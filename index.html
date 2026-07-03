@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Better Life Global Insurance | Segurança para Empreendedores e Autônomos nos EUA</title>
-    <meta name="description" content="A corretora de seguros para imigrantes brasileiros nos EUA que trabalham por conta própria. Especialistas em saúde, vida, responsabilidade civil e automóvel.">
+    <title>Better Life Global Insurance | Seguros para Brasileiros nos EUA</title>
+    <meta name="description" content="A sua corretora de seguros nos Estados Unidos. Especialistas em Saúde, ACA, Medicare, Vida, Auto, Residencial, Empresarial e muito mais.">
     
-    <!-- Google Fonts: Playfair Display (Serif/Headings) and Inter (Sans-serif/Body) -->
+    <!-- Google Fonts: Fraunces (Serif/Headings) and Inter (Sans-serif/Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons for elegant iconography -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- 1. Header fixo com dropdown de seguros -->
     <header class="navbar" id="navbar">
       <div class="container nav-content">
         <a href="#" class="logo">
@@ -28,174 +28,280 @@
           </div>
         </a>
         <nav class="nav-links">
-          <a href="#solucoes">Soluções</a>
-          <a href="#por-que-nos">Por que nós?</a>
-          <a href="#visao-clientes">Nossos Clientes</a>
+          <a href="#home">Início</a>
+          <div class="dropdown">
+            <a href="#seguros" class="dropdown-trigger">Seguros <i class="ph ph-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Saúde / ACA</a>
+              <a href="#">Medicare</a>
+              <a href="#">Seguro de Vida</a>
+              <a href="#">Automotivo</a>
+              <a href="#">Residencial</a>
+              <a href="#">Empresarial</a>
+              <a href="#">Viagem</a>
+              <a href="#">Dental</a>
+              <a href="#">Visão</a>
+              <a href="#">Estudantil</a>
+              <a href="#">Aposentadoria</a>
+              <a href="#">Suplementar</a>
+            </div>
+          </div>
+          <a href="#diferencial">Diferencial</a>
+          <a href="#depoimentos">Depoimentos</a>
         </nav>
-        <a href="https://wa.me/" class="btn btn-primary nav-cta">Falar no WhatsApp</a>
+        <a href="https://wa.me/" class="btn btn-primary nav-cta">Fale Conosco</a>
         <button class="mobile-menu-btn" aria-label="Abrir menu"><i class="ph ph-list"></i></button>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- 2. Hero: "entender o sistema americano antes de assinar" + ícones -->
+    <section class="hero" id="home">
       <div class="hero-bg-glow"></div>
       <div class="container hero-content">
         <div class="hero-text-area">
-          <div class="badge">Especialistas em Imigrantes nos EUA</div>
-          <h1 class="hero-title">Quem não tem patrão cuidando do seu seguro, tem a <span class="highlight">Better Life Global.</span></h1>
+          <h1 class="hero-title">Compreenda o sistema americano <span class="highlight">antes de assinar.</span></h1>
           <p class="hero-subtitle">
-            Você construiu seu próprio caminho nos Estados Unidos. Nós construímos a estrutura de proteção (saúde, vida, auto e negócio) que autônomos e empreendedores brasileiros precisam resolver sozinhos.
+            O mercado de seguros nos EUA pode parecer complexo, mas não precisa ser. Nós existimos para traduzir cada detalhe e construir a cobertura perfeita para a sua vida, saúde e patrimônio na América.
           </p>
           <div class="hero-actions">
             <a href="https://wa.me/" class="btn btn-primary btn-large">
-              <i class="ph ph-whatsapp-logo"></i>
-              Fazer uma Cotação
+              Consultoria Gratuita
             </a>
-            <p class="disclaimer">Atendimento 100% em português.</p>
           </div>
-        </div>
-        <div class="hero-visual">
-          <div class="glass-card">
-            <div class="card-header">
-              <i class="ph-fill ph-shield-star gold-icon"></i>
-              <span>Proteção Independente</span>
-            </div>
-            <div class="card-body">
-              <div class="protection-item">
-                <div class="dot green"></div> Saúde Pessoal e Familiar
-              </div>
-              <div class="protection-item">
-                <div class="dot blue"></div> Proteção de Patrimônio
-              </div>
-              <div class="protection-item">
-                <div class="dot gold"></div> Segurança do Negócio
-              </div>
-            </div>
+          <div class="hero-main-icons">
+            <div class="hero-icon-item"><i class="ph ph-heartbeat"></i> <span>Saúde</span></div>
+            <div class="hero-icon-item"><i class="ph ph-shield-check"></i> <span>Vida</span></div>
+            <div class="hero-icon-item"><i class="ph ph-car"></i> <span>Auto</span></div>
+            <div class="hero-icon-item"><i class="ph ph-house"></i> <span>Casa</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Por que o autônomo precisa (Pain points) -->
-    <section class="pain-points" id="por-que-nos">
+    <!-- 3. Faixa de 4 benefícios do plano de saúde carro-chefe -->
+    <section class="benefits-banner">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <i class="ph ph-first-aid"></i>
+            <h4>Rede Ampla</h4>
+            <p>Acesso aos melhores hospitais.</p>
+          </div>
+          <div class="benefit-item">
+            <i class="ph ph-currency-dollar"></i>
+            <h4>Sem Surpresas</h4>
+            <p>Copagamentos claros e definidos.</p>
+          </div>
+          <div class="benefit-item">
+            <i class="ph ph-stethoscope"></i>
+            <h4>Telemedicina</h4>
+            <p>Atendimento remoto 24 horas.</p>
+          </div>
+          <div class="benefit-item">
+            <i class="ph ph-translate"></i>
+            <h4>Em Português</h4>
+            <p>Suporte que fala o seu idioma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Bloco institucional com vídeo (proposta de valor) -->
+    <section class="institutional" id="diferencial">
+      <div class="container grid-2-align">
+        <div class="institutional-text">
+          <div class="badge">Nossa Proposta de Valor</div>
+          <h2>Uma corretora feita de imigrantes <span class="highlight">para imigrantes.</span></h2>
+          <p>Sabemos exatamente os desafios que você enfrenta ao chegar aos Estados Unidos. Nosso papel vai muito além de vender uma apólice: nós educamos, orientamos e protegemos os brasileiros que escolheram fazer da América o seu lar.</p>
+          <ul class="value-list">
+            <li><i class="ph-fill ph-check-circle"></i> Análise transparente de cada cláusula.</li>
+            <li><i class="ph-fill ph-check-circle"></i> Adequação à sua realidade imigratória e financeira.</li>
+            <li><i class="ph-fill ph-check-circle"></i> Parceria de longo prazo para acompanhar sua evolução.</li>
+          </ul>
+        </div>
+        <div class="institutional-video">
+          <div class="video-placeholder">
+            <i class="ph-fill ph-play-circle play-btn"></i>
+            <p>[Espaço para Vídeo Institucional]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Grade com os 12 tipos de seguro -->
+    <section class="insurance-types" id="seguros">
       <div class="container">
         <div class="section-header center">
-          <h2>Você é o motor do seu negócio. <span class="highlight">E se o motor parar?</span></h2>
-          <p>Profissionais autônomos e donos de negócio não têm um RH corporativo para resolver imprevistos. É por isso que você precisa de coberturas estratégicas.</p>
+          <h2>12 linhas de proteção para <span class="highlight">sua vida inteira</span></h2>
+          <p>Tudo o que você e sua família precisam, concentrado em um único lugar.</p>
         </div>
-        
-        <div class="grid-3">
-          <div class="pain-card">
-            <div class="icon-wrapper">
-              <i class="ph-light ph-first-aid"></i>
-            </div>
-            <h3>A falta do seguro-saúde corporativo</h3>
-            <p>Sem um empregador para bancar os custos, uma emergência médica nos EUA pode comprometer anos de trabalho. Estruturamos planos de saúde sob medida para a sua realidade financeira, sem depender de vínculos empregatícios.</p>
+        <div class="types-grid">
+          <div class="type-card"><i class="ph ph-heartbeat"></i> <h3>Saúde / ACA</h3><p>Planos acessíveis baseados na sua renda (Obamacare).</p></div>
+          <div class="type-card"><i class="ph ph-wheelchair"></i> <h3>Medicare</h3><p>Orientação completa para o seguro saúde sênior nos EUA.</p></div>
+          <div class="type-card"><i class="ph ph-hand-heart"></i> <h3>Seguro de Vida</h3><p>Garantia financeira e proteção de renda para a família.</p></div>
+          <div class="type-card"><i class="ph ph-car-profile"></i> <h3>Automotivo</h3><p>Cobertura essencial para veículos pessoais e comerciais.</p></div>
+          <div class="type-card"><i class="ph ph-house"></i> <h3>Residencial</h3><p>Proteja seu imóvel próprio ou alugado contra imprevistos.</p></div>
+          <div class="type-card"><i class="ph ph-storefront"></i> <h3>Empresarial</h3><p>Proteção de responsabilidade civil (Liability) e bens.</p></div>
+          <div class="type-card"><i class="ph ph-airplane-tilt"></i> <h3>Viagem</h3><p>Tranquilidade garantida em suas viagens internacionais.</p></div>
+          <div class="type-card"><i class="ph ph-tooth"></i> <h3>Dental</h3><p>Planos odontológicos para prevenção e tratamentos.</p></div>
+          <div class="type-card"><i class="ph ph-eyeglasses"></i> <h3>Visão</h3><p>Cobertura para exames, óculos e lentes de contato.</p></div>
+          <div class="type-card"><i class="ph ph-student"></i> <h3>Estudantil</h3><p>Proteção exigida para intercambistas e estudantes.</p></div>
+          <div class="type-card"><i class="ph ph-piggy-bank"></i> <h3>Aposentadoria</h3><p>Estratégias financeiras para um futuro confortável.</p></div>
+          <div class="type-card"><i class="ph ph-plus-circle"></i> <h3>Suplementar</h3><p>Coberturas extras para acidentes e doenças críticas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Comparativo "com/sem" a Better Life Global -->
+    <section class="comparison">
+      <div class="container">
+        <div class="section-header center">
+          <h2>O impacto de ter <span class="highlight">especialistas</span> ao seu lado</h2>
+        </div>
+        <div class="comparison-grid">
+          <div class="comp-card without">
+            <div class="comp-header">Sem a Better Life Global</div>
+            <ul class="comp-list">
+              <li><i class="ph ph-x"></i> Processos complexos em outro idioma.</li>
+              <li><i class="ph ph-x"></i> Risco de assinar cláusulas que não cobrem o essencial.</li>
+              <li><i class="ph ph-x"></i> Atendimento impessoal via call centers demorados.</li>
+              <li><i class="ph ph-x"></i> Patrimônio familiar vulnerável a leis locais desconhecidas.</li>
+            </ul>
           </div>
-          <div class="pain-card">
-            <div class="icon-wrapper">
-              <i class="ph-light ph-briefcase"></i>
-            </div>
-            <h3>Patrimônio pessoal exposto</h3>
-            <p>Um erro, um acidente de trabalho ou um processo de cliente. Sem um Seguro de Responsabilidade Civil (Liability), é o seu patrimônio pessoal e familiar que está na linha de frente. Nós blindamos o que você conquistou.</p>
-          </div>
-          <div class="pain-card">
-            <div class="icon-wrapper">
-              <i class="ph-light ph-users"></i>
-            </div>
-            <h3>Renda variável, proteção fixa</h3>
-            <p>Sua renda não é a mesma todo mês, mas suas responsabilidades com a família não param. Um seguro de vida bem estruturado garante que, se você faltar ou adoecer, o padrão de vida de quem você ama não vai despencar.</p>
+          <div class="comp-card with">
+            <div class="comp-header">Com a Better Life Global</div>
+            <ul class="comp-list">
+              <li><i class="ph ph-check"></i> Explicação detalhada e conversas no seu idioma.</li>
+              <li><i class="ph ph-check"></i> Apólices desenhadas exatamente para o que você precisa.</li>
+              <li><i class="ph ph-check"></i> Um consultor brasileiro sempre à disposição.</li>
+              <li><i class="ph ph-check"></i> Estrutura blindada para você focar no que importa.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Linhas de Seguro -->
-    <section class="solutions" id="solucoes">
-      <div class="solutions-bg-glow"></div>
+    <!-- 7. Seção de missão/posicionamento -->
+    <section class="mission">
+      <div class="mission-bg-glow"></div>
+      <div class="container mission-content">
+        <h2>Nossa Missão</h2>
+        <p class="mission-statement">
+          Acreditamos que o sonho americano não deve vir acompanhado de noites sem dormir por falta de segurança. Nossa missão é ser a ponte de confiança que conecta brasileiros imigrantes às melhores estruturas de proteção nos Estados Unidos, com empatia, verdade e conhecimento profundo do sistema.
+        </p>
+      </div>
+    </section>
+
+    <!-- 8. Passo a passo de contratação (3 passos) -->
+    <section class="steps-section">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Sua segurança em <span class="highlight">3 passos simples</span></h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Consulta Inicial</h3>
+            <p>Uma conversa tranquila para entendermos seu momento de vida, sua família e seus objetivos nos EUA.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Análise de Cenário</h3>
+            <p>Nossa equipe desenha as melhores opções de cobertura no mercado, explicando os prós e contras de forma clara.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Proteção Ativada</h3>
+            <p>Acompanhamos todo o processo de aprovação. A partir daqui, você faz parte da nossa família e estaremos sempre ao seu lado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Depoimentos (placeholders) -->
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Histórias de quem confia na <span class="highlight">nossa entrega</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <p>"[Placeholder: Aqui entrará o relato genuíno de um cliente contando como a corretora ajudou a resolver uma dúvida complexa sobre o ACA.]"</p>
+            <div class="client-name">- [Nome do Cliente 1]</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <p>"[Placeholder: Breve depoimento de um empreendedor sobre como o seguro de responsabilidade civil trouxe paz para a operação da sua empresa.]"</p>
+            <div class="client-name">- [Nome do Cliente 2]</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <p>"[Placeholder: Relato sobre a facilidade de acionar a corretora durante um momento de necessidade, destacando o atendimento em português.]"</p>
+            <div class="client-name">- [Nome do Cliente 3]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Grade de blog (3 a 6 posts) - Movido antes do CTA final para melhor fluidez -->
+    <section class="blog-section">
       <div class="container">
         <div class="section-header">
-          <h2>Soluções completas para a sua <span class="highlight">independência</span></h2>
-          <p>Todas as pontas da sua vida americana protegidas em um só lugar.</p>
+          <h2>Conteúdo para <span class="highlight">guiar você</span></h2>
+          <p>Informação clara e direta sobre o mercado de seguros americano.</p>
         </div>
-
-        <div class="solutions-grid">
-          <div class="solution-item">
-            <div class="solution-content">
-              <i class="ph ph-heartbeat icon-accent"></i>
-              <h3>Seguro Saúde (Health)</h3>
-              <p>Planos individuais e familiares focados no melhor custo-benefício. Garantimos que você tenha acesso à medicina americana de qualidade sem arriscar suas finanças pessoais.</p>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-img-placeholder"></div>
+            <div class="blog-content">
+              <h3>[Título do Post 1: Entendendo o Medicare]</h3>
+              <p>[Breve resumo do conteúdo focado em educar o imigrante brasileiro sobre o sistema Medicare nos EUA...]</p>
+              <a href="#" class="read-more">Ler artigo <i class="ph ph-arrow-right"></i></a>
             </div>
-          </div>
-          <div class="solution-item">
-            <div class="solution-content">
-              <i class="ph ph-hand-heart icon-accent"></i>
-              <h3>Seguro de Vida (Life)</h3>
-              <p>Mais do que uma indenização, oferecemos apólices que podem proteger sua renda em caso de doenças graves ou invalidez. A rede de segurança da sua família.</p>
+          </article>
+          <article class="blog-card">
+            <div class="blog-img-placeholder"></div>
+            <div class="blog-content">
+              <h3>[Título do Post 2: Como funciona o Seguro de Vida]</h3>
+              <p>[Introdução ao artigo que explica as diferenças entre termo e vida inteira para famílias imigrantes...]</p>
+              <a href="#" class="read-more">Ler artigo <i class="ph ph-arrow-right"></i></a>
             </div>
-          </div>
-          <div class="solution-item">
-            <div class="solution-content">
-              <i class="ph ph-storefront icon-accent"></i>
-              <h3>Seguro para Negócios (Liability)</h3>
-              <p>Essencial para contractors, prestadores de serviço e donos de comércio. O General Liability separa e protege o seu CPF dos riscos do seu CNPJ americano.</p>
+          </article>
+          <article class="blog-card">
+            <div class="blog-img-placeholder"></div>
+            <div class="blog-content">
+              <h3>[Título do Post 3: Seguro Auto para Recém-Chegados]</h3>
+              <p>[Dicas valiosas para novos residentes conseguirem as melhores taxas de seguro automotivo...]</p>
+              <a href="#" class="read-more">Ler artigo <i class="ph ph-arrow-right"></i></a>
             </div>
-          </div>
-          <div class="solution-item">
-            <div class="solution-content">
-              <i class="ph ph-car-profile icon-accent"></i>
-              <h3>Seguro Automóvel (Auto)</h3>
-              <p>Coberturas de veículos pessoais e frotas comerciais. Se o seu carro ou van é sua ferramenta de trabalho, ficar parado após um sinistro não é uma opção.</p>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Social Proof (Expectations) -->
-    <section class="social-proof" id="visao-clientes">
-      <div class="container">
-        <div class="section-header center">
-          <h2>O que nossos clientes <span class="highlight">buscam e encontram</span> aqui</h2>
-        </div>
-        
-        <div class="expectations-grid">
-          <div class="expectation-card">
-            <i class="ph-fill ph-quotes"></i>
-            <p class="quote">"Eles buscam a tranquilidade de saber que, mesmo trabalhando por conta própria, uma visita ao hospital não será o fim do negócio que construíram."</p>
-          </div>
-          <div class="expectation-card">
-            <i class="ph-fill ph-quotes"></i>
-            <p class="quote">"Querem proteger o patrimônio construído com tanto esforço. Sabem que um processo no trabalho não pode atingir as economias da família."</p>
-          </div>
-          <div class="expectation-card">
-            <i class="ph-fill ph-quotes"></i>
-            <p class="quote">"Procuram clareza e honestidade. O seguro nos EUA é complexo, e nossos clientes valorizam ter um especialista brasileiro explicando cada detalhe."</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="final-cta">
+    <!-- 10. Banner de CTA final -->
+    <section class="final-cta-banner">
       <div class="cta-glow"></div>
-      <div class="container">
-        <div class="cta-content">
-          <h2>Sua estrutura de proteção começa com uma boa conversa.</h2>
-          <p>Você cuida do seu trabalho, nós cuidamos de proteger os seus resultados. Fale conosco para desenharmos juntos as apólices que fazem sentido para o seu momento, sem pressão.</p>
-          <a href="https://wa.me/" class="btn btn-primary btn-large pulse-animation">
-            <i class="ph ph-whatsapp-logo"></i>
-            Quero proteger meu futuro
-          </a>
-          <p class="disclaimer">Nossa equipe está pronta para te atender em português.</p>
-        </div>
+      <div class="container cta-container">
+        <h2>Vamos construir a sua segurança nos EUA?</h2>
+        <p>A tranquilidade de ter quem entende do assunto cuidando dos seus seguros. Sem pressão, sem letras miúdas. Apenas o que faz sentido para você.</p>
+        <a href="https://wa.me/" class="btn btn-primary btn-large">
+          <i class="ph ph-whatsapp-logo"></i>
+          Falar com um Consultor
+        </a>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 12. Footer com dados de contato -->
     <footer>
-      <div class="container footer-content">
+      <div class="container footer-grid">
         <div class="footer-brand">
           <div class="logo">
             <span class="logo-shield"><i class="ph-fill ph-shield-check"></i></span>
@@ -204,12 +310,31 @@
               <span>Global Insurance</span>
             </div>
           </div>
-          <p>A corretora dos brasileiros que fazem acontecer nos Estados Unidos.</p>
+          <p class="footer-desc">Tranquilidade e segurança para a comunidade brasileira nos Estados Unidos.</p>
+          <div class="social-links">
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
         </div>
-        <div class="footer-links">
+        <div class="footer-links-col">
+          <h4>Nossos Seguros</h4>
+          <a href="#">Saúde e ACA</a>
+          <a href="#">Medicare</a>
+          <a href="#">Vida</a>
+          <a href="#">Empresarial e Auto</a>
+        </div>
+        <div class="footer-links-col">
+          <h4>Institucional</h4>
+          <a href="#diferencial">Sobre Nós</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-contact">
           <h4>Contato</h4>
-          <p>Atendimento exclusivo via WhatsApp</p>
-          <p>EUA e Internacional</p>
+          <p><i class="ph-fill ph-map-pin"></i> [Endereço Placeholder, Suite 100, Orlando, FL]</p>
+          <p><i class="ph-fill ph-phone"></i> [Telefone Placeholder: +1 (000) 000-0000]</p>
+          <p><i class="ph-fill ph-envelope-simple"></i> [Email Placeholder: contato@betterlife.com]</p>
         </div>
       </div>
       <div class="footer-bottom">
