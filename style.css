@@ -149,9 +149,9 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2.5rem;
+  padding: 0.8rem 2rem;
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -251,7 +251,7 @@ header.scrolled {
 
 .desktop-nav {
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .desktop-nav a {
@@ -269,7 +269,7 @@ header.scrolled {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .lang-switch {

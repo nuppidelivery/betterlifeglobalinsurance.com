@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+// main.js - Initialization
   /* ==========================================
      1. Header Scroll Effect
      ========================================== */
@@ -264,4 +264,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-});
