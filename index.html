@@ -1,445 +1,308 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Better Life Global Insurance | Seguros para brasileiros nos EUA</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy-1:#011737;
-    --navy-2:#021A41;
-    --gold-dark:#D39A31;
-    --gold:#E3B14F;
-    --gold-light:#F4C963;
-    --gold-pale:#F6E09A;
-    --ink:#EDEFF4;
-    --ink-dim:#B9C2D6;
-    --max:1180px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--navy-1);
-    color:var(--ink);
-    font-family:'Inter',sans-serif;
-    line-height:1.55;
-  }
-  h1,h2,h3,h4{
-    font-family:'Fraunces',serif;
-    font-weight:600;
-    margin:0 0 .5em;
-    color:var(--gold-light);
-    letter-spacing:.2px;
-  }
-  a{color:inherit;text-decoration:none;}
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
-  .eyebrow{
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    font-size:.72rem;
-    color:var(--gold-dark);
-    font-weight:600;
-  }
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    padding:14px 28px;
-    border-radius:2px;
-    background:linear-gradient(180deg,var(--gold-light),var(--gold-dark));
-    color:var(--navy-1);
-    font-weight:700;
-    font-size:.95rem;
-    border:none;cursor:pointer;
-    box-shadow:0 8px 24px -8px rgba(227,177,79,.45);
-  }
-  .btn.ghost{
-    background:transparent;
-    color:var(--gold-light);
-    border:1px solid rgba(227,177,79,.5);
-    box-shadow:none;
-  }
-  section{padding:88px 0;position:relative;}
-  .divider{
-    width:64px;height:2px;
-    background:var(--gold-dark);
-    margin:18px 0 26px;
-  }
-
-  /* ---------- HEADER ---------- */
-  header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(1,23,55,.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid rgba(227,177,79,.15);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max);margin:0 auto;}
-  .logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--gold-light);}
-  .logo small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.16em;color:var(--ink-dim);text-transform:uppercase;}
-  nav.links{display:flex;gap:28px;font-size:.88rem;color:var(--ink-dim);}
-  nav.links > div{position:relative;cursor:default;}
-  nav.links a:hover{color:var(--gold-light);}
-  .dropdown{
-    display:none;position:absolute;top:28px;left:-10px;
-    background:var(--navy-2);border:1px solid rgba(227,177,79,.18);
-    padding:10px 0;min-width:220px;border-radius:4px;
-    box-shadow:0 20px 40px -20px rgba(0,0,0,.6);
-  }
-  nav.links > div:hover .dropdown{display:block;}
-  .dropdown a{display:block;padding:9px 18px;font-size:.84rem;}
-  .dropdown a:hover{background:rgba(227,177,79,.08);}
-  .lang{display:flex;gap:10px;font-size:.72rem;color:var(--ink-dim);}
-
-  /* ---------- HERO ---------- */
-  .hero{padding:100px 0 60px;background:radial-gradient(ellipse at top right, var(--navy-2), var(--navy-1) 60%);}
-  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
-  .hero h1{font-size:2.6rem;line-height:1.12;max-width:560px;}
-  .hero p.lead{color:var(--ink-dim);font-size:1.05rem;max-width:480px;margin-bottom:28px;}
-  .mark{width:220px;height:220px;margin:0 auto;}
-  .help-row{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;}
-  .help-pill{
-    display:flex;flex-direction:column;align-items:center;gap:8px;
-    width:104px;padding:16px 8px;border:1px solid rgba(227,177,79,.2);
-    border-radius:6px;font-size:.72rem;text-align:center;color:var(--ink-dim);
-    background:rgba(2,26,65,.5);
-  }
-  .help-pill svg{width:26px;height:26px;color:var(--gold-light);}
-
-  /* ---------- FEATURE STRIP ---------- */
-  .strip{background:var(--navy-2);border-top:1px solid rgba(227,177,79,.12);border-bottom:1px solid rgba(227,177,79,.12);}
-  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;}
-  .strip-item{display:flex;gap:12px;align-items:flex-start;}
-  .strip-item svg{width:22px;height:22px;flex:none;color:var(--gold);margin-top:2px;}
-  .strip-item span{font-size:.86rem;color:var(--ink-dim);}
-
-  /* ---------- INTRO ---------- */
-  .intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
-  .intro p{color:var(--ink-dim);}
-  .video-frame{
-    aspect-ratio:16/10;border-radius:8px;
-    background:linear-gradient(135deg,var(--navy-2),var(--navy-1));
-    border:1px solid rgba(227,177,79,.2);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .play{width:60px;height:60px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;}
-  .play svg{width:20px;height:20px;color:var(--gold-light);}
-
-  /* ---------- SERVICES GRID ---------- */
-  .services{background:var(--navy-1);}
-  .grid12{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;}
-  .card{
-    background:var(--navy-2);
-    border:1px solid rgba(227,177,79,.14);
-    border-radius:6px;padding:26px;
-    transition:border-color .2s;
-  }
-  .card:hover{border-color:rgba(227,177,79,.5);}
-  .card svg{width:30px;height:30px;color:var(--gold-light);margin-bottom:14px;}
-  .card h4{font-size:1.02rem;margin-bottom:8px;}
-  .card p{font-size:.86rem;color:var(--ink-dim);margin-bottom:14px;}
-  .card a{font-size:.8rem;color:var(--gold-dark);font-weight:600;}
-
-  /* ---------- COMPARISON ---------- */
-  .compare .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(227,177,79,.15);border-radius:8px;overflow:hidden;}
-  .col{padding:44px 38px;}
-  .col.yes{background:linear-gradient(180deg,rgba(227,177,79,.08),transparent);}
-  .col.no{background:rgba(2,10,26,.5);}
-  .col h3{font-size:1.1rem;}
-  .col ul{list-style:none;padding:0;margin:20px 0 0;}
-  .col li{display:flex;gap:12px;margin-bottom:16px;font-size:.9rem;color:var(--ink-dim);}
-  .col.yes li svg{color:var(--gold-light);}
-  .col.no li svg{color:#8a5a5a;}
-  .col li svg{width:18px;height:18px;flex:none;margin-top:3px;}
-
-  /* ---------- MISSION REPEAT ---------- */
-  .mission{text-align:center;}
-  .mission h2{font-size:2rem;max-width:760px;margin:0 auto 18px;}
-  .mission p{max-width:640px;margin:0 auto 26px;color:var(--ink-dim);}
-
-  /* ---------- STEPS ---------- */
-  .steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px;}
-  .step{text-align:center;padding:0 12px;}
-  .step .num{
-    width:44px;height:44px;border-radius:50%;
-    border:1px solid var(--gold-dark);
-    display:flex;align-items:center;justify-content:center;
-    margin:0 auto 16px;font-family:'Fraunces',serif;color:var(--gold-light);
-  }
-  .step p{color:var(--ink-dim);font-size:.9rem;}
-
-  /* ---------- TESTIMONIALS ---------- */
-  .testi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;}
-  .testi{background:var(--navy-2);border:1px solid rgba(227,177,79,.14);border-radius:6px;padding:26px;}
-  .stars{color:var(--gold);letter-spacing:2px;margin-bottom:12px;}
-  .testi p{font-size:.88rem;color:var(--ink-dim);font-style:italic;}
-  .testi .who{margin-top:14px;font-size:.82rem;color:var(--gold-light);font-weight:600;font-style:normal;}
-  .testi-note{margin-top:18px;font-size:.72rem;color:var(--ink-dim);opacity:.65;}
-
-  /* ---------- CTA BANNER ---------- */
-  .cta-band{background:linear-gradient(90deg,var(--navy-2),var(--navy-1));text-align:center;border-top:1px solid rgba(227,177,79,.15);border-bottom:1px solid rgba(227,177,79,.15);}
-  .cta-band h2{font-size:1.9rem;margin-bottom:22px;}
-
-  /* ---------- BLOG ---------- */
-  .blog-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;}
-  .post{background:var(--navy-2);border:1px solid rgba(227,177,79,.14);border-radius:6px;overflow:hidden;}
-  .post .thumb{height:130px;background:linear-gradient(135deg,var(--gold-dark),var(--navy-2));opacity:.35;}
-  .post .body{padding:20px;}
-  .post h4{font-size:.95rem;line-height:1.3;}
-  .post a.rm{font-size:.78rem;color:var(--gold-dark);font-weight:600;}
-
-  /* ---------- FOOTER ---------- */
-  footer{background:#000d21;padding:60px 0 30px;border-top:1px solid rgba(227,177,79,.15);}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;}
-  .foot-grid h5{color:var(--gold-light);font-family:'Inter',sans-serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px;}
-  .foot-grid a,.foot-grid p{display:block;font-size:.84rem;color:var(--ink-dim);margin-bottom:8px;}
-  .legal{margin-top:44px;padding-top:24px;border-top:1px solid rgba(227,177,79,.1);font-size:.72rem;color:var(--ink-dim);opacity:.7;}
-
-  @media (max-width:920px){
-    nav.links{display:none;}
-    .hero .wrap{grid-template-columns:1fr;}
-    .strip .wrap{grid-template-columns:repeat(2,1fr);}
-    .intro .wrap{grid-template-columns:1fr;}
-    .grid12{grid-template-columns:repeat(2,1fr);}
-    .compare .wrap{grid-template-columns:1fr;}
-    .steps-row,.testi-row,.blog-row{grid-template-columns:1fr;}
-    .foot-grid{grid-template-columns:1fr 1fr;}
-    .hero h1{font-size:2rem;}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Life Global Insurance | Private Wealth & Protection</title>
+  
+  <!-- Fonts: Fraunces (Serif) and Inter (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons (Light and clean) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">
-      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><path d="M20 3 L34 9 V19 C34 28 28 34 20 37 C12 34 6 28 6 19 V9 Z" stroke="#E3B14F" stroke-width="1.6"/><circle cx="20" cy="19" r="6" stroke="#D39A31" stroke-width="1.3"/><path d="M20 13 L20 25 M14 19 L26 19" stroke="#F4C963" stroke-width="1"/></svg>
-      Better Life Global <small>Insurance</small>
+  <!-- Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <i class="ph ph-shield-check tree-shield"></i>
+        <div class="logo-text">
+          <span class="brand">Better Life</span>
+          <span class="sub-brand">Global Insurance</span>
+        </div>
+      </a>
+      
+      <nav class="desktop-nav">
+        <a href="#solucoes" data-i18n="nav_solutions">Soluções</a>
+        <a href="#filosofia" data-i18n="nav_philosophy">A Estratégia</a>
+        <a href="#conhecimento" data-i18n="nav_knowledge">Conhecimento</a>
+        <a href="#contato" data-i18n="nav_contact">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="pt">PT</button>
+          <span class="divider">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="#contato" class="btn btn-outline desktop-only" data-i18n="nav_cta">Consultoria Privada</a>
+        <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+      </div>
     </div>
-    <nav class="links">
-      <div><a href="#">Início</a></div>
-      <div><a href="#sobre">Quem somos</a></div>
-      <div><a href="#seguros">Seguros</a>
-        <div class="dropdown">
-          <a href="#">Saúde — Plano ACA</a>
-          <a href="#">Saúde — Medicare</a>
-          <a href="#">Saúde — Short Term</a>
-          <a href="#">Seguro de Vida</a>
-          <a href="#">Seguro Residencial</a>
-          <a href="#">Seguro Automotivo</a>
-          <a href="#">Seguro Empresarial</a>
-          <a href="#">Seguro Viagem</a>
-          <a href="#">Seguro Dental</a>
-          <a href="#">Seguro de Visão</a>
-          <a href="#">Seguro Estudantil</a>
-          <a href="#">Aposentadoria Privada</a>
+    
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+      <a href="#solucoes" data-i18n="nav_solutions">Soluções</a>
+      <a href="#filosofia" data-i18n="nav_philosophy">A Estratégia</a>
+      <a href="#conhecimento" data-i18n="nav_knowledge">Conhecimento</a>
+      <a href="#contato" data-i18n="nav_contact">Contato</a>
+      <a href="#contato" class="btn btn-primary" data-i18n="nav_cta">Consultoria Privada</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero reveal">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1 data-i18n="hero_title">Uma Agência.<br>Toda a Estratégia de Proteção.</h1>
+      <p class="subtitle" data-i18n="hero_subtitle">Consultoria patrimonial e seguros estruturados para famílias, empresas e legados de brasileiros nos Estados Unidos e no mundo.</p>
+      
+      <div class="hero-ctas">
+        <a href="#solucoes" class="btn btn-primary" data-i18n="hero_cta_1">Construir Meu Plano</a>
+        <a href="#contato" class="btn btn-outline" data-i18n="hero_cta_2">Falar com um Especialista</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa Filosofia -->
+  <section id="filosofia" class="philosophy reveal">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow" data-i18n="eyebrow_philosophy">Nossa Filosofia</span>
+        <h2 data-i18n="philosophy_title">A proteção não é um produto. É uma arquitetura de longo prazo.</h2>
+      </div>
+      <div class="philosophy-text center-text">
+        <p data-i18n="philosophy_text_1">Compreendemos que a sua trajetória nos Estados Unidos envolveu renúncias e construções significativas. Nosso papel não é comercializar apólices, mas sim atuar como arquitetos da sua segurança patrimonial e familiar.</p>
+        <p data-i18n="philosophy_text_2">Trabalhamos com o rigor de um <em>Family Office</em>, alinhando saúde, vida, responsabilidade civil e estruturação internacional de forma coesa e blindada.</p>
+      </div>
+      
+      <div class="counters">
+        <div class="counter-item">
+          <h3 class="count" data-target="15">0</h3>
+          <span data-i18n="counter_1">Anos de Expertise Global</span>
+        </div>
+        <div class="counter-item">
+          <h3 class="count" data-target="850">0</h3>
+          <span data-i18n="counter_2">Famílias Protegidas</span>
+        </div>
+        <div class="counter-item">
+          <h3 class="count" data-target="100">0</h3>
+          <span class="suffix">%</span>
+          <span data-i18n="counter_3">Atendimento Confidencial</span>
         </div>
       </div>
-      <div><a href="#blog">Blog</a></div>
-      <div><a href="#contato">Fale com a gente</a></div>
-    </nav>
-    <div class="lang">PT · EN · ES</div>
-  </div>
-</header>
+    </div>
+  </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <div class="eyebrow">Better Life Global Insurance</div>
-      <h1>Seguro nos EUA, explicado por brasileiros, para brasileiros.</h1>
-      <p class="lead">Do plano de saúde ao seguro do carro: a gente traduz como o sistema americano funciona antes de você assinar qualquer coisa.</p>
-      <a class="btn" href="#contato">Pedir uma cotação</a>
-      <div class="help-row">
-        <a class="help-pill" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z"/><path d="M12 8v4l3 2"/></svg>Saúde</a>
-        <a class="help-pill" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.3-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.3 6C19 16.5 12 21 12 21z"/></svg>Vida</a>
-        <a class="help-pill" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l2-6h14l2 6M5 13h14v5H5z"/><circle cx="8" cy="18" r="1.4"/><circle cx="16" cy="18" r="1.4"/></svg>Carro</a>
-        <a class="help-pill" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg>Casa</a>
-        <a class="help-pill" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4 12H1M23 12h-3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/><circle cx="12" cy="12" r="4"/></svg>Aposentadoria</a>
-        <a class="help-pill" href="#seguros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Ver tudo</a>
+  <!-- Como Trabalhamos -->
+  <section class="how-we-work reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="eyebrow_method">Metodologia</span>
+        <h2 data-i18n="method_title">A Jornada da Estruturação</h2>
       </div>
-    </div>
-    <svg class="mark" viewBox="0 0 200 200" fill="none">
-      <path d="M100 15 L170 42 V95 C170 140 140 168 100 185 C60 168 30 140 30 95 V42 Z" stroke="#E3B14F" stroke-width="1.4"/>
-      <circle cx="100" cy="100" r="42" stroke="#D39A31" stroke-width="1.2"/>
-      <path d="M100 62 L108 92 L138 100 L108 108 L100 138 L92 108 L62 100 L92 92 Z" fill="#F4C963" opacity="0.85"/>
-    </svg>
-  </div>
-</section>
-
-<!-- FEATURE STRIP -->
-<section class="strip" style="padding:44px 0;">
-  <div class="wrap">
-    <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6z"/></svg><span>Sem teto de gastos na cobertura de saúde</span></div>
-    <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>Pré-natal e parto incluídos no plano</span></div>
-    <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><span>Parcelas que podem começar em zero, com tax credit</span></div>
-    <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="1"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><span>Sem período de carência para começar a usar</span></div>
-  </div>
-</section>
-
-<!-- INTRO + VIDEO -->
-<section class="intro" id="sobre">
-  <div class="wrap">
-    <div>
-      <div class="eyebrow">Nossa proposta</div>
-      <h2>Seguro certo é aquele que você entende antes de assinar</h2>
-      <p>A Better Life Global Insurance atua com brasileiros nos Estados Unidos que precisam resolver seguro sem depender de um RH ou de um patrão explicando o sistema. Trabalhamos planos de saúde, vida, carro, casa, empresa e aposentadoria — sempre com a lógica explicada em português antes da assinatura, não depois do problema aparecer.</p>
-      <p style="margin-top:16px;">Nossa estrutura conta com o apoio de parceiros seguradores estabelecidos no mercado americano, o que nos permite comparar planos reais em vez de empurrar uma única opção.</p>
-    </div>
-    <div class="video-frame"><div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
-  </div>
-</section>
-
-<!-- SERVICES GRID -->
-<section class="services" id="seguros">
-  <div class="wrap">
-    <div class="eyebrow">Nossos seguros</div>
-    <h2>A cobertura certa para cada fase da sua vida nos EUA</h2>
-    <div class="grid12">
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6z"/></svg><h4>Plano de Saúde — ACA</h4><p>Cobertura ampla, sem exclusão por condição pré-existente, incluindo consultas, cirurgias e emergências.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><h4>Medicare</h4><p>Orientação sobre Medicare Original, Advantage e Supplement para escolher o plano compatível com sua rotina.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><h4>Short Term</h4><p>Cobertura temporária para imprevistos enquanto você aguarda o período de inscrição de um plano definitivo.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.3-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.3 6C19 16.5 12 21 12 21z"/></svg><h4>Seguro de Vida</h4><p>Proteção financeira para quem depende de você, com opções ajustadas à sua fase de vida e orçamento.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg><h4>Seguro Residencial</h4><p>Cobertura para estrutura, bens e imprevistos climáticos comuns na Flórida e em outros estados.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l2-6h14l2 6M5 13h14v5H5z"/><circle cx="8" cy="18" r="1.4"/><circle cx="16" cy="18" r="1.4"/></svg><h4>Seguro Automotivo</h4><p>Proteção para o veículo e assistência em caso de colisão, roubo ou avaria, com franquia clara.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg><h4>Seguro Empresarial</h4><p>Cobertura para o negócio e a equipe, dimensionada conforme o setor e o porte da empresa.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21l7-14 4 8 3-6 4 12z"/></svg><h4>Seguro Viagem</h4><p>Assistência médica e cobertura de imprevistos para quem viaja dentro ou fora dos EUA.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c3 0 5 3 4 6-1 3 1 5 1 8s-2 4-5 4-3-2-3-4-1-2-3-2-3 2-4-2c-1-4 1-6 3-6 1-3 3-4 7-4z"/></svg><h4>Seguro Dental</h4><p>Redução de custos com consultas de rotina e tratamentos odontológicos ao longo do ano.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><h4>Seguro de Visão</h4><p>Cobertura para exames de vista, lentes e armações, com rede de atendimento credenciada.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg><h4>Seguro Estudantil</h4><p>Assistência médica pensada para quem está estudando fora do país de origem.</p><a href="#">Saiba mais →</a></div>
-      <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4 12H2M22 12h-2M6 6l1.5 1.5M16.5 16.5L18 18M6 18l1.5-1.5M16.5 7.5L18 6"/><circle cx="12" cy="12" r="5"/></svg><h4>Aposentadoria Privada</h4><p>Planejamento de longo prazo para construir uma reserva com previsibilidade.</p><a href="#">Saiba mais →</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPARISON -->
-<section class="compare">
-  <div class="wrap">
-    <div class="eyebrow" style="margin-bottom:8px;">Por que Better Life Global</div>
-    <h2 style="margin-bottom:30px;">A diferença está em quem te acompanha depois da assinatura</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(227,177,79,.15);border-radius:8px;overflow:hidden;">
-      <div class="col yes">
-        <h3>Com a Better Life Global</h3>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Explicação em português de como cada seguro funciona, sem letra miúda escondida</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Cotações com valores claros, sem taxa surpresa no boleto</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Acompanhamento depois da contratação, não só na venda</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Comparação entre parceiros seguradores reais, não uma única opção fixa</li>
-        </ul>
-      </div>
-      <div class="col no">
-        <h3>Sem esse tipo de suporte</h3>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>Ficar perdido entre termos em inglês e prazo de inscrição</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>Descobrir taxa extra só na hora de pagar</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>Agente que some depois de fechar a venda</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>Plano mal encaixado, pagando por cobertura que não usa</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MISSION REPEAT -->
-<section class="mission">
-  <div class="wrap">
-    <div class="eyebrow">Better Life Global Insurance</div>
-    <h2>Seguro traduzido, não terceirizado.</h2>
-    <p>[Inserir aqui o tempo real de atuação da empresa]. Ajudamos brasileiros nos Estados Unidos a organizar saúde, patrimônio e planejamento financeiro, com atendimento em português do início ao fim do processo.</p>
-    <a class="btn ghost" href="#sobre">Conhecer nossa história</a>
-  </div>
-</section>
-
-<!-- STEPS -->
-<section style="background:var(--navy-2);">
-  <div class="wrap">
-    <div class="eyebrow">Contratação</div>
-    <h2>Como funciona na prática</h2>
-    <div class="steps-row">
-      <div class="step"><div class="num">1</div><p>Você conta sua situação pelo formulário ou pelo WhatsApp</p></div>
-      <div class="step"><div class="num">2</div><p>Comparamos opções entre parceiros seguradores e devolvemos uma proposta clara</p></div>
-      <div class="step"><div class="num">3</div><p>Você escolhe com calma, tira dúvidas e só depois assina</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">O que dizem sobre a gente</div>
-    <h2>Depoimentos</h2>
-    <div class="testi-row">
-      <div class="testi"><div class="stars">★★★★★</div><p>"[Texto de depoimento real do cliente a ser inserido aqui]"</p><div class="who">[Nome do cliente]</div></div>
-      <div class="testi"><div class="stars">★★★★★</div><p>"[Texto de depoimento real do cliente a ser inserido aqui]"</p><div class="who">[Nome do cliente]</div></div>
-      <div class="testi"><div class="stars">★★★★★</div><p>"[Texto de depoimento real do cliente a ser inserido aqui]"</p><div class="who">[Nome do cliente]</div></div>
-    </div>
-    <div class="testi-note">Espaços reservados — substituir por depoimentos reais e autorizados por clientes da Better Life Global antes de publicar.</div>
-  </div>
-</section>
-
-<!-- CTA BANNER -->
-<section class="cta-band">
-  <div class="wrap">
-    <div class="eyebrow" style="justify-content:center;display:flex;">Better Life Global Insurance</div>
-    <h2>Bora entender qual seguro faz sentido pra você?</h2>
-    <a class="btn" href="#contato">Falar com um especialista</a>
-  </div>
-</section>
-
-<!-- BLOG -->
-<section id="blog">
-  <div class="wrap">
-    <div class="eyebrow">Artigos</div>
-    <h2>Conteúdo para quem está construindo vida nos EUA</h2>
-    <div class="blog-row">
-      <div class="post"><div class="thumb"></div><div class="body"><h4>O que muda no seu seguro de saúde quando você troca de estado</h4><a class="rm" href="#">Saiba mais →</a></div></div>
-      <div class="post"><div class="thumb"></div><div class="body"><h4>Como funciona o período de inscrição do Obamacare, sem enrolação</h4><a class="rm" href="#">Saiba mais →</a></div></div>
-      <div class="post"><div class="thumb"></div><div class="body"><h4>Seguro de carro nos EUA: o que a franquia realmente cobre</h4><a class="rm" href="#">Saiba mais →</a></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="contato">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="logo" style="margin-bottom:14px;">
-          <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><path d="M20 3 L34 9 V19 C34 28 28 34 20 37 C12 34 6 28 6 19 V9 Z" stroke="#E3B14F" stroke-width="1.6"/></svg>
-          Better Life Global
+      
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-icon"><i class="ph-light ph-magnifying-glass"></i></div>
+          <h4 data-i18n="step_1_title">1. Diagnóstico e Realidade</h4>
+          <p data-i18n="step_1_desc">Conhecemos profundamente a sua estrutura familiar, imigratória e patrimonial atual, identificando pontos de exposição e riscos não calculados.</p>
         </div>
-        <p>[Telefone de contato]</p>
-        <p>[E-mail de suporte]</p>
-      </div>
-      <div>
-        <h5>A empresa</h5>
-        <a href="#sobre">Quem somos</a>
-        <a href="#">Nossos clientes</a>
-        <a href="#contato">Contato</a>
-        <a href="#">Política de Privacidade</a>
-      </div>
-      <div>
-        <h5>Seguros</h5>
-        <a href="#">Plano de Saúde ACA</a>
-        <a href="#">Medicare</a>
-        <a href="#">Seguro de Vida</a>
-        <a href="#">Seguro Automotivo</a>
-        <a href="#">Seguro Residencial</a>
-      </div>
-      <div>
-        <h5>Endereço</h5>
-        <p>[Razão social a definir]</p>
-        <p>[Endereço completo do escritório]</p>
-        <p>Seg. à Sex.: 9h–17h</p>
+        <div class="step">
+          <div class="step-icon"><i class="ph-light ph-compass-tool"></i></div>
+          <h4 data-i18n="step_2_title">2. Arquitetura da Estratégia</h4>
+          <p data-i18n="step_2_desc">Desenhamos um plano de blindagem coeso, cruzando necessidades de saúde, responsabilidade civil e planejamento de sucessão e vida.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="ph-light ph-scales"></i></div>
+          <h4 data-i18n="step_3_title">3. Curadoria de Soluções</h4>
+          <p data-i18n="step_3_desc">Selecionamos as melhores seguradoras e instrumentos financeiros do mercado americano e internacional para executar o planejamento aprovado.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="ph-light ph-infinity"></i></div>
+          <h4 data-i18n="step_4_title">4. Acompanhamento Contínuo</h4>
+          <p data-i18n="step_4_desc">Sua vida muda e sua estratégia também deve evoluir. Mantemos revisões periódicas para garantir que o plano permaneça eficiente ao longo dos anos.</p>
+        </div>
       </div>
     </div>
-    <div class="legal">
-      Aviso: as simulações apresentadas neste site são apenas ilustrativas e não representam uma proposta final. Valores sujeitos à análise e aprovação da seguradora parceira.<br>
-      © 2026 Better Life Global Insurance. Todos os direitos reservados.
-    </div>
-  </div>
-</footer>
+  </section>
 
+  <!-- O Que Protegemos -->
+  <section id="solucoes" class="solutions reveal">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow" data-i18n="eyebrow_protect">Áreas de Atuação</span>
+        <h2 data-i18n="protect_title">O que nós protegemos</h2>
+        <p class="subtitle-small" data-i18n="protect_subtitle">Eixos fundamentais para garantir a preservação do que você construiu.</p>
+      </div>
+      
+      <div class="cards-grid">
+        <a href="#" class="luxury-card">
+          <i class="ph-light ph-users-three"></i>
+          <h3 data-i18n="sol_family_title">Família & Indivíduo</h3>
+          <p data-i18n="sol_family_desc">Estruturação de planos de saúde privados (ACA, Medicare, Suplementares) e Seguros de Vida focados em preservação de padrão e sucessão.</p>
+          <span class="discover" data-i18n="discover">Descobrir Detalhes &rarr;</span>
+        </a>
+        
+        <a href="#" class="luxury-card">
+          <i class="ph-light ph-bank"></i>
+          <h3 data-i18n="sol_wealth_title">Patrimônio</h3>
+          <p data-i18n="sol_wealth_desc">Blindagem de ativos através de apólices residenciais de alto padrão, seguros automotivos premium e responsabilidade civil pessoal (Umbrella).</p>
+          <span class="discover" data-i18n="discover">Descobrir Detalhes &rarr;</span>
+        </a>
+        
+        <a href="#" class="luxury-card">
+          <i class="ph-light ph-buildings"></i>
+          <h3 data-i18n="sol_corp_title">Empresas & Negócios</h3>
+          <p data-i18n="sol_corp_desc">Gestão de riscos para operações comerciais, cobrindo responsabilidade civil corporativa (General Liability), propriedades e sucessão de sócios.</p>
+          <span class="discover" data-i18n="discover">Descobrir Detalhes &rarr;</span>
+        </a>
+        
+        <a href="#" class="luxury-card">
+          <i class="ph-light ph-globe-hemisphere-west"></i>
+          <h3 data-i18n="sol_intl_title">Soluções Internacionais</h3>
+          <p data-i18n="sol_intl_desc">Seguros de viagem abrangentes, proteção para estudantes no exterior e estratégias globais para residentes multinacionais.</p>
+          <span class="discover" data-i18n="discover">Descobrir Detalhes &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por que escolher a BLGI -->
+  <section class="why-us reveal">
+    <div class="container">
+      <div class="two-col-layout">
+        <div class="text-col">
+          <span class="eyebrow" data-i18n="eyebrow_why">Diferenciais</span>
+          <h2 data-i18n="why_title">A excelência na gestão de riscos</h2>
+          <p data-i18n="why_desc">Nós elevamos o padrão de atendimento para brasileiros no exterior, entregando precisão técnica com profundo respeito à sua cultura e idioma.</p>
+        </div>
+        <div class="list-col">
+          <div class="diff-item">
+            <h4 data-i18n="diff_1_title">Fluência Bicultural</h4>
+            <p data-i18n="diff_1_desc">Aconselhamento integral em Português e Inglês, traduzindo complexidades jurídicas americanas para a sua clareza absoluta.</p>
+          </div>
+          <div class="diff-item">
+            <h4 data-i18n="diff_2_title">Independência Estratégica</h4>
+            <p data-i18n="diff_2_desc">Não representamos uma única instituição. Acessamos o mercado de forma imparcial para selecionar o que é matematicamente melhor para você.</p>
+          </div>
+          <div class="diff-item">
+            <h4 data-i18n="diff_3_title">Serviço Concierge</h4>
+            <p data-i18n="diff_3_desc">Nossa relação começa, não termina, após a assinatura. Cuidamos de sinistros, renovações e auditorias anuais em seu nome.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Histórias de Clientes -->
+  <section class="stories reveal">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow" data-i18n="eyebrow_stories">Estudos de Caso</span>
+        <h2 data-i18n="stories_title">O impacto de uma proteção bem estruturada</h2>
+      </div>
+      
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="quote-icon">"</div>
+          <p class="story-text">[Placeholder: Estudo de caso detalhando como a estruturação do plano de saúde em conjunto com o seguro de vida permitiu a preservação financeira de uma família durante um diagnóstico crítico.]</p>
+          <p class="story-author">— [Família Cliente, Flórida]</p>
+        </div>
+        <div class="story-card">
+          <div class="quote-icon">"</div>
+          <p class="story-text">[Placeholder: Relato de um empresário brasileiro sobre como a auditoria de responsabilidade civil corporativa evitou a exposição de seu patrimônio pessoal nos Estados Unidos.]</p>
+          <p class="story-author">— [Empresário Cliente, Nova York]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chamada Final -->
+  <section class="final-cta reveal">
+    <div class="container center-text">
+      <h2 data-i18n="cta_title">Um diálogo sobre o seu legado.</h2>
+      <p data-i18n="cta_subtitle">Agende uma consulta privada e confidencial para avaliarmos a sua atual exposição a riscos e desenharmos o futuro da sua proteção.</p>
+      <div style="margin-top: 3rem;">
+        <a href="#contato" class="btn btn-primary btn-large" data-i18n="cta_btn">Iniciar Diálogo Confidencial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Esqueleto de Navegação -->
+  <footer id="contato" class="reveal">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand -->
+        <div class="footer-col brand-col">
+          <a href="#" class="logo">
+            <i class="ph ph-shield-check tree-shield"></i>
+            <div class="logo-text">
+              <span class="brand">Better Life</span>
+              <span class="sub-brand">Global Insurance</span>
+            </div>
+          </a>
+          <p class="footer-desc" data-i18n="footer_desc">Consultoria patrimonial e proteção internacional para famílias e empresas de excelência.</p>
+        </div>
+        
+        <!-- Links Estratégicos -->
+        <div class="footer-col">
+          <h5 data-i18n="foot_nav_1">A Instituição</h5>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="foot_link_about">Sobre a BLGI</a></li>
+            <li><a href="#" data-i18n="foot_link_philosophy">Nossa Filosofia</a></li>
+            <li><a href="#" data-i18n="foot_link_clients">Quem Atendemos</a></li>
+            <li><a href="#" data-i18n="foot_link_aftersales">Acompanhamento e Pós</a></li>
+          </ul>
+        </div>
+        
+        <!-- Soluções -->
+        <div class="footer-col">
+          <h5 data-i18n="foot_nav_2">Eixos de Proteção</h5>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="sol_family_title">Família & Indivíduo</a></li>
+            <li><a href="#" data-i18n="sol_wealth_title">Patrimônio</a></li>
+            <li><a href="#" data-i18n="sol_corp_title">Empresas & Negócios</a></li>
+            <li><a href="#" data-i18n="sol_intl_title">Soluções Internacionais</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contato -->
+        <div class="footer-col">
+          <h5 data-i18n="foot_nav_3">Contato Privado</h5>
+          <ul class="footer-links contact-info">
+            <li><i class="ph-light ph-envelope-simple"></i> [Email Placeholder]</li>
+            <li><i class="ph-light ph-phone"></i> [Telefone Placeholder]</li>
+            <li><i class="ph-light ph-map-pin"></i> [Endereço Placeholder, EUA]</li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="ph-light ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph-light ph-instagram-logo"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="legal-links">
+          <a href="#" data-i18n="legal_terms">Termos de Uso</a>
+          <span class="divider">•</span>
+          <a href="#" data-i18n="legal_privacy">Privacidade & Confidencialidade</a>
+          <span class="divider">•</span>
+          <a href="#" data-i18n="legal_faq">FAQ Global</a>
+        </div>
+        <p class="copyright">© 2026 Better Life Global Insurance. <span data-i18n="copyright_text">Todos os direitos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
 </body>
 </html>
