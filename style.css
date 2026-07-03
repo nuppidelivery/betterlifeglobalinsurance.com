@@ -235,6 +235,12 @@ header.scrolled {
   flex-direction: column;
 }
 
+.logo-img {
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
 .brand {
   font-family: var(--font-heading);
   font-size: 1.25rem;
@@ -597,6 +603,41 @@ header.scrolled {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--gold-primary);
+}
+
+/* ==========================================================================
+   FAQ Section
+   ========================================================================== */
+.faq-section {
+  background-color: var(--bg-primary);
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(211, 154, 49, 0.2);
+  padding: 2rem 0;
+}
+
+.faq-item h4 {
+  font-size: 1.25rem;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+
+.faq-item p {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
 }
 
 /* ==========================================================================

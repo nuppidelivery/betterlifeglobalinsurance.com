@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Life Global Insurance | Informação</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .internal-page { padding: 180px 0 100px; min-height: 70vh; }
+    .internal-content { max-width: 800px; margin: 0 auto; background: var(--bg-secondary); padding: 4rem; border: 1px solid rgba(211, 154, 49, 0.2); }
+    .internal-title { font-family: var(--font-heading); color: var(--gold-light); margin-bottom: 2rem; font-size: 2.5rem; }
+    .internal-text { font-size: 1.15rem; color: var(--text-main); line-height: 1.8; margin-bottom: 2rem; }
+    .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--gold-dark); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 3rem; transition: var(--trans-med); }
+    .back-btn:hover { color: var(--gold-light); }
+  </style>
+</head>
+<body>
+
+  <header id="header" class="scrolled">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <img src="/logo.png" alt="Better Life Global Insurance" class="logo-img">
+      </a>
+      
+      <div class="nav-actions">
+        <a href="https://wa.me/15616958132" target="_blank" class="btn btn-outline desktop-only">Consultoria Privada</a>
+        <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="internal-page reveal">
+    <div class="container">
+      <a href="/" class="back-btn"><i class="ph ph-arrow-left"></i> Voltar para o início</a>
+      <div class="internal-content">
+        <h1 class="internal-title" id="pageTitle">Carregando...</h1>
+        <div class="internal-text" id="pageText">
+          As informações desta página estão sendo estruturadas pela nossa equipe de Wealth Management. Em breve, você terá acesso a um detalhamento completo.
+        </div>
+        <div style="margin-top: 3rem;">
+          <a href="https://wa.me/15616958132" target="_blank" class="btn btn-primary">Falar com Especialista via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const page = urlParams.get('page') || 'default';
+      
+      const content = {
+        'sobre': { title: 'Sobre a Instituição', text: 'Nossa instituição nasceu da necessidade de oferecer ao brasileiro nos Estados Unidos um serviço de excelência internacional, focando não em vendas, mas em aconselhamento estratégico e proteção real de patrimônio e vida.' },
+        'familia': { title: 'Família & Indivíduo', text: 'Desenvolvemos soluções para a base do seu patrimônio: sua vida e saúde. Oferecemos planos de saúde sob medida e estratégias de seguro de vida desenhadas para preservação e sucessão do seu estilo de vida.' },
+        'patrimonio': { title: 'Patrimônio', text: 'Seus ativos exigem uma blindagem robusta. Conectamos as melhores apólices residenciais, automotivas de alto padrão e estruturas Umbrella para assegurar que nenhum imprevisto afete o que você construiu.' },
+        'empresas': { title: 'Empresas & Negócios', text: 'A estrutura corporativa é vulnerável a riscos jurídicos e trabalhistas. Elaboramos planos de responsabilidade civil corporativa e sucessão societária adaptados às complexas leis americanas.' },
+        'internacional': { title: 'Soluções Internacionais', text: 'Para o cidadão global, as barreiras geográficas não podem ser um risco. Fornecemos estruturas para viajantes frequentes, estudantes e famílias multinacionais, garantindo cobertura onde quer que você esteja.' },
+        'privacidade': { title: 'Privacidade & Confidencialidade', text: 'Atuamos sob os mais rígidos protocolos de sigilo de um Family Office. Nenhuma informação pessoal ou patrimonial é compartilhada sem consentimento expresso e auditoria de segurança.' },
+        'termos': { title: 'Termos de Uso', text: 'Esta plataforma destina-se a fins educativos e institucionais. Qualquer decisão financeira deve ser tomada apenas após consulta individual com nossos especialistas licenciados.' },
+        'conhecimento': { title: 'Central de Conhecimento', text: 'Nosso hub de insights sobre proteção nos EUA será lançado em breve, trazendo artigos, estudos de caso e cartilhas para apoiar suas decisões.' },
+        'clientes': { title: 'Quem Atendemos', text: 'Atendemos empresários, executivos, médicos, famílias investidoras e profissionais que já entenderam que proteção nos EUA não é opção, é o alicerce fundamental.' },
+        'pos-venda': { title: 'Acompanhamento e Pós', text: 'A assinatura de um contrato é apenas o início. Nossa equipe assume toda a parte de suporte, revisão de sinistros e adaptação da sua cobertura ao longo dos anos.' }
+      };
+
+      const data = content[page] || { title: 'Informação Estratégica', text: 'A seção solicitada está sendo formatada pelos nossos especialistas. Por favor, entre em contato diretamente para maiores detalhes.' };
+      
+      document.getElementById('pageTitle').textContent = data.title;
+      document.getElementById('pageText').textContent = data.text;
+      
+      setTimeout(() => document.querySelector('.reveal').classList.add('active'), 100);
+    });
+  </script>
+</body>
+</html>
