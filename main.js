@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_about: "Sobre Nós",
       nav_diff: "Por Que a BLGI?",
       nav_video: "Bem-vindo",
-      nav_faq: "FAQ",
+      nav_faq: "FAQ", nav_lib: "Biblioteca",
       nav_cta: "Agendar Consulta",
       nav_blog: "Blog (Em Breve)",
       
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_title: "Uma Agência. Todas as Proteções da Sua Família.",
       hero_subtitle: "Seguro de Vida, Saúde, Auto, Residência, Empresas e Soluções Internacionais para a comunidade brasileira nos Estados Unidos.",
       hero_cta_1: "Solicitar Cotação",
-      hero_cta_2: "Falar no WhatsApp",
+      hero_cta_2: "Falar no WhatsApp", hero_help: "COMO PODEMOS TE AJUDAR?", quick_saude: "SA�DE", quick_vida: "VIDA", quick_carro: "CARRO", quick_casa: "CASA", quick_aposentar: "APOSENTAR", quick_mais: "E MAIS...",
       
       badge_secure: "Proteção Total",
       badge_expert: "Consultoria VIP",
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_about: "About Us",
       nav_diff: "Why BLGI?",
       nav_video: "Welcome",
-      nav_faq: "FAQ",
+      nav_faq: "FAQ", nav_lib: "Biblioteca",
       nav_cta: "Schedule Consultation",
       nav_blog: "Blog (Coming Soon)",
       
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_title: "One Agency. Every Protection for Your Family.",
       hero_subtitle: "Life, Health, Auto, Home, Business, and International Solutions for the Brazilian community in the United States.",
       hero_cta_1: "Request a Quote",
-      hero_cta_2: "Talk on WhatsApp",
+      hero_cta_2: "Talk on WhatsApp", hero_help: "HOW CAN WE HELP YOU?", quick_saude: "HEALTH", quick_vida: "LIFE", quick_carro: "AUTO", quick_casa: "HOME", quick_aposentar: "RETIRE", quick_mais: "MORE...",
       
       badge_secure: "Total Protection",
       badge_expert: "VIP Consulting",
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
       story_3_city: "Miami, FL",
       story_3_text: "\"As a business owner, I needed General Liability. They handled my policy the same day. What a relief.\"",
       
-      eyebrow_faq: "Clear your doubts",
+      eyebrow_lib: "Exclusive Content", lib_title: "Free Library", lib_desc: "Access our manuals and guides to understand everything about asset protection in the US.", lib_1_title: "Definitive Guide to Life Insurance (IUL)", lib_1_desc: "How to accumulate USD wealth and protect your family at the same time.", lib_2_title: "Obamacare 2026 Manual", lib_2_desc: "Everything immigrants need to know to avoid Tax Return penalties.", lib_3_title: "Business Shielding", lib_3_desc: "General Liability and Workers Comp. Don't lose your business to a lawsuit.", lib_btn: "Download PDF", eyebrow_faq: "Clear your doubts",
       faq_title: "Frequently Asked Questions",
       faq_1_q: "What types of insurance does Better Life offer?",
       faq_1_a: "We offer complete protection: Health (ACA, Medicare, Short Term), Life (Term, IUL), Auto, Home, Business (Liability, Workers Comp), and International Solutions.",

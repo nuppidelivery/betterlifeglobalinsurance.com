@@ -517,3 +517,186 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
   color: var(--gold-light); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 600;
 }
 
+
+/* ==========================================================================
+   Gold Gradients
+   ========================================================================== */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.bg-gradient-gold {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  color: var(--navy-1);
+}
+
+/* ==========================================================================
+   Header Dropdown (Seguros)
+   ========================================================================== */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  background: rgba(3, 37, 89, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(227, 177, 79, 0.3);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  border-radius: 12px;
+  z-index: 100;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.nav-dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+.dropdown-content::before {
+  content: ''; position: absolute; top: -8px; left: 50%; transform: translateX(-50%);
+  border-width: 0 8px 8px 8px; border-style: solid; border-color: transparent transparent rgba(227, 177, 79, 0.3) transparent;
+}
+.dropdown-content a {
+  color: rgba(255,255,255,0.8);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  transition: var(--trans-fast);
+}
+.dropdown-content a:hover {
+  background: rgba(227, 177, 79, 0.1);
+  color: var(--gold-light);
+  padding-left: 2rem;
+}
+
+/* ==========================================================================
+   Hero Quick Links (Like Print)
+   ========================================================================== */
+.hero-quick-links-wrapper {
+  position: relative;
+  z-index: 5;
+  margin-top: -60px; /* Pull it slightly up into the hero */
+  padding-bottom: 40px;
+}
+.quick-links-title {
+  text-align: center;
+  color: var(--white);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.quick-links-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.quick-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.quick-btn i {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--gold-light);
+  transition: all 0.3s ease;
+}
+.quick-btn span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.quick-btn:hover {
+  border-color: var(--gold-light);
+  background: rgba(227, 177, 79, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(227, 177, 79, 0.2);
+}
+.quick-btn:hover i {
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   Colorful Services Section
+   ========================================================================== */
+.colorful-services {
+  background: linear-gradient(135deg, #011737 0%, #032559 100%);
+  position: relative;
+}
+.colorful-services .tech-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(227, 177, 79, 0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.colorful-services .tech-card:hover {
+  border-color: var(--gold-primary);
+  background: rgba(227, 177, 79, 0.05);
+}
+
+/* ==========================================================================
+   Library Section
+   ========================================================================== */
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.lib-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: var(--trans-med);
+}
+.lib-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-color: var(--gold-primary);
+}
+.lib-icon {
+  width: 70px; height: 70px;
+  background: rgba(227, 177, 79, 0.1);
+  color: var(--gold-dark);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem auto;
+}
+.lib-card h4 { color: var(--navy-1); margin-bottom: 1rem; }
+.lib-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.lib-card .btn { width: 100%; border-color: var(--gold-primary); color: var(--gold-dark); }
+.lib-card .btn:hover { background: var(--gold-primary); color: var(--white); }
+
