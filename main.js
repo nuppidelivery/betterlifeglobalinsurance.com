@@ -51,7 +51,37 @@ document.addEventListener('DOMContentLoaded', () => {
   revealElements.forEach(el => revealObserver.observe(el));
 
   /* ==========================================
-     4. FAQ Accordion Logic
+     4. Counters Animation
+     ========================================== */
+  const counters = document.querySelectorAll('.counter-number span');
+  const speed = 200; // The lower the slower
+
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const inc = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 15);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+        observer.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+
+  /* ==========================================
+     5. FAQ Accordion Logic
      ========================================== */
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
@@ -69,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================
-     5. Bilingual Implementation (PT / EN)
+     6. Bilingual Implementation (PT / EN)
      ========================================== */
   const translations = {
     pt: {
@@ -86,16 +116,38 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_subtitle: "Seguro de Vida, Saúde, Auto, Residência, Empresas e Soluções Internacionais para a comunidade brasileira nos Estados Unidos.",
       hero_cta_1: "Solicitar Cotação",
       hero_cta_2: "Falar no WhatsApp",
-      hero_cta_3: "Agendar Consulta",
+      
+      badge_secure: "Proteção Total",
+      badge_expert: "Consultoria VIP",
       
       pillar_1_title: "Famílias",
-      pillar_1_desc: "Vida • Saúde • Auto • Residência. Proteção completa para todas as etapas.",
       pillar_2_title: "Empresas",
-      pillar_2_desc: "Business Insurance. Proteção para empresas, patrimônio e colaboradores.",
-      pillar_3_title: "Soluções Internacionais",
-      pillar_3_desc: "Planejamento patrimonial em dólar e proteção para famílias globais.",
+      pillar_3_title: "Internacional",
+      pillar_click: "Ver Serviços &rarr;",
       
-      partners_title: "Trabalhamos com as Maiores Seguradoras dos EUA",
+      auth_fam: "Famílias Protegidas",
+      auth_years: "Anos de Mercado",
+      auth_states: "Estados Atendidos",
+      auth_lang: "Atendimento em Português",
+      
+      eyebrow_import: "Visão de Futuro",
+      import_title: "Por que construir sua blindagem patrimonial hoje?",
+      import_desc_1: "Mudar para os Estados Unidos é a realização de um grande sonho, mas o sistema americano não perdoa desorganização financeira ou falta de proteção. Um único acidente ou emergência médica pode consumir décadas de trabalho árduo.",
+      import_desc_2: "A Better Life Global Insurance atua como seu Family Office de seguros. Nossa missão é criar uma barreira intransponível ao redor do seu patrimônio, para que você possa focar no que realmente importa: crescer e viver com tranquilidade.",
+      btn_schedule: "Agendar Diagnóstico Gratuito",
+      
+      eyebrow_comp: "O Preço da Escolha",
+      comp_title: "O que acontece nos momentos críticos?",
+      comp_bad_title: "O Caminho Desprotegido",
+      comp_bad_1: "Contas médicas astronômicas em caso de emergência (falência pessoal).",
+      comp_bad_2: "Riscos de processos judiciais esgotarem os bens da sua empresa ou família.",
+      comp_bad_3: "Multas no Tax Return por não cumprimento das leis de saúde (ACA).",
+      comp_bad_4: "Barreira linguística e letras miúdas causando negação de cobertura no sinistro.",
+      comp_good_title: "Com a Proteção da BLGI",
+      comp_good_1: "Apólices desenhadas estrategicamente para blindar suas finanças.",
+      comp_good_2: "Tranquilidade para empreender sabendo que seus bens estão segregados e seguros.",
+      comp_good_3: "Toda a documentação fiscal e burocrática alinhada e em conformidade.",
+      comp_good_4: "Atendimento humanizado em português no WhatsApp na hora exata em que você precisar.",
       
       eyebrow_about: "Quem Somos",
       about_title: "Especialistas em proteger brasileiros na América.",
@@ -103,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
       about_bullet_1: "Agência Independente de Alta Performance",
       about_bullet_2: "Atendimento Especializado em Português e Inglês",
       about_bullet_3: "Soluções Completas para Pessoas Físicas e Empresas",
-      btn_talk: "Conhecer a Agência",
       
       eyebrow_video: "Uma mensagem para você",
       video_title: "Bem-vindo à Better Life",
@@ -128,14 +179,23 @@ document.addEventListener('DOMContentLoaded', () => {
       srv_intl_desc: "Proteção patrimonial, seguro de vida internacional e acumulação de capital em dólar para famílias globais.",
       btn_more: "Saiba Mais &rarr;",
       
+      eyebrow_form: "Diagnóstico Rápido",
+      form_title: "Quer saber quanto custa proteger seu futuro?",
+      form_desc: "Preencha o formulário abaixo e um de nossos especialistas entrará em contato com uma cotação e estratégia desenhada sob medida para sua realidade.",
+      form_name: "Seu Nome Completo",
+      form_email: "Seu E-mail",
+      form_phone: "Seu Telefone / WhatsApp",
+      form_interest: "Qual sua principal necessidade hoje?",
+      form_btn: "Solicitar Contato &rarr;",
+      
       eyebrow_why: "Vantagem Exclusiva",
       why_title: "Por que escolher a BLGI?",
       why_1_title: "Atendimento em Português",
       why_1_desc: "Compreenda as regras americanas sem barreiras de idioma.",
       why_2_title: "Atendimento Local na Flórida",
-      why_2_desc: "Estamos perto de você, entendendo o ecossistema e as leis do estado.",
-      why_3_title: "Diversas Seguradoras Parceiras",
-      why_3_desc: "Buscamos o melhor preço e cobertura em um portfólio enorme.",
+      why_2_desc: "Estamos perto de você, entendendo o ecossistema e as leis.",
+      why_3_title: "Múltiplas Soluções",
+      why_3_desc: "Temos acesso a um vasto portfólio para a sua proteção completa.",
       why_4_title: "Suporte Antes e Depois",
       why_4_desc: "Consultoria humanizada e suporte vitalício, inclusive na hora do sinistro.",
       
@@ -187,16 +247,38 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_subtitle: "Life, Health, Auto, Home, Business, and International Solutions for the Brazilian community in the United States.",
       hero_cta_1: "Request a Quote",
       hero_cta_2: "Talk on WhatsApp",
-      hero_cta_3: "Schedule Consultation",
+      
+      badge_secure: "Total Protection",
+      badge_expert: "VIP Consulting",
       
       pillar_1_title: "Families",
-      pillar_1_desc: "Life • Health • Auto • Home. Complete protection for every stage of life.",
       pillar_2_title: "Businesses",
-      pillar_2_desc: "Business Insurance. Protection for your company, assets, and employees.",
-      pillar_3_title: "International Solutions",
-      pillar_3_desc: "Wealth management in USD and protection for global families.",
+      pillar_3_title: "International",
+      pillar_click: "View Services &rarr;",
       
-      partners_title: "We Work With Top US Carriers",
+      auth_fam: "Families Protected",
+      auth_years: "Years of Experience",
+      auth_states: "States Served",
+      auth_lang: "Portuguese Support",
+      
+      eyebrow_import: "Future Vision",
+      import_title: "Why build your asset shield today?",
+      import_desc_1: "Moving to the US is a huge dream, but the American system does not forgive financial disorganization or lack of protection. A single accident or medical emergency can consume decades of hard work.",
+      import_desc_2: "Better Life Global Insurance acts as your insurance Family Office. Our mission is to create an impenetrable barrier around your assets so you can focus on what really matters: growing and living with peace of mind.",
+      btn_schedule: "Schedule Free Diagnosis",
+      
+      eyebrow_comp: "The Cost of Choice",
+      comp_title: "What happens in critical moments?",
+      comp_bad_title: "The Unprotected Path",
+      comp_bad_1: "Astronomical medical bills in an emergency (personal bankruptcy).",
+      comp_bad_2: "Risks of lawsuits depleting your business or family assets.",
+      comp_bad_3: "Tax Return penalties for non-compliance with health laws (ACA).",
+      comp_bad_4: "Language barrier and fine print causing coverage denial during claims.",
+      comp_good_title: "With BLGI Protection",
+      comp_good_1: "Strategically designed policies to shield your finances.",
+      comp_good_2: "Peace of mind to run your business knowing your assets are secure.",
+      comp_good_3: "All tax and bureaucratic documentation aligned and compliant.",
+      comp_good_4: "Humanized service in Portuguese exactly when you need it.",
       
       eyebrow_about: "About Us",
       about_title: "Experts in protecting Brazilians in America.",
@@ -204,7 +286,6 @@ document.addEventListener('DOMContentLoaded', () => {
       about_bullet_1: "High-Performance Independent Agency",
       about_bullet_2: "Specialized Bilingual Support (PT/EN)",
       about_bullet_3: "Comprehensive Solutions for Individuals and Businesses",
-      btn_talk: "Get to Know the Agency",
       
       eyebrow_video: "A message for you",
       video_title: "Welcome to Better Life",
@@ -229,6 +310,15 @@ document.addEventListener('DOMContentLoaded', () => {
       srv_intl_desc: "Asset protection, international life insurance, and USD wealth accumulation for global families.",
       btn_more: "Learn More &rarr;",
       
+      eyebrow_form: "Quick Diagnosis",
+      form_title: "Want to know how much it costs to protect your future?",
+      form_desc: "Fill out the form below and one of our experts will contact you with a customized quote and strategy for your reality.",
+      form_name: "Full Name",
+      form_email: "Email Address",
+      form_phone: "Phone / WhatsApp",
+      form_interest: "What is your primary need today?",
+      form_btn: "Request Contact &rarr;",
+      
       eyebrow_why: "Exclusive Advantage",
       why_title: "Why choose BLGI?",
       why_1_title: "Support in Portuguese",
@@ -236,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
       why_2_title: "Local Support in Florida",
       why_2_desc: "We are close to you, understanding the local ecosystem and laws.",
       why_3_title: "Multiple Carrier Partners",
-      why_3_desc: "We find the best price and coverage in a vast portfolio.",
+      why_3_desc: "We have access to a vast portfolio for your complete protection.",
       why_4_title: "Before and After Support",
       why_4_desc: "Humanized consulting and lifetime support, even during claims.",
       
@@ -276,22 +366,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const langButtons = document.querySelectorAll('.lang-btn');
+  const langCheckbox = document.getElementById('lang-toggle');
   const i18nElements = document.querySelectorAll('[data-i18n]');
 
-  langButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      langButtons.forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      
-      const lang = e.target.getAttribute('data-lang');
+  if (langCheckbox) {
+    langCheckbox.addEventListener('change', (e) => {
+      const lang = e.target.checked ? 'en' : 'pt';
       
       i18nElements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-          el.innerHTML = translations[lang][key];
+          // Check if it's an input/select or standard element
+          if (el.tagName === 'LABEL' || el.tagName === 'SPAN' || el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'H4' || el.tagName === 'H5' || el.tagName === 'P' || el.tagName === 'A' || el.tagName === 'BUTTON' || el.tagName === 'OPTION') {
+            el.innerHTML = translations[lang][key];
+          }
         }
       });
     });
-  });
+  }
 });
