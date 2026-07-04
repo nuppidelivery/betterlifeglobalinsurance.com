@@ -1,4 +1,4 @@
-// main.js - Initialization
+﻿// main.js - Initialization
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ==========================================
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_title: "Uma Agência. Todas as Proteções da Sua Família.",
       hero_subtitle: "Seguro de Vida, Saúde, Auto, Residência, Empresas e Soluções Internacionais para a comunidade brasileira nos Estados Unidos.",
       hero_cta_1: "Solicitar Cotação",
-      hero_cta_2: "Falar no WhatsApp", hero_help: "COMO PODEMOS TE AJUDAR?", quick_saude: "SA�DE", quick_vida: "VIDA", quick_carro: "CARRO", quick_casa: "CASA", quick_aposentar: "APOSENTAR", quick_mais: "E MAIS...",
+      hero_cta_2: "Falar no WhatsApp", hero_help: "COMO PODEMOS TE AJUDAR?", quick_saude: "SA�DE", quick_vida: "VIDA", quick_carro: "CARRO", quick_casa: "CASA", quick_aposentar: "APOSENTAR", quick_mais: "E MAIS...",
       
       badge_secure: "Proteção Total",
       badge_expert: "Consultoria VIP",
