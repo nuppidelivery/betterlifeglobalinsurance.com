@@ -586,30 +586,31 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
 }
 
 /* ==========================================================================
-   Hero Quick Links (Like Print)
+   Hero Quick Links (Inside Hero Banner)
    ========================================================================== */
-.hero-quick-links-wrapper {
+.hero-quick-links-inside {
   position: relative;
   z-index: 5;
-  background: var(--bg-primary);
-  padding: 80px 0 60px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 40px;
 }
-.quick-links-title {
+.quick-links-title-inside {
   text-align: center;
-  color: var(--navy-1);
+  color: var(--gold-light);
   font-size: 1.1rem;
   letter-spacing: 2px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
-.quick-links-grid {
+.quick-links-grid-inside {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.quick-btn {
+.quick-btn-inside {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -617,31 +618,33 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
   width: 120px;
   height: 120px;
   border-radius: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.08);
-  background: var(--bg-secondary);
-  color: var(--navy-1);
+  border: 2px solid rgba(227, 177, 79, 0.5); /* Gold border */
+  background: rgba(1, 23, 55, 0.7); /* Dark semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--white);
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-.quick-btn i {
+.quick-btn-inside i {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: var(--gold-dark);
+  color: var(--gold-light);
   transition: all 0.3s ease;
 }
-.quick-btn span {
+.quick-btn-inside span {
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.quick-btn:hover {
+.quick-btn-inside:hover {
   border-color: var(--gold-primary);
-  background: var(--white);
+  background: var(--navy-1);
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(227, 177, 79, 0.15);
+  box-shadow: 0 15px 35px rgba(227, 177, 79, 0.3);
 }
-.quick-btn:hover i {
+.quick-btn-inside:hover i {
   transform: scale(1.1);
 }
 

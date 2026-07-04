@@ -32,12 +32,18 @@
         <div class="nav-dropdown">
           <a href="#solucoes" class="dropdown-toggle"><span data-i18n="nav_services">Seguros</span> <i class="ph-bold ph-caret-down"></i></a>
           <div class="dropdown-content glass-panel">
-            <a href="#solucoes" data-i18n="srv_vida">Vida</a>
-            <a href="#solucoes" data-i18n="srv_saude">Saúde</a>
-            <a href="#solucoes" data-i18n="srv_auto">Auto</a>
-            <a href="#solucoes" data-i18n="srv_resi">Residência</a>
-            <a href="#solucoes" data-i18n="srv_emp">Empresas</a>
-            <a href="#solucoes" data-i18n="srv_int">Internacional</a>
+            <a href="#solucoes" data-i18n="srv_1">Aposentadoria privada</a>
+            <a href="#solucoes" data-i18n="srv_2">Saúde / Obamacare</a>
+            <a href="#solucoes" data-i18n="srv_3">Saúde / Medicare</a>
+            <a href="#solucoes" data-i18n="srv_4">Saúde / Short Term</a>
+            <a href="#solucoes" data-i18n="srv_5">Seguro de casa</a>
+            <a href="#solucoes" data-i18n="srv_6">Seguro de carro</a>
+            <a href="#solucoes" data-i18n="srv_7">Seguro Comercial</a>
+            <a href="#solucoes" data-i18n="srv_8">Seguro de vida</a>
+            <a href="#solucoes" data-i18n="srv_9">Seguro Viagem</a>
+            <a href="#solucoes" data-i18n="srv_10">Seguro Dental</a>
+            <a href="#solucoes" data-i18n="srv_11">Seguro de Visão</a>
+            <a href="#solucoes" data-i18n="srv_12">Estudantes</a>
           </div>
         </div>
         <a href="#quem-somos" data-i18n="nav_about">Quem Somos</a>
@@ -81,7 +87,8 @@
     <div class="container hero-grid">
       <div class="hero-content">
         <span class="hero-eyebrow text-gradient-gold" data-i18n="hero_eyebrow">One Agency. Every Protection.</span>
-        <h1 data-i18n="hero_title">Uma Agência. Todas as Proteções da Sua Família.</h1>
+        <!-- Headline Dourada -->
+        <h1 class="text-gradient-gold" data-i18n="hero_title" style="background: linear-gradient(135deg, var(--gold-light), var(--gold-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Uma Agência. Todas as Proteções da Sua Família.</h1>
         <p class="subtitle" data-i18n="hero_subtitle">Seguro de Vida, Saúde, Auto, Residência, Negócios e Soluções Internacionais para a comunidade brasileira.</p>
         
         <div class="hero-ctas">
@@ -101,40 +108,40 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Hero Quick Links (Conforme Print, Movidos para fora do Hero) -->
-  <div class="hero-quick-links-wrapper">
-    <div class="container">
-      <h4 class="quick-links-title" data-i18n="hero_help">COMO PODEMOS TE AJUDAR?</h4>
-      <div class="quick-links-grid">
-        <a href="#solucoes" class="quick-btn">
-          <i class="ph ph-heartbeat text-gradient-gold"></i>
-          <span data-i18n="quick_saude">SAÚDE</span>
-        </a>
-        <a href="#solucoes" class="quick-btn">
-          <i class="ph ph-shield-check text-gradient-gold"></i>
-          <span data-i18n="quick_vida">VIDA</span>
-        </a>
-        <a href="#solucoes" class="quick-btn">
-          <i class="ph ph-car-profile text-gradient-gold"></i>
-          <span data-i18n="quick_carro">CARRO</span>
-        </a>
-        <a href="#solucoes" class="quick-btn">
-          <i class="ph ph-house-line text-gradient-gold"></i>
-          <span data-i18n="quick_casa">CASA</span>
-        </a>
-        <a href="#solucoes" class="quick-btn">
-          <i class="ph ph-briefcase text-gradient-gold"></i>
-          <span data-i18n="quick_aposentar">APOSENTAR</span>
-        </a>
-        <a href="#solucoes" class="quick-btn">
-          <i class="ph ph-dots-three-circle text-gradient-gold"></i>
-          <span data-i18n="quick_mais">E MAIS...</span>
-        </a>
+    
+    <!-- Hero Quick Links (Dentro do Hero, no final, com fundo de vidro transparente para não conflitar com a foto, e cores douradas para alto contraste no fundo escuro) -->
+    <div class="hero-quick-links-inside">
+      <div class="container">
+        <h4 class="quick-links-title-inside" data-i18n="hero_help">COMO PODEMOS TE AJUDAR?</h4>
+        <div class="quick-links-grid-inside">
+          <a href="#solucoes" class="quick-btn-inside">
+            <i class="ph ph-heartbeat"></i>
+            <span data-i18n="quick_saude">SAÚDE</span>
+          </a>
+          <a href="#solucoes" class="quick-btn-inside">
+            <i class="ph ph-shield-check"></i>
+            <span data-i18n="quick_vida">VIDA</span>
+          </a>
+          <a href="#solucoes" class="quick-btn-inside">
+            <i class="ph ph-car-profile"></i>
+            <span data-i18n="quick_carro">CARRO</span>
+          </a>
+          <a href="#solucoes" class="quick-btn-inside">
+            <i class="ph ph-house-line"></i>
+            <span data-i18n="quick_casa">CASA</span>
+          </a>
+          <a href="#solucoes" class="quick-btn-inside">
+            <i class="ph ph-briefcase"></i>
+            <span data-i18n="quick_aposentar">APOSENTAR</span>
+          </a>
+          <a href="#solucoes" class="quick-btn-inside">
+            <i class="ph ph-dots-three-circle"></i>
+            <span data-i18n="quick_mais">E MAIS...</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- 1.5 Formulário de Captação -->
   <section class="lead-gen-section reveal">
@@ -146,7 +153,7 @@
           <p data-i18n="form_desc">Preencha o formulário abaixo e um de nossos especialistas entrará em contato com uma cotação e estratégia desenhada sob medida para sua realidade.</p>
         </div>
         <div class="lead-form-container">
-          <form class="modern-form">
+          <form class="modern-form" style="border: 1px solid var(--navy-1); border-top: 4px solid var(--gold-primary);">
             <div class="form-group">
               <input type="text" id="name" required placeholder=" ">
               <label for="name" data-i18n="form_name">Seu Nome Completo</label>
@@ -207,12 +214,12 @@
   </section>
 
   <!-- 3. A Importância de Estar Protegido -->
-  <section class="importance-section reveal">
+  <section class="importance-section reveal" style="background:var(--bg-secondary);">
     <div class="container">
       <div class="two-col-layout">
         <div class="text-col">
-          <span class="eyebrow" data-i18n="eyebrow_import">Visão de Futuro</span>
-          <h2 data-i18n="import_title">Por que construir sua blindagem patrimonial hoje?</h2>
+          <span class="eyebrow text-gradient-gold" data-i18n="eyebrow_import">Visão de Futuro</span>
+          <h2 data-i18n="import_title" style="color:var(--navy-1);">Por que construir sua blindagem patrimonial hoje?</h2>
           <p data-i18n="import_desc_1">Mudar para os Estados Unidos é a realização de um grande sonho, mas o sistema americano não perdoa desorganização financeira ou falta de proteção. Um único acidente ou emergência médica pode consumir décadas de trabalho árduo.</p>
           <p data-i18n="import_desc_2">A Better Life Global Insurance atua como seu Family Office de seguros. Nossa missão é criar uma barreira intransponível ao redor do seu patrimônio, para que você possa focar no que realmente importa: crescer e viver com tranquilidade.</p>
           <a href="https://calendly.com/" target="_blank" class="btn btn-outline" style="margin-top: 1rem;" data-i18n="btn_schedule">Agendar Diagnóstico Gratuito</a>
@@ -268,26 +275,26 @@
     <div class="container">
       <div class="two-col-layout" style="direction: rtl;">
         <div class="about-image-wrapper" style="direction: ltr;">
-          <img src="about.png" alt="Equipe Better Life Global Insurance" class="about-image">
+          <img src="about.png" alt="Equipe Better Life Global Insurance" class="about-image" style="border: 4px solid var(--gold-primary); border-radius: 12px; box-shadow: 0 20px 40px rgba(1, 23, 55, 0.2);">
         </div>
         <div class="text-col" style="direction: ltr;">
           <span class="eyebrow text-gradient-gold" data-i18n="eyebrow_about">Quem Somos</span>
           <h2 data-i18n="about_title">Especialistas em proteger brasileiros na América.</h2>
-          <p data-i18n="about_desc">Breve apresentação da BLGI.</p>
+          <p data-i18n="about_desc">A Better Life Global Insurance foi fundada para suprir a maior necessidade dos imigrantes: entender com clareza o sistema americano.</p>
           <div class="list-col-small">
-            <div class="diff-item-small">
+            <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-fill ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
               <span data-i18n="about_bullet_1">Agência independente</span>
             </div>
-            <div class="diff-item-small">
+            <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-fill ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
               <span data-i18n="about_bullet_2">Atendimento em português e inglês</span>
             </div>
-            <div class="diff-item-small">
+            <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-fill ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
               <span data-i18n="about_bullet_3">Especializada na comunidade brasileira</span>
             </div>
-            <div class="diff-item-small">
+            <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-fill ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
               <span data-i18n="about_bullet_4">Soluções pessoais e empresariais</span>
             </div>
@@ -305,7 +312,7 @@
         <h2 data-i18n="video_title">Bem-vindo à Better Life</h2>
         <p style="color:var(--text-muted);" data-i18n="video_subtitle">Descubra como podemos transformar a maneira como você protege seu patrimônio nos Estados Unidos.</p>
       </div>
-      <div class="video-wrapper">
+      <div class="video-wrapper" style="border: 2px solid var(--gold-primary);">
         <div class="video-placeholder">
           <i class="ph-fill ph-play-circle text-gradient-gold" style="animation: pulseGlow 2s infinite; border-radius:50%;"></i>
           <span data-i18n="video_placeholder_text">O seu vídeo será adicionado aqui</span>
@@ -314,7 +321,7 @@
     </div>
   </section>
 
-  <!-- 7. Nossas Soluções (6 BLOCOS PRINCIPAIS COLORIDOS) -->
+  <!-- 7. Nossas Soluções (12 BLOCOS COMPLETOS COMO PEDIDO) -->
   <section id="solucoes" class="services reveal colorful-services">
     <div class="container">
       <div class="section-header center">
@@ -323,37 +330,55 @@
         <p style="color:rgba(255,255,255,0.7);" data-i18n="services_subtitle">Um portfólio gigantesco desenhado estrategicamente para suprir as necessidades de proteção da vida e dos negócios da comunidade brasileira.</p>
       </div>
       
-      <!-- Tech Grid 6 Columns -->
+      <!-- Tech Grid 12 Columns -->
       <div class="services-tech-grid">
         <div class="tech-card glass-panel">
+          <i class="ph-fill ph-piggy-bank text-gradient-gold"></i>
+          <h4 data-i18n="srv_1">Aposentadoria privada</h4>
+        </div>
+        <div class="tech-card glass-panel">
+          <i class="ph-fill ph-first-aid text-gradient-gold"></i>
+          <h4 data-i18n="srv_2">Seguro saúde/Obamacare</h4>
+        </div>
+        <div class="tech-card glass-panel">
           <i class="ph-fill ph-heartbeat text-gradient-gold"></i>
-          <h4 data-i18n="srv_vida">Vida</h4>
-          <p data-i18n="srv_vida_d">Proteção financeira para sua família.</p>
+          <h4 data-i18n="srv_3">Seguro Saúde/Medicare</h4>
         </div>
         <div class="tech-card glass-panel">
-          <i class="ph-fill ph-first-aid-kit text-gradient-gold"></i>
-          <h4 data-i18n="srv_saude">Saúde</h4>
-          <p data-i18n="srv_saude_d">Planos individuais, familiares e empresariais.</p>
-        </div>
-        <div class="tech-card glass-panel">
-          <i class="ph-fill ph-car-profile text-gradient-gold"></i>
-          <h4 data-i18n="srv_auto">Auto</h4>
-          <p data-i18n="srv_auto_d">Proteção para veículos pessoais.</p>
+          <i class="ph-fill ph-hourglass text-gradient-gold"></i>
+          <h4 data-i18n="srv_4">Seguro Saúde/Short Term</h4>
         </div>
         <div class="tech-card glass-panel">
           <i class="ph-fill ph-house-line text-gradient-gold"></i>
-          <h4 data-i18n="srv_resi">Residência</h4>
-          <p data-i18n="srv_resi_d">Homeowners, Condo e Renters.</p>
+          <h4 data-i18n="srv_5">Seguro de casa</h4>
+        </div>
+        <div class="tech-card glass-panel">
+          <i class="ph-fill ph-car-profile text-gradient-gold"></i>
+          <h4 data-i18n="srv_6">Seguro de carro</h4>
         </div>
         <div class="tech-card glass-panel">
           <i class="ph-fill ph-buildings text-gradient-gold"></i>
-          <h4 data-i18n="srv_emp">Empresas</h4>
-          <p data-i18n="srv_emp_d">Proteção para negócios.</p>
+          <h4 data-i18n="srv_7">Seguro Comercial</h4>
         </div>
         <div class="tech-card glass-panel">
-          <i class="ph-fill ph-globe-hemisphere-west text-gradient-gold"></i>
-          <h4 data-i18n="srv_int">Internacional</h4>
-          <p data-i18n="srv_int_d">Soluções patrimoniais e proteção em dólar.</p>
+          <i class="ph-fill ph-shield-check text-gradient-gold"></i>
+          <h4 data-i18n="srv_8">Seguro de vida</h4>
+        </div>
+        <div class="tech-card glass-panel">
+          <i class="ph-fill ph-airplane-tilt text-gradient-gold"></i>
+          <h4 data-i18n="srv_9">Seguro Viagem</h4>
+        </div>
+        <div class="tech-card glass-panel">
+          <i class="ph-fill ph-tooth text-gradient-gold"></i>
+          <h4 data-i18n="srv_10">Seguro Dental</h4>
+        </div>
+        <div class="tech-card glass-panel">
+          <i class="ph-fill ph-eye text-gradient-gold"></i>
+          <h4 data-i18n="srv_11">Seguro de Visão</h4>
+        </div>
+        <div class="tech-card glass-panel">
+          <i class="ph-fill ph-graduation-cap text-gradient-gold"></i>
+          <h4 data-i18n="srv_12">Seguro para estudantes</h4>
         </div>
       </div>
     </div>
@@ -367,26 +392,27 @@
         <h2 data-i18n="why_title">Por que escolher a BLGI?</h2>
       </div>
       
+      <!-- Fundo branco tem mais contraste nas caixas -->
       <div class="timeline" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-        <div class="timeline-step">
-          <div class="step-icon"><i class="ph-fill ph-translate"></i></div>
-          <h4 data-i18n="why_1_title">Atendimento em português</h4>
+        <div class="timeline-step" style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-bottom: 3px solid var(--navy-1);">
+          <div class="step-icon" style="background:var(--navy-1); color:var(--white); border-color:var(--gold-primary);"><i class="ph-fill ph-translate"></i></div>
+          <h4 data-i18n="why_1_title" style="color:var(--navy-1); margin-top:1rem;">Atendimento em português</h4>
         </div>
-        <div class="timeline-step">
-          <div class="step-icon"><i class="ph-fill ph-handshake"></i></div>
-          <h4 data-i18n="why_2_title">Diversas seguradoras</h4>
+        <div class="timeline-step" style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-bottom: 3px solid var(--navy-1);">
+          <div class="step-icon" style="background:var(--navy-1); color:var(--white); border-color:var(--gold-primary);"><i class="ph-fill ph-handshake"></i></div>
+          <h4 data-i18n="why_2_title" style="color:var(--navy-1); margin-top:1rem;">Diversas seguradoras</h4>
         </div>
-        <div class="timeline-step">
-          <div class="step-icon"><i class="ph-fill ph-crosshair"></i></div>
-          <h4 data-i18n="why_3_title">Soluções personalizadas</h4>
+        <div class="timeline-step" style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-bottom: 3px solid var(--navy-1);">
+          <div class="step-icon" style="background:var(--navy-1); color:var(--white); border-color:var(--gold-primary);"><i class="ph-fill ph-crosshair"></i></div>
+          <h4 data-i18n="why_3_title" style="color:var(--navy-1); margin-top:1rem;">Soluções personalizadas</h4>
         </div>
-        <div class="timeline-step">
-          <div class="step-icon"><i class="ph-fill ph-map-pin"></i></div>
-          <h4 data-i18n="why_4_title">Atendimento local na Flórida</h4>
+        <div class="timeline-step" style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-bottom: 3px solid var(--navy-1);">
+          <div class="step-icon" style="background:var(--navy-1); color:var(--white); border-color:var(--gold-primary);"><i class="ph-fill ph-map-pin"></i></div>
+          <h4 data-i18n="why_4_title" style="color:var(--navy-1); margin-top:1rem;">Atendimento local na Flórida</h4>
         </div>
-        <div class="timeline-step">
-          <div class="step-icon"><i class="ph-fill ph-users"></i></div>
-          <h4 data-i18n="why_5_title">Especialistas em famílias brasileiras</h4>
+        <div class="timeline-step" style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-bottom: 3px solid var(--navy-1);">
+          <div class="step-icon" style="background:var(--navy-1); color:var(--white); border-color:var(--gold-primary);"><i class="ph-fill ph-users"></i></div>
+          <h4 data-i18n="why_5_title" style="color:var(--navy-1); margin-top:1rem;">Especialistas em famílias brasileiras</h4>
         </div>
       </div>
     </div>
@@ -401,23 +427,23 @@
         <p style="color:var(--text-muted);" data-i18n="lib_desc">Acesse nossos manuais e guias para entender tudo sobre a proteção patrimonial nos EUA.</p>
       </div>
       <div class="library-grid">
-        <div class="lib-card">
-          <div class="lib-icon"><i class="ph-fill ph-file-pdf"></i></div>
-          <h4 data-i18n="lib_1_title">Guia Definitivo do Seguro de Vida (IUL)</h4>
+        <div class="lib-card" style="border-top: 4px solid var(--gold-primary); background: var(--white);">
+          <div class="lib-icon"><i class="ph-fill ph-file-pdf text-gradient-gold" style="font-size: 3rem;"></i></div>
+          <h4 data-i18n="lib_1_title" style="color:var(--navy-1); margin-top:1rem;">Guia Definitivo do Seguro de Vida (IUL)</h4>
           <p data-i18n="lib_1_desc">Como acumular patrimônio em dólar e proteger sua família ao mesmo tempo.</p>
-          <button class="btn btn-outline" data-i18n="lib_btn">Baixar PDF</button>
+          <button class="btn btn-outline" data-i18n="lib_btn" style="background:var(--navy-1); color:var(--white); border:none;">Baixar PDF</button>
         </div>
-        <div class="lib-card">
-          <div class="lib-icon"><i class="ph-fill ph-file-pdf"></i></div>
-          <h4 data-i18n="lib_2_title">Manual do Obamacare 2026</h4>
+        <div class="lib-card" style="border-top: 4px solid var(--gold-primary); background: var(--white);">
+          <div class="lib-icon"><i class="ph-fill ph-file-pdf text-gradient-gold" style="font-size: 3rem;"></i></div>
+          <h4 data-i18n="lib_2_title" style="color:var(--navy-1); margin-top:1rem;">Manual do Obamacare 2026</h4>
           <p data-i18n="lib_2_desc">Tudo que o imigrante precisa saber para não pagar multas no Tax Return.</p>
-          <button class="btn btn-outline" data-i18n="lib_btn">Baixar PDF</button>
+          <button class="btn btn-outline" data-i18n="lib_btn" style="background:var(--navy-1); color:var(--white); border:none;">Baixar PDF</button>
         </div>
-        <div class="lib-card">
-          <div class="lib-icon"><i class="ph-fill ph-file-pdf"></i></div>
-          <h4 data-i18n="lib_3_title">Blindagem Empresarial</h4>
+        <div class="lib-card" style="border-top: 4px solid var(--gold-primary); background: var(--white);">
+          <div class="lib-icon"><i class="ph-fill ph-file-pdf text-gradient-gold" style="font-size: 3rem;"></i></div>
+          <h4 data-i18n="lib_3_title" style="color:var(--navy-1); margin-top:1rem;">Blindagem Empresarial</h4>
           <p data-i18n="lib_3_desc">General Liability e Workers Comp. Não perca sua empresa por um processo.</p>
-          <button class="btn btn-outline" data-i18n="lib_btn">Baixar PDF</button>
+          <button class="btn btn-outline" data-i18n="lib_btn" style="background:var(--navy-1); color:var(--white); border:none;">Baixar PDF</button>
         </div>
       </div>
     </div>
@@ -507,27 +533,27 @@
       </div>
       
       <div class="faq-list">
-        <div class="faq-item">
+        <div class="faq-item" style="background:var(--white); border-left: 4px solid var(--gold-primary); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
           <button class="faq-btn">
-            <span data-i18n="faq_1_q">Quais tipos de seguros a Better Life oferece?</span>
+            <span data-i18n="faq_1_q" style="font-weight:600; color:var(--navy-1);">Quais tipos de seguros a Better Life oferece?</span>
             <i class="ph ph-caret-down text-gradient-gold"></i>
           </button>
           <div class="faq-content">
             <p data-i18n="faq_1_a">Oferecemos proteção completa: Saúde (Obamacare, Medicare, Short Term), Vida (Term e IUL), Automóvel, Residencial, Empresarial (Liability, Workers Comp) e Soluções Internacionais (acumulação em dólar).</p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item" style="background:var(--white); border-left: 4px solid var(--gold-primary); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
           <button class="faq-btn">
-            <span data-i18n="faq_2_q">O atendimento e consultoria tem algum custo?</span>
+            <span data-i18n="faq_2_q" style="font-weight:600; color:var(--navy-1);">O atendimento e consultoria tem algum custo?</span>
             <i class="ph ph-caret-down text-gradient-gold"></i>
           </button>
           <div class="faq-content">
             <p data-i18n="faq_2_a">Não! Nossa consultoria e cotação são gratuitas. Nós somos remunerados diretamente pelas seguradoras após a contratação. O preço do seguro será o mesmo que comprar diretamente, porém com toda a nossa assistência e estratégia.</p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item" style="background:var(--white); border-left: 4px solid var(--gold-primary); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
           <button class="faq-btn">
-            <span data-i18n="faq_3_q">Vocês atendem apenas na Flórida?</span>
+            <span data-i18n="faq_3_q" style="font-weight:600; color:var(--navy-1);">Vocês atendem apenas na Flórida?</span>
             <i class="ph ph-caret-down text-gradient-gold"></i>
           </button>
           <div class="faq-content">
@@ -551,9 +577,9 @@
   </section>
 
   <!-- 11. CTA Final -->
-  <section class="final-cta reveal">
+  <section class="final-cta reveal" style="background:var(--white);">
     <div class="container center-text">
-      <h2 data-i18n="cta_title">Vamos construir seu plano de proteção?</h2>
+      <h2 data-i18n="cta_title" style="color:var(--navy-1);">Vamos construir seu plano de proteção?</h2>
       <div style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
         <a href="https://wa.me/15616741194" target="_blank" class="btn btn-gold btn-large btn-pulse" data-i18n="cta_btn_1">WhatsApp</a>
         <a href="https://calendly.com/" target="_blank" class="btn btn-outline" data-i18n="cta_btn_2" style="border-color:var(--navy-1); color:var(--navy-1);">Agendar reunião</a>
@@ -582,12 +608,12 @@
         <div class="footer-col">
           <h5 data-i18n="eyebrow_services" class="text-gradient-gold">Nossas Soluções</h5>
           <ul class="footer-links">
-            <li><a href="#" data-i18n="srv_vida">Vida</a></li>
-            <li><a href="#" data-i18n="srv_saude">Saúde</a></li>
-            <li><a href="#" data-i18n="srv_auto">Auto</a></li>
-            <li><a href="#" data-i18n="srv_resi">Residência</a></li>
-            <li><a href="#" data-i18n="srv_emp">Empresas</a></li>
-            <li><a href="#" data-i18n="srv_int">Internacional</a></li>
+            <li><a href="#" data-i18n="srv_1">Aposentadoria privada</a></li>
+            <li><a href="#" data-i18n="srv_2">Saúde / Obamacare</a></li>
+            <li><a href="#" data-i18n="srv_3">Saúde / Medicare</a></li>
+            <li><a href="#" data-i18n="srv_4">Saúde / Short Term</a></li>
+            <li><a href="#" data-i18n="srv_5">Seguro de casa</a></li>
+            <li><a href="#" data-i18n="srv_6">Seguro de carro</a></li>
           </ul>
         </div>
         

@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
      4. Counters Animation
      ========================================== */
   const counters = document.querySelectorAll('.counter-number span');
-  const speed = 200; // The lower the slower
+  const speed = 200;
 
   const counterObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_lib: "Biblioteca",
       nav_faq: "FAQ",
       nav_cta: "Agendar Consulta",
-      nav_blog: "Blog (Em Breve)",
       
       hero_eyebrow: "One Agency. Every Protection.",
       hero_title: "Uma Agência. Todas as Proteções da Sua Família.",
@@ -156,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       eyebrow_about: "Quem Somos",
       about_title: "Especialistas em proteger brasileiros na América.",
-      about_desc: "Breve apresentação da BLGI.",
+      about_desc: "A Better Life Global Insurance foi fundada para suprir a maior necessidade dos imigrantes: entender com clareza o sistema americano.",
       about_bullet_1: "Agência independente",
       about_bullet_2: "Atendimento em português e inglês",
       about_bullet_3: "Especializada na comunidade brasileira",
@@ -171,18 +170,18 @@ document.addEventListener('DOMContentLoaded', () => {
       services_title: "Todas as proteções que você precisa em um só lugar",
       services_subtitle: "Um portfólio gigantesco desenhado estrategicamente para suprir as necessidades de proteção da vida e dos negócios da comunidade brasileira.",
       
-      srv_vida: "Vida",
-      srv_vida_d: "Proteção financeira para sua família.",
-      srv_saude: "Saúde",
-      srv_saude_d: "Planos individuais, familiares e empresariais.",
-      srv_auto: "Auto",
-      srv_auto_d: "Proteção para veículos pessoais.",
-      srv_resi: "Residência",
-      srv_resi_d: "Homeowners, Condo e Renters.",
-      srv_emp: "Empresas",
-      srv_emp_d: "Proteção para negócios.",
-      srv_int: "Internacional",
-      srv_int_d: "Soluções patrimoniais e proteção em dólar.",
+      srv_1: "Aposentadoria privada",
+      srv_2: "Seguro saúde/Obamacare",
+      srv_3: "Seguro Saúde/Medicare",
+      srv_4: "Seguro Saúde/Short Term",
+      srv_5: "Seguro de casa",
+      srv_6: "Seguro de carro",
+      srv_7: "Seguro Comercial",
+      srv_8: "Seguro de vida",
+      srv_9: "Seguro Viagem",
+      srv_10: "Seguro Dental",
+      srv_11: "Seguro de Visão",
+      srv_12: "Seguro para estudantes",
       
       eyebrow_form: "Diagnóstico Rápido",
       form_title: "Quer saber quanto custa proteger seu futuro?",
@@ -253,7 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_lib: "Library",
       nav_faq: "FAQ",
       nav_cta: "Schedule Consultation",
-      nav_blog: "Blog (Coming Soon)",
       
       hero_eyebrow: "One Agency. Every Protection.",
       hero_title: "One Agency. Every Protection for Your Family.",
@@ -299,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       eyebrow_about: "About Us",
       about_title: "Experts in protecting Brazilians in America.",
-      about_desc: "Brief presentation of BLGI.",
+      about_desc: "Better Life Global Insurance was founded to meet the greatest need of immigrants: understanding the American system clearly.",
       about_bullet_1: "Independent Agency",
       about_bullet_2: "Service in Portuguese and English",
       about_bullet_3: "Specialized in the Brazilian community",
@@ -314,18 +312,18 @@ document.addEventListener('DOMContentLoaded', () => {
       services_title: "All the protection you need in one place",
       services_subtitle: "A massive portfolio strategically designed to meet the life and business protection needs of the Brazilian community.",
       
-      srv_vida: "Life",
-      srv_vida_d: "Financial protection for your family.",
-      srv_saude: "Health",
-      srv_saude_d: "Individual, family, and business plans.",
-      srv_auto: "Auto",
-      srv_auto_d: "Protection for personal vehicles.",
-      srv_resi: "Home",
-      srv_resi_d: "Homeowners, Condo, and Renters.",
-      srv_emp: "Business",
-      srv_emp_d: "Protection for businesses.",
-      srv_int: "International",
-      srv_int_d: "Asset solutions and USD protection.",
+      srv_1: "Private Retirement",
+      srv_2: "Health Insurance/Obamacare",
+      srv_3: "Health Insurance/Medicare",
+      srv_4: "Health Insurance/Short Term",
+      srv_5: "Home Insurance",
+      srv_6: "Auto Insurance",
+      srv_7: "Commercial Insurance",
+      srv_8: "Life Insurance",
+      srv_9: "Travel Insurance",
+      srv_10: "Dental Insurance",
+      srv_11: "Vision Insurance",
+      srv_12: "Student Insurance",
       
       eyebrow_form: "Quick Diagnosis",
       form_title: "Want to know how much it costs to protect your future?",
