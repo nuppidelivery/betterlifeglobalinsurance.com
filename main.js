@@ -1,4 +1,6 @@
 // main.js - Initialization
+document.addEventListener('DOMContentLoaded', () => {
+
   /* ==========================================
      1. Header Scroll Effect
      ========================================== */
@@ -49,44 +51,17 @@
   revealElements.forEach(el => revealObserver.observe(el));
 
   /* ==========================================
-     4. Number Counter Animation (Once)
-     ========================================== */
-  const counters = document.querySelectorAll('.count');
-  const counterObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const target = +entry.target.getAttribute('data-target');
-        const duration = 2000;
-        const stepTime = Math.abs(Math.floor(duration / target));
-        let current = 0;
-        
-        const timer = setInterval(() => {
-          current += Math.ceil(target / 100);
-          if (current >= target) {
-            current = target;
-            clearInterval(timer);
-          }
-          entry.target.innerText = current;
-        }, stepTime);
-        
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(counter => counterObserver.observe(counter));
-
-  /* ==========================================
-     5. FAQ Accordion Logic
+     4. FAQ Accordion Logic
      ========================================== */
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const btn = item.querySelector('.faq-btn');
     if (btn) {
       btn.addEventListener('click', () => {
-        // Toggle the clicked item
+        // Toggle current item
         item.classList.toggle('active');
-        // Close others (optional, keeps UI clean)
+        
+        // Close other items
         faqItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('active');
@@ -97,168 +72,202 @@
   });
 
   /* ==========================================
-     6. Bilingual Implementation (PT / EN)
+     5. Bilingual Implementation (PT / EN)
      ========================================== */
   const translations = {
     pt: {
-      nav_solutions: "Soluções",
-      nav_philosophy: "Metodologia",
+      nav_services: "Serviços",
+      nav_diff: "Diferenciais",
+      nav_how: "Como Funciona",
       nav_faq: "FAQ",
-      nav_contact: "Contato",
-      nav_cta: "Atendimento Exclusivo",
+      nav_cta: "Solicitar Cotação",
       
-      hero_title: "A arquitetura completa da sua proteção nos Estados Unidos.",
-      hero_subtitle: "Blindagem patrimonial, saúde familiar e continuidade de negócios estruturada por especialistas para brasileiros na América.",
-      hero_cta_1: "Falar com Especialista Agora",
-      hero_cta_2: "Conhecer o Método",
+      hero_title: "A Segurança que Sua Família e Patrimônio Merecem nos Estados Unidos",
+      hero_subtitle: "Especialistas em seguros para brasileiros. Soluções completas em saúde, vida, residência e negócios com atendimento 100% em português.",
+      hero_cta_1: "Quero uma Cotação Gratuita",
+      hero_cta_2: "Falar no WhatsApp",
       
-      eyebrow_philosophy: "Nossa Filosofia",
-      philosophy_title: "A proteção não é um produto. É uma arquitetura de longo prazo.",
-      philosophy_text_1: "Compreendemos que a sua trajetória nos Estados Unidos envolveu renúncias e construções significativas. Nosso papel não é comercializar apólices soltas, mas atuar como arquitetos da sua segurança patrimonial e familiar, com profundo entendimento das leis americanas.",
-      philosophy_text_2: "Trabalhamos com o rigor de um <em>Family Office</em>, alinhando saúde, vida, responsabilidade civil e estruturação internacional de forma coesa e blindada.",
+      cred_1: "Atendimento em Português",
+      cred_2: "Cotação Gratuita e Rápida",
+      cred_3: "Consultoria Especializada",
+      cred_4: "Processo Sem Burocracia",
+      cred_5: "Contratação 100% Online",
       
-      counter_1: "Anos de Expertise Global",
-      counter_2: "Famílias Protegidas",
-      counter_3: "Atendimento Confidencial",
+      eyebrow_services: "Nossas Soluções",
+      services_title: "Proteção Completa para Cada Etapa da Sua Vida",
+      srv_1_title: "Seguro Saúde (ACA & Medicare)",
+      srv_1_desc: "Acesso aos melhores hospitais americanos sem surpresas financeiras. Desenhamos o plano ideal para o seu perfil e status imigratório.",
+      srv_2_title: "Seguro Automotivo",
+      srv_2_desc: "Cobertura abrangente para proteger você, seu veículo e terceiros no trânsito americano, garantindo paz de espírito ao volante.",
+      srv_3_title: "Seguro Residencial",
+      srv_3_desc: "Blindagem contra desastres naturais, roubos e acidentes domésticos. Proteja seu maior investimento nos EUA com coberturas robustas.",
+      srv_4_title: "Seguro de Vida",
+      srv_4_desc: "Garantia de estabilidade financeira para quem você mais ama. Planejamento sucessório inteligente e capital protegido contra imprevistos.",
+      srv_5_title: "Seguro Empresarial",
+      srv_5_desc: "Proteção de responsabilidade civil corporativa e bens comerciais. Foque no crescimento da sua empresa enquanto gerenciamos os riscos.",
+      srv_6_title: "Previdência Privada",
+      srv_6_desc: "Estruture um futuro tranquilo com rentabilidade segura no mercado americano. Soluções personalizadas para a construção de longo prazo.",
+      btn_quote: "Cotar Seguro &rarr;",
       
-      eyebrow_method: "Metodologia",
-      method_title: "A Jornada da Estruturação",
-      step_1_title: "1. Diagnóstico",
-      step_1_desc: "Conhecemos profundamente a sua estrutura familiar e patrimonial atual, identificando pontos de exposição.",
-      step_2_title: "2. Estratégia",
-      step_2_desc: "Desenhamos um plano coeso, cruzando necessidades de saúde, responsabilidade civil e vida.",
-      step_3_title: "3. Curadoria",
-      step_3_desc: "Selecionamos as melhores seguradoras e instrumentos financeiros do mercado americano.",
-      step_4_title: "4. Acompanhamento",
-      step_4_desc: "Mantemos revisões periódicas para garantir que o plano permaneça eficiente ao longo dos anos.",
+      eyebrow_diff: "Por que nos escolher",
+      diff_title: "Elevamos o Padrão do Mercado de Seguros",
+      diff_desc: "Não somos apenas corretores; somos seus consultores de confiança nos Estados Unidos, garantindo clareza total em contratos americanos complexos.",
+      diff_1_title: "Independência Real",
+      diff_1_desc: "Avaliamos mais de 50 seguradoras para encontrar a apólice que beneficia você, não a instituição financeira.",
+      diff_2_title: "Tradução Cultural",
+      diff_2_desc: "Descomplicamos o jargão americano. Você assina entendendo 100% de cada cláusula e cobertura na sua língua nativa.",
+      diff_3_title: "Gestão Contínua",
+      diff_3_desc: "Em caso de sinistros, acidentes ou dúvidas, nossa equipe é a sua ponte direta, resolvendo burocracias em seu nome.",
       
-      eyebrow_protect: "Áreas de Atuação",
-      protect_title: "O que nós protegemos",
-      protect_subtitle: "Eixos fundamentais para garantir a preservação do que você construiu.",
+      eyebrow_how: "O Processo",
+      how_title: "Contratação Simples em 4 Passos",
+      how_1_title: "Solicite sua cotação",
+      how_1_desc: "Entre em contato via WhatsApp de forma rápida e nos conte o que você deseja proteger.",
+      how_2_title: "Análise de Necessidades",
+      how_2_desc: "Nossa equipe entende sua realidade, riscos e orçamento em uma conversa amigável.",
+      how_3_title: "Curadoria de Opções",
+      how_3_desc: "Apresentamos de forma clara as melhores opções de coberturas do mercado, sem letras miúdas.",
+      how_4_title: "Contrate com Segurança",
+      how_4_desc: "Você assina a apólice online e passa a contar com nossa proteção e suporte permanente.",
       
-      sol_family_title: "Família & Indivíduo",
-      sol_family_desc: "Estruturação de planos de saúde privados (ACA, Medicare, Suplementares) e Seguros de Vida focados em preservação de padrão e sucessão.",
-      sol_wealth_title: "Patrimônio",
-      sol_wealth_desc: "Blindagem de ativos através de apólices residenciais de alto padrão, seguros automotivos premium e responsabilidade civil pessoal (Umbrella).",
-      sol_corp_title: "Empresas & Negócios",
-      sol_corp_desc: "Gestão de riscos para operações comerciais, cobrindo responsabilidade civil corporativa (General Liability), propriedades e sucessão de sócios.",
-      sol_intl_title: "Soluções Internacionais",
-      sol_intl_desc: "Seguros de viagem abrangentes, proteção para estudantes no exterior e estratégias globais para residentes multinacionais.",
+      ben_1_title: "Tranquilidade Absoluta",
+      ben_1_desc: "Durma sabendo que um imprevisto médico ou acidente não irá consumir as economias de uma vida inteira.",
+      ben_2_title: "Economia de Tempo",
+      ben_2_desc: "Não perca horas pesquisando regras americanas. Nós fazemos o trabalho pesado e entregamos a solução pronta.",
+      ben_3_title: "Eficiência Financeira",
+      ben_3_desc: "Evite multas fiscais (ACA penalties) e prêmios abusivos, contratando exatamente o que você precisa.",
       
-      eyebrow_stories: "Relatos de Sucesso",
-      stories_title: "A proteção na prática",
-      story_1_text: "Tínhamos muitas dúvidas sobre a real proteção do patrimônio. A Better Life uniu o seguro da empresa à proteção familiar perfeitamente.",
-      story_1_author: "— Carlos e Marina Souza, Flórida",
-      story_2_text: "A estruturação do seguro de vida e civil teve uma sofisticação de grandes bancos. Entender as duas culturas fez toda a diferença.",
-      story_2_author: "— Dr. Fernando Almeida, Nova York",
-      story_3_text: "Explicaram cada detalhe do Medicare com um domínio e agilidade incríveis, me dando a certeza de estar no caminho certo.",
-      story_3_author: "— Camila Rodrigues, Texas",
-      story_4_text: "Como investidor imobiliário, precisava de blindagem robusta (Umbrella). O atendimento foi impecável e muito prático pelo WhatsApp.",
-      story_4_author: "— Roberto Vilela, Orlando",
-      story_5_text: "Ter alguém que gerencia meu plano ACA e meu seguro automotivo com a mesma excelência economizou um tempo que eu não tinha.",
-      story_5_author: "— Luciana Mendes, Califórnia",
-
-      eyebrow_faq: "Perguntas Frequentes",
-      faq_title: "Clareza para suas decisões",
-      faq_1_q: "Preciso ter Green Card para contratar um seguro nos EUA?",
-      faq_1_a: "Não necessariamente. Existem diversas opções de seguros de saúde e vida formatadas para residentes temporários, estudantes e profissionais com vistos de trabalho.",
-      faq_2_q: "Como funciona o atendimento pelo WhatsApp?",
-      faq_2_a: "De forma rápida e prática. Nossa equipe está pronta para entender sua necessidade em poucos minutos e lhe guiar exatamente para a solução e cotação adequadas, sem perda de tempo.",
-      faq_3_q: "Vocês cobram honorários pela consultoria?",
-      faq_3_a: "Na imensa maioria dos seguros (como saúde e vida), não cobramos honorários diretos do cliente, pois somos remunerados pelas próprias instituições financeiras e seguradoras.",
-      faq_4_q: "O que difere a Better Life da seguradora direta?",
-      faq_4_a: "Comprando direto, você se adapta ao produto daquela empresa. Nós acessamos todo o mercado, selecionando imparcialmente a apólice que melhor blinda o seu perfil específico.",
-      faq_5_q: "Como funcionam as renovações e sinistros?",
-      faq_5_a: "Nós assumimos o suporte contínuo. Lidamos com os processos burocráticos e auditorias em seu nome, permitindo que você foque apenas no seu negócio e família.",
+      eyebrow_stories: "Depoimentos Reais",
+      stories_title: "A Voz de Quem Confia na Better Life",
+      story_1_text: "\"O sistema de saúde aqui sempre me assustou. A equipe da Better Life encontrou um plano perfeito para minha família, explicando tudo em português. Confiança total!\"",
+      story_1_author: "— Mariana Silva, Orlando - FL",
+      story_2_text: "\"Contratei o seguro do meu carro e da minha casa. A agilidade deles pelo WhatsApp e a clareza nas opções de cobertura são impressionantes. Recomendo de olhos fechados.\"",
+      story_2_author: "— Ricardo Mendes, Boca Raton - FL",
+      story_3_text: "\"Como dono de negócio, precisava de um General Liability rápido. Eles resolveram minha apólice no mesmo dia. Um alívio saber que tenho esse suporte.\"",
+      story_3_author: "— Thiago Costa, Miami - FL",
+      story_4_text: "\"Fazer um seguro de vida nos EUA parecia muito complexo. A consultoria deles traduziu as regras e hoje durmo tranquilo sabendo que meu legado está protegido.\"",
+      story_4_author: "— Felipe Oliveira, Nova York - NY",
       
-      cta_title: "Um diálogo direto e objetivo.",
-      cta_subtitle: "Envie uma mensagem e nossa equipe lhe responderá prontamente com a direção exata para a sua proteção.",
-      cta_btn: "Falar com Especialista Agora",
+      eyebrow_faq: "Dúvidas Comuns",
+      faq_title: "Perguntas Frequentes",
+      faq_1_q: "É necessário ter Green Card para contratar seguros?",
+      faq_1_a: "Não. Trabalhamos com diversas seguradoras que aceitam passaporte estrangeiro, ITIN e diversos tipos de vistos, oferecendo total proteção para imigrantes.",
+      faq_2_q: "Quanto custa fazer uma cotação com vocês?",
+      faq_2_a: "Absolutamente nada. A nossa consultoria e cotação são gratuitas. Nós somos remunerados diretamente pelas seguradoras quando você adquire uma apólice.",
+      faq_3_q: "Como o atendimento pelo WhatsApp funciona?",
+      faq_3_a: "É muito simples. Ao clicar no botão, você falará com um consultor humano em português. Ele entenderá suas necessidades e enviará as cotações diretamente por lá.",
+      faq_4_q: "Se eu bater o carro, vocês me ajudam?",
+      faq_4_a: "Sim! Nossa assistência de pós-venda auxilia você na abertura do sinistro, comunicação com a seguradora e orientações em português no momento que você mais precisa.",
       
-      footer_desc: "Consultoria patrimonial e proteção internacional de excelência.",
-      foot_nav_1: "Navegação",
-      foot_nav_3: "Contato Direto",
-      copyright_text: "Todos os direitos reservados."
+      cta_title: "Não deixe o seu patrimônio desprotegido.",
+      cta_subtitle: "Fale com nossa equipe agora mesmo, receba sua cotação gratuita e viva com segurança e tranquilidade nos EUA.",
+      cta_btn_1: "Solicitar Cotação Gratuita",
+      cta_btn_2: "Tirar Dúvida no WhatsApp",
+      
+      footer_desc: "A agência de seguros parceira do brasileiro nos Estados Unidos. Proteção confiável, atendimento excepcional e 100% em português.",
+      foot_nav_1: "Nossos Serviços",
+      foot_nav_2: "A Empresa",
+      foot_nav_3: "Fale Conosco",
+      copyright_text: "Todos os direitos reservados.",
+      legal_privacy: "Política de Privacidade",
+      legal_terms: "Termos de Uso"
     },
     en: {
-      nav_solutions: "Solutions",
-      nav_philosophy: "Methodology",
+      nav_services: "Services",
+      nav_diff: "Differentiators",
+      nav_how: "How it Works",
       nav_faq: "FAQ",
-      nav_contact: "Contact",
-      nav_cta: "Exclusive Service",
+      nav_cta: "Get a Quote",
       
-      hero_title: "The complete architecture of your protection in the US.",
-      hero_subtitle: "Wealth shielding, family health, and business continuity structured by experts for internationals in America.",
-      hero_cta_1: "Speak with an Expert Now",
-      hero_cta_2: "Discover the Method",
+      hero_title: "The Security Your Family and Assets Deserve in the US",
+      hero_subtitle: "Insurance experts for internationals. Comprehensive solutions in health, life, home, and business.",
+      hero_cta_1: "Get a Free Quote Now",
+      hero_cta_2: "Contact via WhatsApp",
       
-      eyebrow_philosophy: "Our Philosophy",
-      philosophy_title: "Protection is not a product. It's a long-term architecture.",
-      philosophy_text_1: "We understand that your journey in the US involved significant sacrifices and achievements. Our role is not to sell loose policies, but to act as architects of your wealth and family security, with a deep understanding of US laws.",
-      philosophy_text_2: "We operate with the rigor of a <em>Family Office</em>, cohesively aligning health, life, liability, and international structuring into a bulletproof plan.",
+      cred_1: "Multilingual Support",
+      cred_2: "Fast & Free Quotes",
+      cred_3: "Expert Consulting",
+      cred_4: "Hassle-free Process",
+      cred_5: "100% Online Contracting",
       
-      counter_1: "Years of Global Expertise",
-      counter_2: "Families Protected",
-      counter_3: "Confidential Service",
+      eyebrow_services: "Our Solutions",
+      services_title: "Complete Protection for Every Stage of Your Life",
+      srv_1_title: "Health Insurance (ACA & Medicare)",
+      srv_1_desc: "Access the best American hospitals with no financial surprises. We design the ideal plan for your profile and immigration status.",
+      srv_2_title: "Auto Insurance",
+      srv_2_desc: "Comprehensive coverage to protect you, your vehicle, and third parties in US traffic, ensuring peace of mind behind the wheel.",
+      srv_3_title: "Home Insurance",
+      srv_3_desc: "Shield against natural disasters, theft, and domestic accidents. Protect your biggest investment in the US.",
+      srv_4_title: "Life Insurance",
+      srv_4_desc: "Financial stability guarantee for those you love most. Smart succession planning and capital protected against the unforeseen.",
+      srv_5_title: "Business Insurance",
+      srv_5_desc: "Corporate liability and commercial property protection. Focus on growing your company while we manage the risks.",
+      srv_6_title: "Private Retirement",
+      srv_6_desc: "Structure a peaceful future with secure profitability in the American market. Customized solutions for long-term building.",
+      btn_quote: "Get a Quote &rarr;",
       
-      eyebrow_method: "Methodology",
-      method_title: "The Structuring Journey",
-      step_1_title: "1. Diagnosis",
-      step_1_desc: "We deeply understand your current family and wealth structure, identifying exposure points.",
-      step_2_title: "2. Strategy",
-      step_2_desc: "We design a cohesive shielding plan, intersecting health needs, civil liability, and life.",
-      step_3_title: "3. Curation",
-      step_3_desc: "We select the best carriers and financial instruments from the US market.",
-      step_4_title: "4. Monitoring",
-      step_4_desc: "We hold periodic reviews to ensure the plan remains efficient over the years.",
+      eyebrow_diff: "Why choose us",
+      diff_title: "We Raise the Bar in the Insurance Market",
+      diff_desc: "We aren't just brokers; we are your trusted advisors in the United States, ensuring total clarity in complex American contracts.",
+      diff_1_title: "True Independence",
+      diff_1_desc: "We evaluate over 50 carriers to find the policy that benefits you, not the financial institution.",
+      diff_2_title: "Cultural Translation",
+      diff_2_desc: "We simplify the American jargon. You sign understanding 100% of every clause and coverage.",
+      diff_3_title: "Continuous Management",
+      diff_3_desc: "In case of claims, accidents, or doubts, our team is your direct bridge, handling bureaucracy on your behalf.",
       
-      eyebrow_protect: "Areas of Expertise",
-      protect_title: "What we protect",
-      protect_subtitle: "Fundamental pillars to ensure the preservation of what you've built.",
+      eyebrow_how: "The Process",
+      how_title: "Simple Contracting in 4 Steps",
+      how_1_title: "Request a Quote",
+      how_1_desc: "Contact us via WhatsApp quickly and tell us what you want to protect.",
+      how_2_title: "Needs Analysis",
+      how_2_desc: "Our team understands your reality, risks, and budget in a friendly conversation.",
+      how_3_title: "Curated Options",
+      how_3_desc: "We clearly present the best coverage options in the market, with no fine print.",
+      how_4_title: "Contract Securely",
+      how_4_desc: "You sign the policy online and begin to rely on our permanent protection and support.",
       
-      sol_family_title: "Family & Individual",
-      sol_family_desc: "Structuring private health plans (ACA, Medicare, Supplemental) and Life Insurance focused on lifestyle preservation and succession.",
-      sol_wealth_title: "Wealth",
-      sol_wealth_desc: "Asset shielding through high-end residential policies, premium auto insurance, and personal liability (Umbrella).",
-      sol_corp_title: "Corporate & Business",
-      sol_corp_desc: "Risk management for commercial operations, covering corporate civil liability (General Liability), property, and partner succession.",
-      sol_intl_title: "International Solutions",
-      sol_intl_desc: "Comprehensive travel insurance, protection for students abroad, and global strategies for multinational residents.",
+      ben_1_title: "Absolute Peace of Mind",
+      ben_1_desc: "Sleep knowing that a medical unforeseen event or accident will not consume your life savings.",
+      ben_2_title: "Time Savings",
+      ben_2_desc: "Don't waste hours researching American rules. We do the heavy lifting and deliver the ready solution.",
+      ben_3_title: "Financial Efficiency",
+      ben_3_desc: "Avoid tax penalties (ACA) and abusive premiums by contracting exactly what you need.",
       
-      eyebrow_stories: "Success Stories",
-      stories_title: "Protection in practice",
-      story_1_text: "We had many doubts about the real protection of our assets. Better Life united company insurance with family protection perfectly.",
-      story_1_author: "— Carlos and Marina Souza, Florida",
-      story_2_text: "The structuring of life and liability insurance had the sophistication of major banks. Understanding both cultures made all the difference.",
-      story_2_author: "— Dr. Fernando Almeida, New York",
-      story_3_text: "They explained every detail of Medicare with incredible mastery and agility, giving me the certainty of being on the right path.",
-      story_3_author: "— Camila Rodrigues, Texas",
-      story_4_text: "As a real estate investor, I needed robust shielding (Umbrella). The service was impeccable and very practical via WhatsApp.",
-      story_4_author: "— Roberto Vilela, Orlando",
-      story_5_text: "Having someone manage my ACA plan and auto insurance with the same excellence saved me time I didn't have.",
-      story_5_author: "— Luciana Mendes, California",
-
-      eyebrow_faq: "Frequently Asked Questions",
-      faq_title: "Clarity for your decisions",
-      faq_1_q: "Do I need a Green Card to purchase insurance in the US?",
-      faq_1_a: "Not necessarily. There are several health and life insurance options formatted for temporary residents, students, and professionals on work visas.",
-      faq_2_q: "How does the WhatsApp service work?",
-      faq_2_a: "Fast and practical. Our team is ready to understand your needs in a few minutes and guide you exactly to the appropriate solution and quote, without wasting time.",
-      faq_3_q: "Do you charge fees for consulting?",
-      faq_3_a: "For the vast majority of insurances (like health and life), we do not charge direct fees from the client, as we are compensated by the financial institutions and carriers themselves.",
-      faq_4_q: "What differentiates Better Life from a direct carrier?",
-      faq_4_a: "Buying directly, you adapt to that company's product. We access the entire market, impartially selecting the policy that best shields your specific profile.",
-      faq_5_q: "How do renewals and claims work?",
-      faq_5_a: "We take over continuous support. We deal with bureaucratic processes and audits on your behalf, allowing you to focus only on your business and family.",
+      eyebrow_stories: "Real Testimonials",
+      stories_title: "The Voice of Those Who Trust Better Life",
+      story_1_text: "\"The healthcare system here always scared me. The Better Life team found a perfect plan for my family. Total trust!\"",
+      story_1_author: "— Mariana Silva, Orlando - FL",
+      story_2_text: "\"I got my car and home insurance. Their agility via WhatsApp and clarity in coverage options are impressive. Highly recommend.\"",
+      story_2_author: "— Ricardo Mendes, Boca Raton - FL",
+      story_3_text: "\"As a business owner, I needed General Liability fast. They sorted my policy out the same day. A relief to have this support.\"",
+      story_3_author: "— Thiago Costa, Miami - FL",
+      story_4_text: "\"Getting life insurance in the US seemed too complex. Their consulting translated the rules and today I sleep peacefully knowing my legacy is protected.\"",
+      story_4_author: "— Felipe Oliveira, New York - NY",
       
-      cta_title: "A direct and objective dialogue.",
-      cta_subtitle: "Send a message and our team will promptly respond with the exact direction for your protection.",
-      cta_btn: "Speak with an Expert Now",
+      eyebrow_faq: "Common Doubts",
+      faq_title: "Frequently Asked Questions",
+      faq_1_q: "Is a Green Card necessary to purchase insurance?",
+      faq_1_a: "No. We work with several carriers that accept foreign passports, ITINs, and various types of visas, offering full protection for immigrants.",
+      faq_2_q: "How much does a quote with you cost?",
+      faq_2_a: "Absolutely nothing. Our consulting and quoting are free. We are compensated directly by the carriers when you purchase a policy.",
+      faq_3_q: "How does the WhatsApp service work?",
+      faq_3_a: "It's very simple. By clicking the button, you will speak with a human consultant. They will understand your needs and send quotes directly there.",
+      faq_4_q: "If I crash my car, do you help me?",
+      faq_4_a: "Yes! Our after-sales assistance helps you open the claim, communicate with the carrier, and provides guidance when you need it most.",
       
-      footer_desc: "Wealth consulting and international protection of excellence.",
-      foot_nav_1: "Navigation",
-      foot_nav_3: "Direct Contact",
-      copyright_text: "All rights reserved."
+      cta_title: "Don't leave your assets unprotected.",
+      cta_subtitle: "Speak with our team right now, get your free quote, and live with security and peace of mind in the US.",
+      cta_btn_1: "Request a Free Quote",
+      cta_btn_2: "Ask a Question on WhatsApp",
+      
+      footer_desc: "The trusted insurance agency in the United States. Reliable protection and exceptional service.",
+      foot_nav_1: "Our Services",
+      foot_nav_2: "Company",
+      foot_nav_3: "Contact Us",
+      copyright_text: "All rights reserved.",
+      legal_privacy: "Privacy Policy",
+      legal_terms: "Terms of Use"
     }
   };
 
@@ -280,3 +289,5 @@
       });
     });
   });
+
+});
