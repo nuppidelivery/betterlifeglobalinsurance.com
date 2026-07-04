@@ -428,3 +428,92 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
 .floating-whatsapp:hover { background-color: #128C7E; transform: scale(1.1); }
 @keyframes floatWa { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
 @media (max-width: 768px) { .floating-whatsapp { bottom: 20px; right: 20px; width: 50px; height: 50px; font-size: 1.5rem; } }
+
+/* ==========================================================================
+   12-Item Tech Grid (Services)
+   ========================================================================== */
+.services-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.tech-card {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--trans-med);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+}
+.tech-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--gold-primary), var(--gold-dark));
+  opacity: 0; transition: var(--trans-med);
+}
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  border-color: rgba(227, 177, 79, 0.3);
+}
+.tech-card:hover::after { opacity: 1; }
+.tech-card i {
+  font-size: 2.5rem;
+  color: var(--navy-1);
+  margin-bottom: 1rem;
+  transition: var(--trans-fast);
+}
+.tech-card:hover i { color: var(--gold-dark); transform: scale(1.1); }
+.tech-card h4 {
+  font-size: 1.1rem;
+  color: var(--navy-1);
+  margin-bottom: 0.75rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+.tech-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Colorful Stories (Testimonials)
+   ========================================================================== */
+.colorful-stories {
+  background: linear-gradient(135deg, var(--navy-1) 0%, #032559 100%);
+  position: relative;
+  overflow: hidden;
+}
+.stories-glow-1 {
+  position: absolute; top: -20%; left: -10%; width: 50%; height: 50%;
+  background: radial-gradient(circle, rgba(227, 177, 79, 0.15) 0%, transparent 60%);
+  z-index: 0;
+}
+.stories-glow-2 {
+  position: absolute; bottom: -20%; right: -10%; width: 50%; height: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+  z-index: 0;
+}
+.custom-marquee::before { background: linear-gradient(to right, var(--navy-1) 0%, transparent 100%); }
+.custom-marquee::after { background: linear-gradient(to left, var(--navy-1) 0%, transparent 100%); }
+
+.tech-story {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.tech-story .story-text { color: rgba(255,255,255,0.8); }
+.tech-story .story-author.text-white { color: var(--white); }
+.tech-story .story-city { color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 0; }
+.avatar-circle {
+  width: 50px; height: 50px; background: rgba(227, 177, 79, 0.2); border: 1px solid var(--gold-dark);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  color: var(--gold-light); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 600;
+}
+

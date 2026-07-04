@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Better Life Global Insurance | One Agency. Every Protection.</title>
   
+  <link rel="icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,7 +90,7 @@
     </div>
   </section>
 
-  <!-- Hero Overlaid Pillar Buttons (Moved out of hero section to avoid overflow bugs) -->
+  <!-- Hero Overlaid Pillar Buttons (Botões de Destaque) -->
   <div class="hero-pillars-wrapper">
     <div class="container">
       <div class="pillars-grid-hero reveal">
@@ -118,7 +119,47 @@
     </div>
   </div>
 
-  <!-- 2. Autoridade e Números (Counters) - AGORA AZUL E TECNOLÓGICA -->
+  <!-- 1.5 Formulário de Captação (Movido para logo após o Hero para Altíssima Conversão) -->
+  <section class="lead-gen-section reveal" style="padding-top: 150px; padding-bottom: 120px;">
+    <div class="container">
+      <div class="lead-gen-wrapper">
+        <div class="lead-text">
+          <span class="eyebrow" data-i18n="eyebrow_form" style="color:var(--navy-1); border-color:var(--navy-1);">Diagnóstico Rápido</span>
+          <h2 data-i18n="form_title" style="color:var(--white);">Quer saber quanto custa proteger seu futuro?</h2>
+          <p data-i18n="form_desc" style="color:rgba(255,255,255,0.8);">Preencha o formulário abaixo e um de nossos especialistas entrará em contato com uma cotação e estratégia desenhada sob medida para sua realidade.</p>
+        </div>
+        <div class="lead-form-container">
+          <form class="modern-form">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder=" ">
+              <label for="name" data-i18n="form_name">Seu Nome Completo</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required placeholder=" ">
+              <label for="email" data-i18n="form_email">Seu E-mail</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" required placeholder=" ">
+              <label for="phone" data-i18n="form_phone">Seu Telefone / WhatsApp</label>
+            </div>
+            <div class="form-group">
+              <select id="interest" required>
+                <option value="" disabled selected data-i18n="form_interest">Qual sua principal necessidade hoje?</option>
+                <option value="saude">Seguro Saúde</option>
+                <option value="vida">Seguro de Vida / IUL</option>
+                <option value="empresa">Seguro Empresarial</option>
+                <option value="auto_casa">Seguro Auto / Casa</option>
+                <option value="outro">Outros / Consultoria Geral</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-full" data-i18n="form_btn">Solicitar Contato &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Autoridade e Números (Counters) - Azul e Espaçada -->
   <section class="authority-counters reveal">
     <div class="container">
       <div class="counters-grid">
@@ -140,7 +181,7 @@
         </div>
       </div>
     </div>
-    <!-- Divisor Continuo SVG -->
+    <!-- Divisor Continuo SVG (Onda) -->
     <div class="custom-shape-divider-bottom">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#011737"></path>
@@ -166,7 +207,7 @@
     </div>
   </section>
 
-  <!-- 4. Comparação: Com BLGI vs Sem BLGI (AGORA COLORIDA E TECNOLÓGICA) -->
+  <!-- 4. Comparação: Com BLGI vs Sem BLGI -->
   <section class="comparison-section reveal">
     <!-- Efeito de Luz de Fundo -->
     <div class="comp-glow-bg"></div>
@@ -240,7 +281,7 @@
   </section>
 
   <!-- 6. Seção de Vídeo Boas-Vindas -->
-  <section id="video-boas-vindas" class="video-section reveal">
+  <section id="video-boas-vindas" class="video-section reveal" style="background:var(--bg-secondary);">
     <div class="container">
       <div class="section-header center">
         <span class="eyebrow" data-i18n="eyebrow_video">Uma mensagem para você</span>
@@ -256,103 +297,83 @@
     </div>
   </section>
 
-  <!-- 7. Nossas Soluções -->
-  <section id="solucoes" class="services reveal" style="background:var(--bg-secondary);">
+  <!-- 7. Nossas Soluções (12 Serviços Organizados & Tecnológicos) -->
+  <section id="solucoes" class="services reveal">
     <div class="container">
       <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_services">Nossas Soluções</span>
-        <h2 data-i18n="services_title">Proteção em Todas as Esferas</h2>
-        <p style="color:var(--text-muted);" data-i18n="services_subtitle">A BLGI oferece um portfólio completo, desenhado estrategicamente para suprir todas as necessidades de proteção da vida e dos negócios.</p>
+        <span class="eyebrow" data-i18n="eyebrow_services">Soluções Completas</span>
+        <h2 data-i18n="services_title">Todas as proteções que você precisa em um só lugar</h2>
+        <p style="color:var(--text-muted);" data-i18n="services_subtitle">Um portfólio gigantesco desenhado estrategicamente para suprir as necessidades de proteção da vida e dos negócios da comunidade brasileira.</p>
       </div>
       
-      <div class="cards-grid">
-        <div class="luxury-card dark-card">
-          <i class="ph-fill ph-heartbeat"></i>
-          <h3 data-i18n="srv_life_title">Seguro de Vida</h3>
-          <p data-i18n="srv_life_desc">Term Life e Indexed Universal Life (IUL). Proteja quem você ama e acumule capital de forma inteligente.</p>
-          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
+      <!-- Tech Grid 4 Columns -->
+      <div class="services-tech-grid">
+        <div class="tech-card">
+          <i class="ph-fill ph-piggy-bank"></i>
+          <h4 data-i18n="srv_retire">Aposentadoria Privada</h4>
+          <p data-i18n="srv_retire_d">Planejamento seguro em dólar para garantir seu futuro.</p>
         </div>
-        
-        <div class="luxury-card dark-card">
+        <div class="tech-card">
           <i class="ph-fill ph-first-aid-kit"></i>
-          <h3 data-i18n="srv_health_title">Seguro Saúde</h3>
-          <p data-i18n="srv_health_desc">Planos individuais, familiares, ACA (Marketplace), e Medicare. Acesso aos melhores hospitais americanos.</p>
-          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
+          <h4 data-i18n="srv_oba">Seguro Saúde (Obamacare)</h4>
+          <p data-i18n="srv_oba_d">Planos regulamentados pelo ACA com amplos subsídios.</p>
         </div>
-        
-        <div class="luxury-card dark-card">
-          <i class="ph-fill ph-car-profile"></i>
-          <h3 data-i18n="srv_auto_title">Seguro Auto</h3>
-          <p data-i18n="srv_auto_desc">Proteção abrangente e Liability para seu veículo e terceiros nas estradas americanas. Dirija sem preocupações.</p>
-          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
+        <div class="tech-card">
+          <i class="ph-fill ph-heartbeat"></i>
+          <h4 data-i18n="srv_med">Seguro Saúde (Medicare)</h4>
+          <p data-i18n="srv_med_d">Planos completos e suplementares para 65+ anos.</p>
         </div>
-        
-        <div class="luxury-card dark-card">
+        <div class="tech-card">
+          <i class="ph-fill ph-clock"></i>
+          <h4 data-i18n="srv_short">Seguro Saúde (Short Term)</h4>
+          <p data-i18n="srv_short_d">Cobertura imediata para imprevistos temporários.</p>
+        </div>
+        <div class="tech-card">
           <i class="ph-fill ph-house-line"></i>
-          <h3 data-i18n="srv_home_title">Seguro Residencial</h3>
-          <p data-i18n="srv_home_desc">Homeowners, Condo, Renters e Flood Insurance. A blindagem completa para o seu maior patrimônio.</p>
-          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
+          <h4 data-i18n="srv_casa">Seguro de Casa</h4>
+          <p data-i18n="srv_casa_d">Homeowners e Renters. Seu maior bem protegido contra tudo.</p>
         </div>
-        
-        <div class="luxury-card dark-card">
+        <div class="tech-card">
+          <i class="ph-fill ph-car-profile"></i>
+          <h4 data-i18n="srv_carro">Seguro de Carro</h4>
+          <p data-i18n="srv_carro_d">Cobertura total, PIP, Property Damage e Liability nas estradas.</p>
+        </div>
+        <div class="tech-card">
           <i class="ph-fill ph-buildings"></i>
-          <h3 data-i18n="srv_business_title">Business Insurance</h3>
-          <p data-i18n="srv_business_desc">General Liability, Workers Compensation, Commercial Auto e mais. Cresça sua empresa de forma segura e protegida.</p>
-          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
+          <h4 data-i18n="srv_com">Seguro Comercial</h4>
+          <p data-i18n="srv_com_d">General Liability, Workers Comp e Commercial Auto.</p>
         </div>
-        
-        <div class="luxury-card dark-card">
-          <i class="ph-fill ph-globe-hemisphere-west"></i>
-          <h3 data-i18n="srv_intl_title">International Solutions</h3>
-          <p data-i18n="srv_intl_desc">Proteção patrimonial, seguro de vida internacional e acumulação de capital em dólar para famílias globais.</p>
-          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
+        <div class="tech-card">
+          <i class="ph-fill ph-users"></i>
+          <h4 data-i18n="srv_vida">Seguro de Vida</h4>
+          <p data-i18n="srv_vida_d">Proteção familiar com benefícios em vida e acumulação IUL.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. Formulário de Captação -->
-  <section class="lead-gen-section reveal">
-    <div class="container">
-      <div class="lead-gen-wrapper">
-        <div class="lead-text">
-          <span class="eyebrow" data-i18n="eyebrow_form" style="color:var(--navy-1); border-color:var(--navy-1);">Diagnóstico Rápido</span>
-          <h2 data-i18n="form_title" style="color:var(--white);">Quer saber quanto custa proteger seu futuro?</h2>
-          <p data-i18n="form_desc" style="color:rgba(255,255,255,0.8);">Preencha o formulário abaixo e um de nossos especialistas entrará em contato com uma cotação e estratégia desenhada sob medida para sua realidade.</p>
+        <div class="tech-card">
+          <i class="ph-fill ph-airplane-tilt"></i>
+          <h4 data-i18n="srv_viagem">Seguro Viagem</h4>
+          <p data-i18n="srv_viagem_d">Emergências médicas, cancelamentos e extravio de bagagem.</p>
         </div>
-        <div class="lead-form-container">
-          <form class="modern-form">
-            <div class="form-group">
-              <input type="text" id="name" required placeholder=" ">
-              <label for="name" data-i18n="form_name">Seu Nome Completo</label>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" required placeholder=" ">
-              <label for="email" data-i18n="form_email">Seu E-mail</label>
-            </div>
-            <div class="form-group">
-              <input type="tel" id="phone" required placeholder=" ">
-              <label for="phone" data-i18n="form_phone">Seu Telefone / WhatsApp</label>
-            </div>
-            <div class="form-group">
-              <select id="interest" required>
-                <option value="" disabled selected data-i18n="form_interest">Qual sua principal necessidade hoje?</option>
-                <option value="saude">Seguro Saúde</option>
-                <option value="vida">Seguro de Vida / IUL</option>
-                <option value="empresa">Seguro Empresarial</option>
-                <option value="auto_casa">Seguro Auto / Casa</option>
-                <option value="outro">Outros / Consultoria Geral</option>
-              </select>
-            </div>
-            <button type="button" class="btn btn-primary btn-full" data-i18n="form_btn">Solicitar Contato &rarr;</button>
-          </form>
+        <div class="tech-card">
+          <i class="ph-fill ph-tooth"></i>
+          <h4 data-i18n="srv_dental">Seguro Dental</h4>
+          <p data-i18n="srv_dental_d">Limpezas, raios-x e procedimentos dentários cobertos.</p>
+        </div>
+        <div class="tech-card">
+          <i class="ph-fill ph-eyeglasses"></i>
+          <h4 data-i18n="srv_visao">Seguro de Visão</h4>
+          <p data-i18n="srv_visao_d">Exames de vista, óculos de grau e lentes de contato.</p>
+        </div>
+        <div class="tech-card">
+          <i class="ph-fill ph-student"></i>
+          <h4 data-i18n="srv_est">Seguro para Estudantes</h4>
+          <p data-i18n="srv_est_d">Cobertura de saúde e acidentes para estudantes internacionais (F1/J1).</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 9. Por que escolher a BLGI? -->
-  <section id="diferenciais" class="how-it-works reveal">
+  <!-- 8. Por que escolher a BLGI? -->
+  <section id="diferenciais" class="how-it-works reveal" style="background:var(--bg-secondary);">
     <div class="container">
       <div class="section-header center">
         <span class="eyebrow" data-i18n="eyebrow_why">Vantagem Exclusiva</span>
@@ -384,47 +405,51 @@
     </div>
   </section>
 
-  <!-- 10. Depoimentos -->
-  <section class="stories reveal" style="background:var(--bg-secondary);">
-    <div class="container">
+  <!-- 9. Depoimentos (AGORA COLORIDA E TECH) -->
+  <section class="stories reveal colorful-stories">
+    <!-- Glow Effect Decor -->
+    <div class="stories-glow-1"></div>
+    <div class="stories-glow-2"></div>
+    
+    <div class="container" style="position:relative; z-index:2;">
       <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_stories">O que dizem sobre nós</span>
-        <h2 data-i18n="stories_title">A voz de quem confia na Better Life</h2>
+        <span class="eyebrow" style="color:var(--gold-light); border-color:var(--gold-light);" data-i18n="eyebrow_stories">O que dizem sobre nós</span>
+        <h2 style="color:var(--white);" data-i18n="stories_title">A voz de quem confia na Better Life</h2>
       </div>
       
-      <div class="marquee-container">
+      <div class="marquee-container custom-marquee">
         <div class="marquee-track">
           <!-- Story 1 -->
-          <div class="story-card">
+          <div class="story-card tech-story">
             <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
-              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">MS</div>
+              <div class="avatar-circle">MS</div>
               <div>
-                <p class="story-author" data-i18n="story_1_author" style="margin:0;">Mariana Silva</p>
-                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_1_city">Orlando, FL</p>
+                <p class="story-author text-white" data-i18n="story_1_author" style="margin:0;">Mariana Silva</p>
+                <p class="story-city" data-i18n="story_1_city">Orlando, FL</p>
               </div>
             </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
             <p class="story-text" data-i18n="story_1_text">"O sistema de saúde aqui sempre me assustou. A BLGI encontrou o plano perfeito para minha família, explicando tudo em português. Confiança total!"</p>
           </div>
           <!-- Story 2 -->
-          <div class="story-card">
+          <div class="story-card tech-story">
             <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
-              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">RM</div>
+              <div class="avatar-circle">RM</div>
               <div>
-                <p class="story-author" data-i18n="story_2_author" style="margin:0;">Ricardo Mendes</p>
-                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_2_city">Boca Raton, FL</p>
+                <p class="story-author text-white" data-i18n="story_2_author" style="margin:0;">Ricardo Mendes</p>
+                <p class="story-city" data-i18n="story_2_city">Boca Raton, FL</p>
               </div>
             </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
             <p class="story-text" data-i18n="story_2_text">"Contratei o seguro do meu carro e da minha casa. A agilidade deles e a clareza nas opções de cobertura são impressionantes. Recomendo de olhos fechados."</p>
           </div>
           <!-- Story 3 -->
-          <div class="story-card">
+          <div class="story-card tech-story">
             <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
-              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">TC</div>
+              <div class="avatar-circle">TC</div>
               <div>
-                <p class="story-author" data-i18n="story_3_author" style="margin:0;">Thiago Costa</p>
-                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_3_city">Miami, FL</p>
+                <p class="story-author text-white" data-i18n="story_3_author" style="margin:0;">Thiago Costa</p>
+                <p class="story-city" data-i18n="story_3_city">Miami, FL</p>
               </div>
             </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
@@ -432,23 +457,23 @@
           </div>
           
           <!-- Duplicates for scrolling -->
-          <div class="story-card">
+          <div class="story-card tech-story">
             <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
-              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">MS</div>
+              <div class="avatar-circle">MS</div>
               <div>
-                <p class="story-author" data-i18n="story_1_author" style="margin:0;">Mariana Silva</p>
-                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_1_city">Orlando, FL</p>
+                <p class="story-author text-white" data-i18n="story_1_author" style="margin:0;">Mariana Silva</p>
+                <p class="story-city" data-i18n="story_1_city">Orlando, FL</p>
               </div>
             </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
             <p class="story-text" data-i18n="story_1_text">"O sistema de saúde aqui sempre me assustou. A BLGI encontrou o plano perfeito para minha família, explicando tudo em português. Confiança total!"</p>
           </div>
-          <div class="story-card">
+          <div class="story-card tech-story">
             <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
-              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">RM</div>
+              <div class="avatar-circle">RM</div>
               <div>
-                <p class="story-author" data-i18n="story_2_author" style="margin:0;">Ricardo Mendes</p>
-                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_2_city">Boca Raton, FL</p>
+                <p class="story-author text-white" data-i18n="story_2_author" style="margin:0;">Ricardo Mendes</p>
+                <p class="story-city" data-i18n="story_2_city">Boca Raton, FL</p>
               </div>
             </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
@@ -499,6 +524,18 @@
     </div>
   </section>
 
+  <!-- 10. Google Maps Section -->
+  <section class="map-section reveal" style="padding-bottom: 0;">
+    <div class="container center-text" style="margin-bottom: 2rem;">
+      <span class="eyebrow" data-i18n="eyebrow_map">Nossa Localização</span>
+      <h2 data-i18n="map_title">Venha tomar um café conosco</h2>
+      <p style="color:var(--text-muted);">9825 Marina BLVD # 100 Boca Raton, Florida 33428</p>
+    </div>
+    <div class="map-wrapper" style="width:100%; height:450px; background:var(--bg-secondary);">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.52309831415!2d-80.20816992484432!3d26.341852084428054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c1071da51fb%3A0xc6c761cc5a33c1f!2s9825%20Marina%20Blvd%20%23100%2C%20Boca%20Raton%2C%20FL%2033428%2C%20USA!5e0!3m2!1sen!2sbr!4v1714526543211!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
   <!-- 11. CTA Final -->
   <section class="final-cta reveal">
     <div class="container center-text">
@@ -532,12 +569,12 @@
         <div class="footer-col">
           <h5 data-i18n="foot_nav_1">Soluções Completas</h5>
           <ul class="footer-links">
-            <li><a href="#" data-i18n="srv_life_title">Seguro de Vida</a></li>
-            <li><a href="#" data-i18n="srv_health_title">Seguro Saúde</a></li>
-            <li><a href="#" data-i18n="srv_auto_title">Seguro Auto</a></li>
-            <li><a href="#" data-i18n="srv_home_title">Seguro Residencial</a></li>
-            <li><a href="#" data-i18n="srv_business_title">Business Insurance</a></li>
-            <li><a href="#" data-i18n="srv_intl_title">International Solutions</a></li>
+            <li><a href="#" data-i18n="srv_vida">Seguro de Vida</a></li>
+            <li><a href="#" data-i18n="srv_oba">Seguro Saúde</a></li>
+            <li><a href="#" data-i18n="srv_carro">Seguro Auto</a></li>
+            <li><a href="#" data-i18n="srv_casa">Seguro Residencial</a></li>
+            <li><a href="#" data-i18n="srv_com">Business Insurance</a></li>
+            <li><a href="#" data-i18n="srv_retire">Aposentadoria Privada</a></li>
           </ul>
         </div>
         
