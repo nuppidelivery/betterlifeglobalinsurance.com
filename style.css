@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    CSS Custom Properties & Base Setup
    ========================================================================== */
 :root {
@@ -287,10 +287,10 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
 /* ==========================================================================
    Lead Gen Form Section
    ========================================================================== */
-.lead-gen-section { background: linear-gradient(135deg, var(--navy-1), var(--navy-2)); color: var(--white); position: relative; overflow: hidden; }
+.lead-gen-section { background: var(--bg-primary); color: var(--navy-1); position: relative; overflow: hidden; }
 .lead-gen-section::before { content: ''; position: absolute; right: -100px; top: -100px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(227,177,79,0.15) 0%, transparent 70%); }
 .lead-gen-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1000px; margin: 0 auto; }
-.modern-form { background: var(--white); padding: 3rem; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+.modern-form { background: var(--bg-secondary); padding: 3rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); }
 .form-group { position: relative; margin-bottom: 2rem; }
 .form-group input, .form-group select { width: 100%; padding: 10px 0; font-size: 1rem; color: var(--text-main); border: none; border-bottom: 2px solid rgba(0,0,0,0.1); outline: none; background: transparent; transition: var(--trans-fast); }
 .form-group select { padding-bottom: 5px; cursor: pointer; color: var(--text-muted); }
@@ -591,16 +591,17 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
 .hero-quick-links-wrapper {
   position: relative;
   z-index: 5;
-  margin-top: -60px; /* Pull it slightly up into the hero */
-  padding-bottom: 40px;
+  background: var(--bg-primary);
+  padding: 80px 0 60px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 .quick-links-title {
   text-align: center;
-  color: var(--white);
+  color: var(--navy-1);
   font-size: 1.1rem;
   letter-spacing: 2px;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
 }
 .quick-links-grid {
   display: flex;
@@ -613,34 +614,32 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: var(--white);
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  background: var(--bg-secondary);
+  color: var(--navy-1);
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
 }
 .quick-btn i {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: var(--gold-light);
+  color: var(--gold-dark);
   transition: all 0.3s ease;
 }
 .quick-btn span {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 .quick-btn:hover {
-  border-color: var(--gold-light);
-  background: rgba(227, 177, 79, 0.15);
+  border-color: var(--gold-primary);
+  background: var(--white);
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(227, 177, 79, 0.2);
+  box-shadow: 0 15px 35px rgba(227, 177, 79, 0.15);
 }
 .quick-btn:hover i {
   transform: scale(1.1);
@@ -657,6 +656,12 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(227, 177, 79, 0.2);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.colorful-services .tech-card h4 {
+  color: var(--white);
+}
+.colorful-services .tech-card p {
+  color: rgba(255, 255, 255, 0.85);
 }
 .colorful-services .tech-card:hover {
   border-color: var(--gold-primary);
