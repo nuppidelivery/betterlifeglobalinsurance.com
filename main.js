@@ -1,8 +1,8 @@
-// main.js - Initialization
+// main.js - Premium Motion Initialization
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ==========================================
-     1. Header Scroll Effect
+     1. Premium Header Scroll Effect
      ========================================== */
   const header = document.getElementById('header');
   if (header) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         header.classList.remove('scrolled');
       }
-    });
+    }, { passive: true });
   }
 
   /* ==========================================
@@ -33,22 +33,60 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================
-     3. Scroll Reveal Animation
+     3. Premium Scroll Reveal (Staggered)
      ========================================== */
   const revealElements = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
+        // Handle staggered children if they exist
+        const staggers = entry.target.querySelectorAll('.stagger-item');
+        if (staggers.length > 0) {
+          staggers.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('active');
+            }, index * 100); // 100ms delay between elements
+          });
+        }
         observer.unobserve(entry.target);
       }
     });
   }, {
     threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
+    rootMargin: "0px 0px -10% 0px"
   });
 
-  revealElements.forEach(el => revealObserver.observe(el));
+  revealElements.forEach(el => {
+    // Check if it's the hero, animate it immediately instead of waiting for scroll
+    if (el.classList.contains('hero')) {
+      setTimeout(() => {
+        el.classList.add('active');
+        const staggers = el.querySelectorAll('.stagger-item');
+        staggers.forEach((staggerEl, index) => {
+          setTimeout(() => {
+            staggerEl.classList.add('active');
+          }, index * 150);
+        });
+      }, 100);
+    } else {
+      revealObserver.observe(el);
+    }
+  });
+
+  /* ==========================================
+     3.5 Parallax Effect (Hero Image)
+     ========================================== */
+  const heroImage = document.querySelector('.hero-image');
+  if (heroImage) {
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      if (scrollPos < window.innerHeight) {
+        // Move image down slightly as we scroll down (parallax)
+        heroImage.style.transform = `translateY(${scrollPos * 0.15}px)`;
+      }
+    }, { passive: true });
+  }
 
   /* ==========================================
      4. Counters Animation
@@ -57,23 +95,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const speed = 200;
 
   const counterObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        const counter = entry.target;
-        const updateCount = () => {
+        setTimeout(() => {
+          const counter = entry.target;
           const target = +counter.getAttribute('data-target');
-          const count = +counter.innerText;
+          let count = 0;
           const inc = target / speed;
-
-          if (count < target) {
-            counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 15);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCount();
-        observer.unobserve(counter);
+          
+          const updateCount = () => {
+            count += inc;
+            if (count < target) {
+              counter.innerText = Math.ceil(count);
+              requestAnimationFrame(updateCount);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          requestAnimationFrame(updateCount);
+        }, index * 150); // Stagger counters
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
@@ -88,12 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = item.querySelector('.faq-btn');
     if (btn) {
       btn.addEventListener('click', () => {
-        item.classList.toggle('active');
+        const isActive = item.classList.contains('active');
+        
+        // Close all
         faqItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            otherItem.classList.remove('active');
-          }
+          otherItem.classList.remove('active');
+          const content = otherItem.querySelector('.faq-content');
+          if (content) content.style.maxHeight = null;
         });
+
+        // Toggle current
+        if (!isActive) {
+          item.classList.add('active');
+          const content = item.querySelector('.faq-content');
+          if (content) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        }
       });
     }
   });
@@ -398,7 +450,6 @@ document.addEventListener('DOMContentLoaded', () => {
       i18nElements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-          // Check if it's an input/select or standard element
           if (el.tagName === 'LABEL' || el.tagName === 'SPAN' || el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'H4' || el.tagName === 'H5' || el.tagName === 'P' || el.tagName === 'A' || el.tagName === 'BUTTON' || el.tagName === 'OPTION') {
             el.innerHTML = translations[lang][key];
           }

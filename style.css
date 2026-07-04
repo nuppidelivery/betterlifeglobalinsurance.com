@@ -705,3 +705,78 @@ footer { background-color: var(--navy-1); padding: 80px 0 20px; color: var(--whi
 .lib-card .btn { width: 100%; border-color: var(--gold-primary); color: var(--gold-dark); }
 .lib-card .btn:hover { background: var(--gold-primary); color: var(--white); }
 
+
+/* ==========================================================================
+   Premium Motion Pass - Microinteractions & Animations
+   ========================================================================== */
+
+/* Staggered Animations */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+.stagger-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhancing Scroll Reveal */
+.reveal {
+  will-change: opacity, transform;
+}
+
+/* Premium Header Glassmorphism */
+header.scrolled {
+  background: rgba(1, 23, 55, 0.75) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Refined Button Hovers */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Card Hover Enhancements */
+.tech-card, .lib-card, .timeline-step, .comp-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+  will-change: transform, box-shadow;
+}
+.tech-card:hover, .lib-card:hover, .comp-card:hover {
+  transform: translateY(-5px) scale(1.015);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Subtle Hero Glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -10%; left: -10%;
+  width: 50%; height: 60%;
+  background: radial-gradient(circle, rgba(227, 177, 79, 0.08) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Floating Image */
+.hero-image {
+  animation: floatWa 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Smooth Links Underline */
+.footer-links a, .nav-dropdown a, .story-author {
+  position: relative;
+}
+
