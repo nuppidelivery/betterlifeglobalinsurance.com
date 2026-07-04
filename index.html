@@ -63,7 +63,6 @@
 
   <!-- 1. Hero Section -->
   <section class="hero reveal">
-    <!-- Efeitos Visuais Tecnológicos no Fundo -->
     <div class="hero-tech-bg"></div>
     
     <div class="container hero-grid">
@@ -79,7 +78,7 @@
       </div>
       <div class="hero-image-wrapper">
         <img src="hero_bg.png" alt="Família Brasileira nos EUA" class="hero-image">
-        <!-- Floating Elements for Tech Feel -->
+        <!-- Floating Elements -->
         <div class="floating-badge badge-1">
           <i class="ph-fill ph-shield-check"></i> <span data-i18n="badge_secure">Proteção Total</span>
         </div>
@@ -88,10 +87,12 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Hero Overlaid Pillar Buttons -->
-    <div class="container hero-pillars-overlay">
-      <div class="pillars-grid-hero">
+  <!-- Hero Overlaid Pillar Buttons (Moved out of hero section to avoid overflow bugs) -->
+  <div class="hero-pillars-wrapper">
+    <div class="container">
+      <div class="pillars-grid-hero reveal">
         <a href="#solucoes" class="pillar-btn">
           <div class="pillar-icon"><i class="ph-fill ph-users-three"></i></div>
           <div class="pillar-text">
@@ -115,9 +116,9 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- 2. Autoridade e Números (Counters) -->
+  <!-- 2. Autoridade e Números (Counters) - AGORA AZUL E TECNOLÓGICA -->
   <section class="authority-counters reveal">
     <div class="container">
       <div class="counters-grid">
@@ -139,9 +140,15 @@
         </div>
       </div>
     </div>
+    <!-- Divisor Continuo SVG -->
+    <div class="custom-shape-divider-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#011737"></path>
+      </svg>
+    </div>
   </section>
 
-  <!-- 3. A Importância de Estar Protegido (Imagens + Texto) -->
+  <!-- 3. A Importância de Estar Protegido -->
   <section class="importance-section reveal">
     <div class="container">
       <div class="two-col-layout">
@@ -159,19 +166,22 @@
     </div>
   </section>
 
-  <!-- 4. Comparação: Com BLGI vs Sem BLGI -->
+  <!-- 4. Comparação: Com BLGI vs Sem BLGI (AGORA COLORIDA E TECNOLÓGICA) -->
   <section class="comparison-section reveal">
-    <div class="container">
+    <!-- Efeito de Luz de Fundo -->
+    <div class="comp-glow-bg"></div>
+
+    <div class="container" style="position:relative; z-index:2;">
       <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_comp">O Preço da Escolha</span>
-        <h2 data-i18n="comp_title">O que acontece nos momentos críticos?</h2>
+        <span class="eyebrow" style="color:var(--gold-light); border-color:var(--gold-light);" data-i18n="eyebrow_comp">O Preço da Escolha</span>
+        <h2 style="color:var(--white);" data-i18n="comp_title">O que acontece nos momentos críticos?</h2>
       </div>
       
       <div class="comparison-grid">
         <!-- Sem Proteção -->
-        <div class="comp-card danger">
+        <div class="comp-card danger glass-panel">
           <div class="comp-header">
-            <i class="ph-fill ph-x-circle"></i>
+            <div class="icon-glow-red"><i class="ph-fill ph-x-circle"></i></div>
             <h3 data-i18n="comp_bad_title">O Caminho Desprotegido</h3>
           </div>
           <ul class="comp-list">
@@ -183,9 +193,9 @@
         </div>
         
         <!-- Com a BLGI -->
-        <div class="comp-card safe">
+        <div class="comp-card safe glass-panel">
           <div class="comp-header">
-            <i class="ph-fill ph-check-circle"></i>
+            <div class="icon-glow-green"><i class="ph-fill ph-check-circle"></i></div>
             <h3 data-i18n="comp_good_title">Com a Proteção da BLGI</h3>
           </div>
           <ul class="comp-list">
@@ -200,7 +210,7 @@
   </section>
 
   <!-- 5. Quem Somos -->
-  <section id="quem-somos" class="differentials reveal" style="background:var(--bg-secondary);">
+  <section id="quem-somos" class="differentials reveal">
     <div class="container">
       <div class="two-col-layout" style="direction: rtl;">
         <div class="about-image-wrapper" style="direction: ltr;">
@@ -246,8 +256,8 @@
     </div>
   </section>
 
-  <!-- 7. Nossas Soluções (6 Cards Principais em Azul) -->
-  <section id="solucoes" class="services reveal">
+  <!-- 7. Nossas Soluções -->
+  <section id="solucoes" class="services reveal" style="background:var(--bg-secondary);">
     <div class="container">
       <div class="section-header center">
         <span class="eyebrow" data-i18n="eyebrow_services">Nossas Soluções</span>
