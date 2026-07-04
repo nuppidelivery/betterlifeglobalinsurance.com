@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Better Life Global Insurance | Seguros nos Estados Unidos</title>
+  <title>Better Life Global Insurance | One Agency. Every Protection.</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,19 @@
     <i class="ph-fill ph-whatsapp-logo"></i>
   </a>
 
-  <!-- Header (Navy) -->
+  <!-- Header -->
   <header id="header">
     <div class="nav-container">
-      <a href="#" class="logo">
+      <a href="/" class="logo">
         <img src="logo.png" alt="Better Life Global Insurance" class="logo-img">
       </a>
       
       <nav class="desktop-nav">
-        <a href="#servicos" data-i18n="nav_services">Seguros</a>
-        <a href="#diferenciais" data-i18n="nav_diff">Sobre Nós</a>
-        <a href="#como-funciona" data-i18n="nav_how">Como Funciona</a>
+        <!-- Estrutura de Navegação Completa Baseada no Briefing -->
+        <a href="#solucoes" data-i18n="nav_services">Seguros</a>
+        <a href="#quem-somos" data-i18n="nav_about">Sobre Nós</a>
+        <a href="#diferenciais" data-i18n="nav_diff">Por Que a BLGI?</a>
+        <a href="#video-boas-vindas" data-i18n="nav_video">Bem-vindo</a>
         <a href="#faq" data-i18n="nav_faq">FAQ</a>
       </nav>
 
@@ -39,246 +41,218 @@
           <span class="divider" style="color:var(--text-muted);">|</span>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
-        <a href="https://wa.me/15616958132" target="_blank" class="btn btn-outline desktop-only" data-i18n="nav_cta">Fale Conosco</a>
+        <a href="https://calendly.com/" target="_blank" class="btn btn-outline desktop-only" data-i18n="nav_cta">Agendar Consulta</a>
         <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
       </div>
     </div>
     
     <!-- Mobile Nav -->
     <div class="mobile-nav">
-      <a href="#servicos" data-i18n="nav_services">Seguros</a>
-      <a href="#diferenciais" data-i18n="nav_diff">Sobre Nós</a>
-      <a href="#como-funciona" data-i18n="nav_how">Como Funciona</a>
+      <a href="#solucoes" data-i18n="nav_services">Seguros</a>
+      <a href="#quem-somos" data-i18n="nav_about">Sobre Nós</a>
+      <a href="#diferenciais" data-i18n="nav_diff">Por Que a BLGI?</a>
+      <a href="#video-boas-vindas" data-i18n="nav_video">Bem-vindo</a>
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
-      <a href="https://wa.me/15616958132" target="_blank" class="btn btn-primary" style="border-color:var(--white);" data-i18n="nav_cta">Fale Conosco</a>
+      <a href="https://calendly.com/" target="_blank" class="btn btn-primary" style="border-color:var(--white);" data-i18n="nav_cta">Agendar Consulta</a>
     </div>
   </header>
 
-  <!-- 1. Hero Section (Light) -->
+  <!-- 1. Hero Section (Navy with Image) -->
   <section class="hero reveal">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <h1 data-i18n="hero_title">A Proteção Exata que Sua Vida nos Estados Unidos Exige</h1>
-      <p class="subtitle" data-i18n="hero_subtitle">Planos de Saúde (Obamacare/Medicare), Seguro Auto, Casa, Vida, Previdência e Soluções Empresariais. Atendimento 100% em português.</p>
-      
-      <div class="hero-ctas">
-        <a href="https://wa.me/15616958132" target="_blank" class="btn btn-primary btn-pulse" data-i18n="hero_cta_1">Fazer Cotação Gratuita</a>
-        <a href="https://wa.me/15616958132" target="_blank" class="btn btn-outline" data-i18n="hero_cta_2">Atendimento no WhatsApp</a>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-eyebrow" data-i18n="hero_eyebrow" style="color: var(--gold-light); font-family: var(--font-body); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; display: block;">One Agency. Every Protection.</span>
+        <h1 data-i18n="hero_title">Uma Agência. Todas as Proteções da Sua Família.</h1>
+        <p class="subtitle" data-i18n="hero_subtitle">Seguro de Vida, Saúde, Auto, Residência, Empresas e Soluções Internacionais para a comunidade brasileira nos Estados Unidos.</p>
+        
+        <div class="hero-ctas">
+          <a href="https://wa.me/15616958132" target="_blank" class="btn btn-gold btn-pulse" data-i18n="hero_cta_1">Solicitar Cotação</a>
+          <a href="https://wa.me/15616958132" target="_blank" class="btn btn-outline-white" data-i18n="hero_cta_2">Falar no WhatsApp</a>
+          <a href="https://calendly.com/" target="_blank" class="btn btn-outline-white" data-i18n="hero_cta_3" style="border-color: transparent; text-decoration: underline;">Agendar Consulta</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="hero_bg.png" alt="Família Brasileira nos EUA" class="hero-image">
       </div>
     </div>
   </section>
 
-  <!-- 2. Barra de Credibilidade (Light) -->
-  <div class="credibility-bar reveal">
-    <div class="container credibility-grid">
-      <div class="cred-item"><i class="ph-fill ph-check-circle"></i> <span data-i18n="cred_1">Atendimento em Português</span></div>
-      <div class="cred-item"><i class="ph-fill ph-check-circle"></i> <span data-i18n="cred_2">Cotação Gratuita</span></div>
-      <div class="cred-item"><i class="ph-fill ph-check-circle"></i> <span data-i18n="cred_3">Consultoria Especializada</span></div>
-      <div class="cred-item"><i class="ph-fill ph-check-circle"></i> <span data-i18n="cred_4">Processo Simplificado</span></div>
-      <div class="cred-item"><i class="ph-fill ph-check-circle"></i> <span data-i18n="cred_5">Atendimento Online</span></div>
+  <!-- 2. Três Grandes Pilares -->
+  <div class="pillars-bar reveal">
+    <div class="container pillars-grid">
+      <div class="pillar-item">
+        <i class="ph-fill ph-users-three"></i>
+        <h4 data-i18n="pillar_1_title">Famílias</h4>
+        <p data-i18n="pillar_1_desc">Vida • Saúde • Auto • Residência. Proteção completa para todas as etapas.</p>
+      </div>
+      <div class="pillar-item">
+        <i class="ph-fill ph-buildings"></i>
+        <h4 data-i18n="pillar_2_title">Empresas</h4>
+        <p data-i18n="pillar_2_desc">Business Insurance. Proteção para empresas, patrimônio e colaboradores.</p>
+      </div>
+      <div class="pillar-item">
+        <i class="ph-fill ph-globe-hemisphere-west"></i>
+        <h4 data-i18n="pillar_3_title">Soluções Internacionais</h4>
+        <p data-i18n="pillar_3_desc">Planejamento patrimonial em dólar e proteção para famílias internacionais.</p>
+      </div>
     </div>
   </div>
 
-  <!-- 3. Serviços Grid - Completo -->
-  <section id="servicos" class="services reveal">
+  <!-- Parceiros (Seguradoras) -->
+  <section class="partners-section reveal">
+    <div class="container center-text">
+      <h3 style="margin-bottom: 2rem; color: var(--navy-1);" data-i18n="partners_title">Trabalhamos com as Maiores Seguradoras dos EUA</h3>
+      <img src="partners.png" alt="Parceiros" class="partners-img">
+    </div>
+  </section>
+
+  <!-- 3. Quem Somos -->
+  <section id="quem-somos" class="differentials reveal">
+    <div class="container">
+      <div class="two-col-layout">
+        <!-- Imagem Humanizada -->
+        <div class="about-image-wrapper">
+          <img src="about.png" alt="Equipe Better Life Global Insurance" class="about-image">
+        </div>
+
+        <div class="text-col">
+          <span class="eyebrow" data-i18n="eyebrow_about">Quem Somos</span>
+          <h2 data-i18n="about_title">Especialistas em proteger brasileiros na América.</h2>
+          <p data-i18n="about_desc">A Better Life Global Insurance (BLGI) não é apenas mais uma agência de seguros. Somos uma agência independente focada em garantir que famílias e empresas brasileiras nos Estados Unidos protejam tudo o que construíram com esforço. Nosso atendimento é personalizado, humano e bilíngue.</p>
+          
+          <div class="list-col-small">
+            <div class="diff-item-small">
+              <i class="ph-fill ph-check-circle" style="color:var(--gold-dark); font-size:1.5rem;"></i>
+              <span data-i18n="about_bullet_1">Agência Independente de Alta Performance</span>
+            </div>
+            <div class="diff-item-small">
+              <i class="ph-fill ph-check-circle" style="color:var(--gold-dark); font-size:1.5rem;"></i>
+              <span data-i18n="about_bullet_2">Atendimento Especializado em Português e Inglês</span>
+            </div>
+            <div class="diff-item-small">
+              <i class="ph-fill ph-check-circle" style="color:var(--gold-dark); font-size:1.5rem;"></i>
+              <span data-i18n="about_bullet_3">Soluções Completas para Pessoas Físicas e Empresas</span>
+            </div>
+          </div>
+          
+          <a href="https://calendly.com/" target="_blank" class="btn btn-primary" style="margin-top:2rem;" data-i18n="btn_talk">Conhecer a Agência</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVO: Seção de Vídeo Boas-Vindas -->
+  <section id="video-boas-vindas" class="video-section reveal">
     <div class="container">
       <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_services">Nossos Seguros</span>
-        <h2 data-i18n="services_title">A Opção de Seguro Perfeita para Você</h2>
-        <p style="color:var(--text-muted);" data-i18n="services_subtitle">A Better Life Global Insurance é dedicada a proteger você e seu patrimônio. Oferecemos soluções personalizadas para garantir sua segurança em todas as fases da vida.</p>
+        <span class="eyebrow" data-i18n="eyebrow_video">Uma mensagem para você</span>
+        <h2 data-i18n="video_title">Bem-vindo à Better Life</h2>
+        <p style="color:var(--text-muted);" data-i18n="video_subtitle">Descubra como podemos transformar a maneira como você protege seu patrimônio nos Estados Unidos.</p>
+      </div>
+      <div class="video-wrapper">
+        <!-- Placeholder para o iframe do vídeo (YouTube/Vimeo) -->
+        <div class="video-placeholder">
+          <i class="ph-fill ph-play-circle"></i>
+          <span data-i18n="video_placeholder_text">O seu vídeo será adicionado aqui</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Nossas Soluções (6 Cards Principais em Azul) -->
+  <section id="solucoes" class="services reveal">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow" data-i18n="eyebrow_services">Nossas Soluções</span>
+        <h2 data-i18n="services_title">Proteção em Todas as Esferas</h2>
+        <p style="color:var(--text-muted);" data-i18n="services_subtitle">A BLGI oferece um portfólio completo, desenhado estrategicamente para suprir todas as necessidades de proteção da vida e dos negócios.</p>
       </div>
       
       <div class="cards-grid">
-        <!-- Saúde ACA -->
-        <div class="luxury-card">
+        <!-- 6 Cards Focados -->
+        <div class="luxury-card dark-card">
           <i class="ph-fill ph-heartbeat"></i>
-          <h3 data-i18n="srv_1_title">Seguro Saúde (Obamacare)</h3>
-          <p data-i18n="srv_1_desc">Cobertura preventiva, emergencial e maternidade com subsídios do governo. Acesso à saúde de qualidade sem estourar o orçamento.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
+          <h3 data-i18n="srv_life_title">Seguro de Vida</h3>
+          <p data-i18n="srv_life_desc">Term Life e Indexed Universal Life (IUL). Proteja quem você ama e acumule capital de forma inteligente.</p>
+          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
         </div>
-        <!-- Medicare -->
-        <div class="luxury-card">
+        
+        <div class="luxury-card dark-card">
           <i class="ph-fill ph-first-aid-kit"></i>
-          <h3 data-i18n="srv_2_title">Medicare</h3>
-          <p data-i18n="srv_2_desc">Planos de saúde estruturados para maiores de 65 anos ou elegíveis. Auxiliamos na escolha do plano complementar ideal para suas necessidades médicas.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
+          <h3 data-i18n="srv_health_title">Seguro Saúde</h3>
+          <p data-i18n="srv_health_desc">Planos individuais, familiares, ACA (Marketplace), e Medicare. Acesso aos melhores hospitais americanos.</p>
+          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
         </div>
-        <!-- Short Term -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-hourglass-high"></i>
-          <h3 data-i18n="srv_3_title">Seguro Saúde (Short Term)</h3>
-          <p data-i18n="srv_3_desc">Ideal para quem precisa de proteção rápida e temporária contra acidentes e doenças enquanto aguarda o período oficial de inscrições (Open Enrollment).</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
-        </div>
-        <!-- Auto -->
-        <div class="luxury-card">
+        
+        <div class="luxury-card dark-card">
           <i class="ph-fill ph-car-profile"></i>
-          <h3 data-i18n="srv_4_title">Seguro Automotivo</h3>
-          <p data-i18n="srv_4_desc">Proteção abrangente para você, seu veículo e terceiros nas estradas americanas. Planos customizados para o seu perfil de motorista.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
+          <h3 data-i18n="srv_auto_title">Seguro Auto</h3>
+          <p data-i18n="srv_auto_desc">Proteção abrangente e Liability para seu veículo e terceiros nas estradas americanas. Dirija sem preocupações.</p>
+          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
         </div>
-        <!-- Residencial -->
-        <div class="luxury-card">
+        
+        <div class="luxury-card dark-card">
           <i class="ph-fill ph-house-line"></i>
-          <h3 data-i18n="srv_5_title">Seguro Residencial</h3>
-          <p data-i18n="srv_5_desc">Proteja seu maior patrimônio físico contra roubos, incêndios, desastres naturais e garanta responsabilidade civil dentro da sua propriedade.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
+          <h3 data-i18n="srv_home_title">Seguro Residencial</h3>
+          <p data-i18n="srv_home_desc">Homeowners, Condo, Renters e Flood Insurance. A blindagem completa para o seu maior patrimônio.</p>
+          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
         </div>
-        <!-- Empresarial -->
-        <div class="luxury-card">
+        
+        <div class="luxury-card dark-card">
           <i class="ph-fill ph-buildings"></i>
-          <h3 data-i18n="srv_6_title">Seguro Comercial (Empresarial)</h3>
-          <p data-i18n="srv_6_desc">General Liability, Workers Compensation e proteção para propriedades comerciais. Cresça seu negócio nos EUA sem medo de processos.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
+          <h3 data-i18n="srv_business_title">Business Insurance</h3>
+          <p data-i18n="srv_business_desc">General Liability, Workers Compensation, Commercial Auto e mais. Cresça sua empresa de forma segura e protegida.</p>
+          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
         </div>
-        <!-- Vida -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-users-three"></i>
-          <h3 data-i18n="srv_7_title">Seguro de Vida</h3>
-          <p data-i18n="srv_7_desc">Muito mais que uma apólice por morte. Nossos seguros de vida podem possuir benefícios em vida para doenças graves e acúmulo de capital.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
-        </div>
-        <!-- Viagem -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-airplane-tilt"></i>
-          <h3 data-i18n="srv_8_title">Seguro Viagem</h3>
-          <p data-i18n="srv_8_desc">Viaje pelo mundo ou visite o Brasil com a garantia de assistência médica internacional, perda de bagagem e repatriação.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
-        </div>
-        <!-- Dental -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-tooth"></i>
-          <h3 data-i18n="srv_9_title">Seguro Dental</h3>
-          <p data-i18n="srv_9_desc">Procedimentos odontológicos nos EUA são extremamente caros. Um bom seguro dental previne surpresas na cadeira do dentista.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
-        </div>
-        <!-- Visao -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-eyeglasses"></i>
-          <h3 data-i18n="srv_10_title">Seguro de Visão</h3>
-          <p data-i18n="srv_10_desc">Cobertura essencial para exames oftalmológicos anuais, compra de lentes de contato e óculos de grau com enorme economia.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
-        </div>
-        <!-- Estudantes -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-graduation-cap"></i>
-          <h3 data-i18n="srv_11_title">Seguro para Estudantes</h3>
-          <p data-i18n="srv_11_desc">Planos de saúde desenvolvidos especificamente para estudantes internacionais (F1, J1, M1), atendendo aos rigorosos requisitos das universidades americanas.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
-        </div>
-        <!-- Previdência -->
-        <div class="luxury-card">
-          <i class="ph-fill ph-vault"></i>
-          <h3 data-i18n="srv_12_title">Aposentadoria Privada</h3>
-          <p data-i18n="srv_12_desc">Invista no seu futuro através de anuidades e planos estratégicos. Garanta que seus anos dourados na América sejam prósperos e seguros.</p>
-          <a href="https://wa.me/15616958132" class="discover" data-i18n="btn_quote">Cotar Seguro &rarr;</a>
+        
+        <div class="luxury-card dark-card">
+          <i class="ph-fill ph-globe-hemisphere-west"></i>
+          <h3 data-i18n="srv_intl_title">International Solutions</h3>
+          <p data-i18n="srv_intl_desc">Proteção patrimonial, seguro de vida internacional e acumulação de capital em dólar para famílias globais.</p>
+          <a href="#" class="discover" data-i18n="btn_more">Saiba Mais &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. Sobre / Diferenciais (Light Grey) -->
-  <section id="diferenciais" class="differentials reveal">
-    <div class="container">
-      <div class="two-col-layout">
-        <div class="text-col">
-          <span class="eyebrow" data-i18n="eyebrow_diff">Sobre Nós</span>
-          <h2 data-i18n="diff_title">Há anos protegendo os sonhos de quem escolheu os EUA.</h2>
-          <p data-i18n="diff_desc">A Better Life Global Insurance não é uma corretora comum. Nós agimos como parceiros do imigrante brasileiro na América, traduzindo as leis e indicando os caminhos mais seguros. Nosso compromisso é com a sua total compreensão do que está sendo contratado.</p>
-          <a href="https://wa.me/15616958132" target="_blank" class="btn btn-primary" style="margin-top:1rem;" data-i18n="btn_talk">Fale com a Equipe</a>
-        </div>
-        <div class="list-col">
-          <div class="diff-item">
-            <div class="icon-circle"><i class="ph-fill ph-handshake"></i></div>
-            <div class="diff-text">
-              <h4 data-i18n="diff_1_title">Tradução e Transparência</h4>
-              <p data-i18n="diff_1_desc">Entender as apólices em inglês técnico é difícil. Nós explicamos linha por linha no seu idioma nativo, com zero surpresas na hora de usar.</p>
-            </div>
-          </div>
-          <div class="diff-item">
-            <div class="icon-circle"><i class="ph-fill ph-crosshair"></i></div>
-            <div class="diff-text">
-              <h4 data-i18n="diff_2_title">Personalização Real</h4>
-              <p data-i18n="diff_2_desc">Não vendemos pacotes prontos. Nós desenhamos a apólice com as maiores seguradoras dos EUA, adequando-a ao seu bolso e necessidade exata.</p>
-            </div>
-          </div>
-          <div class="diff-item">
-            <div class="icon-circle"><i class="ph-fill ph-headset"></i></div>
-            <div class="diff-text">
-              <h4 data-i18n="diff_3_title">Pós-venda Humanizado</h4>
-              <p data-i18n="diff_3_desc">Nosso trabalho não acaba na assinatura. Te damos a mão caso precise acionar o seguro, com um pós-venda direto e prático no WhatsApp.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. Como Funciona -->
-  <section id="como-funciona" class="how-it-works reveal">
+  <!-- 5. Por que escolher a BLGI? (Diferenciais) -->
+  <section id="diferenciais" class="how-it-works reveal">
     <div class="container">
       <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_how">Metodologia</span>
-        <h2 data-i18n="how_title">Como funciona para contratar?</h2>
+        <span class="eyebrow" data-i18n="eyebrow_why">Vantagem Exclusiva</span>
+        <h2 data-i18n="why_title">Por que escolher a BLGI?</h2>
       </div>
       
       <div class="timeline">
         <div class="timeline-step">
-          <div class="step-number">1</div>
-          <h4 data-i18n="how_1_title">Solicite sua Cotação</h4>
-          <p data-i18n="how_1_desc">Acesse nosso WhatsApp e informe qual seguro você precisa. É rápido e sem compromisso.</p>
+          <div class="step-icon"><i class="ph-fill ph-translate"></i></div>
+          <h4 data-i18n="why_1_title">Atendimento em Português</h4>
+          <p data-i18n="why_1_desc">Compreenda as regras americanas sem barreiras de idioma.</p>
         </div>
         <div class="timeline-step">
-          <div class="step-number">2</div>
-          <h4 data-i18n="how_2_title">Consultoria Personalizada</h4>
-          <p data-i18n="how_2_desc">Um especialista vai entender sua realidade (visto, CEP, renda) para achar a melhor opção.</p>
+          <div class="step-icon"><i class="ph-fill ph-map-pin"></i></div>
+          <h4 data-i18n="why_2_title">Atendimento Local na Flórida</h4>
+          <p data-i18n="why_2_desc">Estamos perto de você, entendendo o ecossistema e as leis do estado.</p>
         </div>
         <div class="timeline-step">
-          <div class="step-number">3</div>
-          <h4 data-i18n="how_3_title">Apresentação da Proposta</h4>
-          <p data-i18n="how_3_desc">Mostramos as opções mais vantajosas de diversas seguradoras americanas em português.</p>
+          <div class="step-icon"><i class="ph-fill ph-handshake"></i></div>
+          <h4 data-i18n="why_3_title">Diversas Seguradoras Parceiras</h4>
+          <p data-i18n="why_3_desc">Buscamos o melhor preço e cobertura em um portfólio enorme.</p>
         </div>
         <div class="timeline-step">
-          <div class="step-number">4</div>
-          <h4 data-i18n="how_4_title">Fechamento Seguro</h4>
-          <p data-i18n="how_4_desc">Emitimos sua apólice e enviamos os cartões e garantias. A partir daí, conte com nosso suporte 24h.</p>
+          <div class="step-icon"><i class="ph-fill ph-headset"></i></div>
+          <h4 data-i18n="why_4_title">Suporte Antes e Depois</h4>
+          <p data-i18n="why_4_desc">Consultoria humanizada e suporte vitalício, inclusive na hora do sinistro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. Benefícios (Navy Block) -->
-  <section class="benefits reveal">
-    <div class="container">
-      <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_ben">Vantagens</span>
-        <h2 data-i18n="ben_title">Por que você não deve contratar sozinho</h2>
-      </div>
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <i class="ph-light ph-shield-warning"></i>
-          <h4 data-i18n="ben_1_title">Evite Coberturas Inadequadas</h4>
-          <p data-i18n="ben_1_desc">Um plano muito barato pode não cobrir doenças graves. Nós equilibramos preço e proteção real.</p>
-        </div>
-        <div class="benefit-card">
-          <i class="ph-light ph-money"></i>
-          <h4 data-i18n="ben_2_title">Fuja de Multas Fiscais</h4>
-          <p data-i18n="ben_2_desc">Errar no formulário do ACA pode gerar multas no Tax Return. Nós fazemos a documentação corretamente.</p>
-        </div>
-        <div class="benefit-card">
-          <i class="ph-light ph-clock"></i>
-          <h4 data-i18n="ben_3_title">Poupar Tempo Precioso</h4>
-          <p data-i18n="ben_3_desc">Ficar em linhas telefônicas americanas é exaustivo. Nós ligamos e resolvemos a burocracia por você.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Depoimentos -->
+  <!-- 6. Depoimentos -->
   <section class="stories reveal">
     <div class="container">
       <div class="section-header center">
-        <span class="eyebrow" data-i18n="eyebrow_stories">Depoimentos</span>
+        <span class="eyebrow" data-i18n="eyebrow_stories">O que dizem sobre nós</span>
         <h2 data-i18n="stories_title">A voz de quem confia na Better Life</h2>
       </div>
       
@@ -286,56 +260,70 @@
         <div class="marquee-track">
           <!-- Story 1 -->
           <div class="story-card">
+            <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">MS</div>
+              <div>
+                <p class="story-author" data-i18n="story_1_author" style="margin:0;">Mariana Silva</p>
+                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_1_city">Orlando, FL</p>
+              </div>
+            </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_1_text">"O sistema de saúde aqui sempre me assustou. A equipe encontrou o Obamacare perfeito para minha família, explicando tudo em português. Confiança total!"</p>
-            <p class="story-author" data-i18n="story_1_author">— Mariana S., Orlando - FL</p>
+            <p class="story-text" data-i18n="story_1_text">"O sistema de saúde aqui sempre me assustou. A BLGI encontrou o plano perfeito para minha família, explicando tudo em português. Confiança total!"</p>
           </div>
           <!-- Story 2 -->
           <div class="story-card">
+            <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">RM</div>
+              <div>
+                <p class="story-author" data-i18n="story_2_author" style="margin:0;">Ricardo Mendes</p>
+                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_2_city">Boca Raton, FL</p>
+              </div>
+            </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_2_text">"Contratei o seguro do meu carro e da minha casa. A agilidade deles pelo WhatsApp e a clareza nas opções de cobertura são impressionantes. Recomendo."</p>
-            <p class="story-author" data-i18n="story_2_author">— Ricardo M., Boca Raton - FL</p>
+            <p class="story-text" data-i18n="story_2_text">"Contratei o seguro do meu carro e da minha casa. A agilidade deles e a clareza nas opções de cobertura são impressionantes. Recomendo de olhos fechados."</p>
           </div>
           <!-- Story 3 -->
           <div class="story-card">
+            <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">TC</div>
+              <div>
+                <p class="story-author" data-i18n="story_3_author" style="margin:0;">Thiago Costa</p>
+                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_3_city">Miami, FL</p>
+              </div>
+            </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_3_text">"Como dono de negócio, precisava de um General Liability rápido. Eles resolveram minha apólice no mesmo dia. Um alívio saber que tenho esse suporte."</p>
-            <p class="story-author" data-i18n="story_3_author">— Thiago C., Miami - FL</p>
-          </div>
-          <!-- Story 4 -->
-          <div class="story-card">
-            <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_4_text">"O atendimento deles é fantástico. Precisava de um seguro dental urgente para minha filha e em poucas horas o cartão digital já estava no meu e-mail."</p>
-            <p class="story-author" data-i18n="story_4_author">— Juliana O., Kissimmee - FL</p>
+            <p class="story-text" data-i18n="story_3_text">"Como dono de negócio, precisava de um General Liability. Eles resolveram minha apólice no mesmo dia. Um alívio saber que tenho esse suporte."</p>
           </div>
           
-          <!-- Duplicates -->
+          <!-- Duplicates for scrolling -->
           <div class="story-card">
+            <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">MS</div>
+              <div>
+                <p class="story-author" data-i18n="story_1_author" style="margin:0;">Mariana Silva</p>
+                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_1_city">Orlando, FL</p>
+              </div>
+            </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_1_text">"O sistema de saúde aqui sempre me assustou. A equipe encontrou o Obamacare perfeito para minha família, explicando tudo em português. Confiança total!"</p>
-            <p class="story-author" data-i18n="story_1_author">— Mariana S., Orlando - FL</p>
+            <p class="story-text" data-i18n="story_1_text">"O sistema de saúde aqui sempre me assustou. A BLGI encontrou o plano perfeito para minha família, explicando tudo em português. Confiança total!"</p>
           </div>
           <div class="story-card">
+            <div class="story-header" style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <div style="width:50px; height:50px; background:var(--navy-2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-size:1.2rem;">RM</div>
+              <div>
+                <p class="story-author" data-i18n="story_2_author" style="margin:0;">Ricardo Mendes</p>
+                <p style="margin:0; font-size:0.8rem; color:var(--text-muted);" data-i18n="story_2_city">Boca Raton, FL</p>
+              </div>
+            </div>
             <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_2_text">"Contratei o seguro do meu carro e da minha casa. A agilidade deles pelo WhatsApp e a clareza nas opções de cobertura são impressionantes. Recomendo."</p>
-            <p class="story-author" data-i18n="story_2_author">— Ricardo M., Boca Raton - FL</p>
-          </div>
-          <div class="story-card">
-            <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_3_text">"Como dono de negócio, precisava de um General Liability rápido. Eles resolveram minha apólice no mesmo dia. Um alívio saber que tenho esse suporte."</p>
-            <p class="story-author" data-i18n="story_3_author">— Thiago C., Miami - FL</p>
-          </div>
-          <div class="story-card">
-            <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-            <p class="story-text" data-i18n="story_4_text">"O atendimento deles é fantástico. Precisava de um seguro dental urgente para minha filha e em poucas horas o cartão digital já estava no meu e-mail."</p>
-            <p class="story-author" data-i18n="story_4_author">— Juliana O., Kissimmee - FL</p>
+            <p class="story-text" data-i18n="story_2_text">"Contratei o seguro do meu carro e da minha casa. A agilidade deles e a clareza nas opções de cobertura são impressionantes. Recomendo de olhos fechados."</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. FAQ -->
+  <!-- FAQ -->
   <section id="faq" class="faq-section reveal">
     <div class="container">
       <div class="section-header center">
@@ -346,66 +334,58 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-btn">
-            <span data-i18n="faq_1_q">A cotação tem algum custo?</span>
+            <span data-i18n="faq_1_q">Quais tipos de seguros a Better Life oferece?</span>
             <i class="ph ph-caret-down"></i>
           </button>
           <div class="faq-content">
-            <p data-i18n="faq_1_a">Não! Nossa consultoria e cotação são gratuitas. Nós somos remunerados pelas seguradoras após a contratação. O preço do seguro será o mesmo que comprar diretamente, porém com toda a nossa assistência em português.</p>
+            <p data-i18n="faq_1_a">Oferecemos proteção completa: Saúde (Obamacare, Medicare, Short Term), Vida (Term e IUL), Automóvel, Residencial, Empresarial (Liability, Workers Comp) e Soluções Internacionais (acumulação em dólar).</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-btn">
-            <span data-i18n="faq_2_q">Posso fazer seguro saúde apenas com Passaporte?</span>
+            <span data-i18n="faq_2_q">O atendimento e consultoria tem algum custo?</span>
             <i class="ph ph-caret-down"></i>
           </button>
           <div class="faq-content">
-            <p data-i18n="faq_2_a">Sim! Existem opções específicas no mercado (como planos Short Term ou planos para estudantes/vistos específicos) que não exigem Social Security nem Green Card.</p>
+            <p data-i18n="faq_2_a">Não! Nossa consultoria e cotação são gratuitas. Nós somos remunerados diretamente pelas seguradoras após a contratação. O preço do seguro será o mesmo que comprar diretamente, porém com toda a nossa assistência e estratégia.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-btn">
-            <span data-i18n="faq_3_q">Como funcionam as renovações?</span>
+            <span data-i18n="faq_3_q">Vocês atendem apenas na Flórida?</span>
             <i class="ph ph-caret-down"></i>
           </button>
           <div class="faq-content">
-            <p data-i18n="faq_3_a">A maioria das apólices (como Casa, Carro e ACA) se renovam anualmente. Nós entraremos em contato proativamente na época de renovação para checar se algo mudou na sua vida e buscar tarifas ainda melhores para o próximo ciclo.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-btn">
-            <span data-i18n="faq_4_q">Se eu bater o carro, vocês me ajudam?</span>
-            <i class="ph ph-caret-down"></i>
-          </button>
-          <div class="faq-content">
-            <p data-i18n="faq_4_a">Sim! Nossa assistência de pós-venda está à disposição para guiar você na abertura do sinistro e na comunicação com a seguradora, facilitando todo o processo.</p>
+            <p data-i18n="faq_3_a">Apesar da nossa sede estar na Flórida, possuímos licenças em diversos outros estados e trabalhamos com Soluções Internacionais para clientes ao redor do globo. Fale conosco para verificar a disponibilidade no seu estado.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 9. CTA Final -->
+  <!-- 7. CTA Final -->
   <section class="final-cta reveal">
     <div class="container center-text">
-      <h2 data-i18n="cta_title">Comece a proteger o que importa agora.</h2>
-      <p data-i18n="cta_subtitle">Fale com nossa equipe, receba sua cotação gratuita e viva com segurança nos EUA.</p>
+      <h2 data-i18n="cta_title">Vamos construir seu plano de proteção?</h2>
+      <p data-i18n="cta_subtitle">Nossos especialistas estão prontos para garantir a tranquilidade e a segurança patrimonial da sua família nos EUA.</p>
       <div style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="https://wa.me/15616958132" target="_blank" class="btn btn-primary btn-large btn-pulse" data-i18n="cta_btn_1">Solicitar Cotação no WhatsApp</a>
+        <a href="https://wa.me/15616958132" target="_blank" class="btn btn-primary btn-large btn-pulse" data-i18n="cta_btn_1">Falar no WhatsApp</a>
+        <a href="https://calendly.com/" target="_blank" class="btn btn-outline" data-i18n="cta_btn_2" style="border-color:var(--navy-1); color:var(--navy-1);">Agendar Reunião</a>
       </div>
     </div>
   </section>
 
-  <!-- 10. Footer (Navy) -->
+  <!-- Footer -->
   <footer id="contato" class="reveal">
     <div class="container">
       <div class="footer-grid">
         
         <!-- Brand -->
         <div class="footer-col brand-col">
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <img src="logo.png" alt="Better Life Global Insurance" style="height:50px;">
           </a>
-          <p class="footer-desc" data-i18n="footer_desc" style="margin-top: 1.5rem;">A agência de seguros parceira do brasileiro nos Estados Unidos. Segurança, clareza e atendimento excepcional.</p>
+          <p class="footer-desc" data-i18n="footer_desc" style="margin-top: 1.5rem;">One Agency. Every Protection. A agência que ajuda famílias e empresas brasileiras nos Estados Unidos a proteger tudo o que construíram.</p>
           <div class="social-icons" style="margin-top: 1.5rem;">
             <a href="https://wa.me/15616958132" target="_blank" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
             <a href="https://www.instagram.com/betterlife.usa/" target="_blank" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
@@ -414,30 +394,31 @@
         
         <!-- Serviços -->
         <div class="footer-col">
-          <h5 data-i18n="foot_nav_1">Principais Seguros</h5>
+          <h5 data-i18n="foot_nav_1">Soluções Completas</h5>
           <ul class="footer-links">
-            <li><a href="#servicos" data-i18n="srv_1_title">Saúde ACA</a></li>
-            <li><a href="#servicos" data-i18n="srv_2_title">Medicare</a></li>
-            <li><a href="#servicos" data-i18n="srv_4_title">Automóvel</a></li>
-            <li><a href="#servicos" data-i18n="srv_5_title">Residencial</a></li>
-            <li><a href="#servicos" data-i18n="srv_7_title">Vida</a></li>
-            <li><a href="#servicos" data-i18n="srv_6_title">Comercial</a></li>
+            <li><a href="#" data-i18n="srv_life_title">Seguro de Vida</a></li>
+            <li><a href="#" data-i18n="srv_health_title">Seguro Saúde</a></li>
+            <li><a href="#" data-i18n="srv_auto_title">Seguro Auto</a></li>
+            <li><a href="#" data-i18n="srv_home_title">Seguro Residencial</a></li>
+            <li><a href="#" data-i18n="srv_business_title">Business Insurance</a></li>
+            <li><a href="#" data-i18n="srv_intl_title">International Solutions</a></li>
           </ul>
         </div>
         
         <!-- Empresa -->
         <div class="footer-col">
-          <h5 data-i18n="foot_nav_2">Navegação</h5>
+          <h5 data-i18n="foot_nav_2">A Agência</h5>
           <ul class="footer-links">
-            <li><a href="#diferenciais" data-i18n="nav_diff">Sobre Nós</a></li>
-            <li><a href="#como-funciona" data-i18n="nav_how">Como Funciona</a></li>
-            <li><a href="#faq" data-i18n="nav_faq">Dúvidas Frequentes</a></li>
+            <li><a href="#quem-somos" data-i18n="nav_about">Sobre Nós</a></li>
+            <li><a href="#diferenciais" data-i18n="nav_diff">Por que a BLGI?</a></li>
+            <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="#" data-i18n="nav_blog">Blog (Em Breve)</a></li>
           </ul>
         </div>
         
         <!-- Contato -->
         <div class="footer-col">
-          <h5 data-i18n="foot_nav_3">Fale Conosco</h5>
+          <h5 data-i18n="foot_nav_3">Contato</h5>
           <ul class="footer-links contact-info">
             <li><i class="ph-fill ph-whatsapp-logo"></i> <a href="https://wa.me/15616958132" target="_blank">+1 (561) 695-8132</a></li>
             <li><i class="ph-fill ph-envelope-simple"></i> contato@betterlife.com</li>
