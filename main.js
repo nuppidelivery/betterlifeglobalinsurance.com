@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_help: "COMO PODEMOS TE AJUDAR?",
       quick_saude: "SAÚDE",
       quick_vida: "VIDA",
-      quick_carro: "CARRO",
-      quick_casa: "CASA",
-      quick_aposentar: "APOSENTAR",
-      quick_mais: "E MAIS...",
+      quick_carro: "AUTO",
+      quick_casa: "RESIDÊNCIA",
+      quick_empresa: "EMPRESAS",
+      quick_inter: "INTERNACIONAL",
       
       auth_fam: "Famílias Protegidas",
       auth_years: "Anos de Mercado",
@@ -187,9 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
       auth_lang: "Atendimento em Português",
       
       eyebrow_import: "Visão de Futuro",
-      import_title: "Por que construir sua blindagem patrimonial hoje?",
+      import_title: "Por que proteger seu futuro hoje?",
       import_desc_1: "Mudar para os Estados Unidos é a realização de um grande sonho, mas o sistema americano não perdoa desorganização financeira ou falta de proteção. Um único acidente ou emergência médica pode consumir décadas de trabalho árduo.",
-      import_desc_2: "A Better Life Global Insurance atua como seu Family Office de seguros. Nossa missão é criar uma barreira intransponível ao redor do seu patrimônio, para que você possa focar no que realmente importa: crescer e viver com tranquilidade.",
+      import_desc_2: "A Better Life Global Insurance atua como seu Family Office de seguros. Nossa missão é garantir a máxima segurança para sua família e negócios, para que você possa focar no que realmente importa: crescer e viver com tranquilidade.",
       btn_schedule: "Agendar Diagnóstico Gratuito",
       
       eyebrow_comp: "O Preço da Escolha",
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
       services_title: "Todas as proteções que você precisa em um só lugar",
       services_subtitle: "Um portfólio gigantesco desenhado estrategicamente para suprir as necessidades de proteção da vida e dos negócios da comunidade brasileira.",
       
-      srv_1: "Aposentadoria privada",
+      srv_1: "Soluções Internacionais",
       srv_2: "Seguro saúde/Obamacare",
       srv_3: "Seguro Saúde/Medicare",
       srv_4: "Seguro Saúde/Short Term",
@@ -259,9 +259,10 @@ document.addEventListener('DOMContentLoaded', () => {
       lib_1_desc: "Como acumular patrimônio em dólar e proteger sua família ao mesmo tempo.",
       lib_2_title: "Manual do Obamacare 2026",
       lib_2_desc: "Tudo que o imigrante precisa saber para não pagar multas no Tax Return.",
-      lib_3_title: "Blindagem Empresarial",
+      lib_3_title: "Proteção Empresarial Total",
       lib_3_desc: "General Liability e Workers Comp. Não perca sua empresa por um processo.",
       lib_btn: "Baixar PDF",
+      learn_more: "Saiba mais",
       
       eyebrow_stories: "Depoimentos",
       stories_title: "Clientes Better Life",
@@ -320,8 +321,8 @@ document.addEventListener('DOMContentLoaded', () => {
       quick_vida: "LIFE",
       quick_carro: "AUTO",
       quick_casa: "HOME",
-      quick_aposentar: "RETIRE",
-      quick_mais: "MORE...",
+      quick_empresa: "BUSINESS",
+      quick_inter: "INTERNATIONAL",
       
       auth_fam: "Families Protected",
       auth_years: "Years of Experience",
@@ -329,9 +330,9 @@ document.addEventListener('DOMContentLoaded', () => {
       auth_lang: "Portuguese Support",
       
       eyebrow_import: "Future Vision",
-      import_title: "Why build your asset shield today?",
+      import_title: "Why protect your future today?",
       import_desc_1: "Moving to the US is a huge dream, but the American system does not forgive financial disorganization or lack of protection. A single accident or medical emergency can consume decades of hard work.",
-      import_desc_2: "Better Life Global Insurance acts as your insurance Family Office. Our mission is to create an impenetrable barrier around your assets so you can focus on what really matters: growing and living with peace of mind.",
+      import_desc_2: "Better Life Global Insurance acts as your insurance Family Office. Our mission is to guarantee maximum security for your family and business so you can focus on what really matters: growing and living with peace of mind.",
       btn_schedule: "Schedule Free Diagnosis",
       
       eyebrow_comp: "The Cost of Choice",
@@ -364,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
       services_title: "All the protection you need in one place",
       services_subtitle: "A massive portfolio strategically designed to meet the life and business protection needs of the Brazilian community.",
       
-      srv_1: "Private Retirement",
+      srv_1: "International Solutions",
       srv_2: "Health Insurance/Obamacare",
       srv_3: "Health Insurance/Medicare",
       srv_4: "Health Insurance/Short Term",
@@ -401,9 +402,10 @@ document.addEventListener('DOMContentLoaded', () => {
       lib_1_desc: "How to accumulate USD wealth and protect your family at the same time.",
       lib_2_title: "Obamacare 2026 Manual",
       lib_2_desc: "Everything immigrants need to know to avoid Tax Return penalties.",
-      lib_3_title: "Business Shielding",
+      lib_3_title: "Total Business Protection",
       lib_3_desc: "General Liability and Workers Comp. Don't lose your business to a lawsuit.",
       lib_btn: "Download PDF",
+      learn_more: "Learn more",
       
       eyebrow_stories: "Testimonials",
       stories_title: "Better Life Clients",
