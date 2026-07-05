@@ -44,7 +44,7 @@ body {
 /* ==========================================================================
    Typography
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 500; line-height: 1.2; margin-bottom: 1rem; color: var(--navy-1); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: var(--navy-1); }
 p { margin-bottom: 1rem; }
 a { color: inherit; text-decoration: none; transition: var(--trans-fast); }
 .center-text { text-align: center; }
@@ -60,14 +60,14 @@ section { padding: 120px 0; position: relative; }
 .eyebrow {
   display: inline-block; font-size: 0.85rem; text-transform: uppercase;
   letter-spacing: 0.15em; color: var(--gold-dark); margin-bottom: 1rem;
-  border-bottom: 1px solid var(--gold-light); padding-bottom: 0.25rem; font-weight: 600;
+  border-bottom: 1px solid var(--gold-light); padding-bottom: 0.25rem; font-weight: 700;
 }
 
 /* ==========================================================================
    Buttons & Links
    ========================================================================== */
 .btn {
-  display: inline-block; padding: 1rem 2rem; font-size: 0.95rem; font-weight: 600;
+  display: inline-block; padding: 1rem 2rem; font-size: 0.95rem; font-weight: 700;
   text-align: center; border-radius: 4px; cursor: pointer; transition: var(--trans-fast); text-decoration: none;
 }
 .btn-primary { background: var(--navy-1); color: var(--white); border: 1px solid var(--navy-1); }
@@ -105,7 +105,7 @@ header.scrolled { padding: 0.5rem 0; background: rgba(1, 23, 55, 0.98); box-shad
 header.scrolled .logo-img { height: 35px; }
 
 .desktop-nav { display: flex; gap: 2rem; }
-.desktop-nav a { font-size: 0.9rem; font-weight: 500; color: var(--white); position: relative; }
+.desktop-nav a { font-size: 0.9rem; font-weight: 600; color: var(--white); position: relative; }
 .desktop-nav a::after {
   content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0;
   background-color: var(--gold-primary); transition: var(--trans-fast);
@@ -168,7 +168,7 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
 .hero-content { position: relative; z-index: 2; }
 .hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.5rem); color: var(--white); margin-bottom: 1.5rem; line-height: 1.1; }
 /* Aumentando opacidade do subtitulo */
-.hero .subtitle { font-size: clamp(1.1rem, 2vw, 1.2rem); color: var(--white); font-weight: 500; opacity: 0.9; margin-bottom: 2.5rem; }
+.hero .subtitle { font-size: clamp(1.1rem, 2vw, 1.2rem); color: var(--white); font-weight: 600; opacity: 0.9; margin-bottom: 2.5rem; }
 
 .hero-eyebrow {
   color: var(--gold-light); font-family: var(--font-body); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; display: block;
@@ -376,7 +376,7 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
 .faq-section { background-color: var(--white); }
 .faq-list { max-width: 800px; margin: 0 auto; }
 .faq-item { border-bottom: 1px solid rgba(0,0,0,0.1); }
-.faq-btn { width: 100%; background: none; border: none; display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; font-family: var(--font-heading); font-size: 1.2rem; color: var(--navy-1); font-weight: 600; cursor: pointer; text-align: left; transition: var(--trans-fast); }
+.faq-btn { width: 100%; background: none; border: none; display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; font-family: var(--font-heading); font-size: 1.2rem; color: var(--navy-1); font-weight: 700; cursor: pointer; text-align: left; transition: var(--trans-fast); }
 .faq-btn:hover { color: var(--gold-dark); }
 .faq-btn i { font-size: 1.5rem; color: var(--navy-1); transition: transform 0.3s ease; }
 .faq-item.active .faq-btn i { transform: rotate(180deg); }
