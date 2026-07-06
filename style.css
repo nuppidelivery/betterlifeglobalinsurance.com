@@ -130,7 +130,7 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
 .lang-checkbox { opacity: 0; width: 0; height: 0; }
 .lang-label { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255,255,255,0.1); transition: .4s; border-radius: 34px; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: space-between; padding: 0 8px; font-size: 0.7rem; font-weight: bold; color: var(--white); }
 .lang-slider { position: absolute; height: 22px; width: 30px; left: 4px; bottom: 3px; background-color: var(--gold-primary); transition: .4s; border-radius: 34px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-.lang-checkbox:checked + .lang-label .lang-slider { transform: translateX(30px); }
+.lang-checkbox:checked + .lang-label .lang-slider { transform: translateX(38px); }
 
 @media (max-width: 992px) {
   .desktop-nav { display: none; }

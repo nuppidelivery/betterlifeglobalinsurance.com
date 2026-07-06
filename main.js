@@ -186,8 +186,12 @@ document.addEventListener('DOMContentLoaded', () => {
       auth_lang: "Atendimento em Português",
       
       eyebrow_import: "Visão de Futuro",
+      import_check_1: "Garantimos o futuro dos seus filhos.",
+      import_check_2: "Protegemos o seu patrimônio e a casa dos seus sonhos.",
+      import_check_3: "Blindamos os seus negócios e a sua empresa.",
+      import_check_4: "Preservamos o seu legado em momentos críticos.",
+      import_check_conc: "Você vive sua vida. Nós cuidamos da sua proteção.",
       import_title: "ESTAMOS AO SEU LADO",
-      import_desc_1: "Quando nasce um filho. Quando compra uma casa. Quando abre uma empresa. Quando cresce o patrimônio. Você vive sua vida. Nós cuidamos da sua proteção.",
       btn_schedule: "Agendar Diagnóstico Gratuito",
       
       eyebrow_comp: "O Preço da Escolha",
@@ -304,11 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_video: "Welcome",
       nav_lib: "Library",
       nav_faq: "FAQ",
-      nav_cta: "CONTACT US",
+      nav_cta: "TALK TO US",
       
       hero_eyebrow: "One Agency. Every Protection.",
-      hero_title: "Every protection your family needs",
-      hero_subtitle: "Life, Health, Auto, Home, Business, and International Solutions for the Brazilian community.",
+      hero_title: "All the protection your family needs",
+      hero_subtitle: "Life, Health, Auto, Home, Business, and International Solutions...",
       hero_cta_1: "Request a Quote",
       hero_cta_2: "Talk on WhatsApp",
       
@@ -328,9 +332,13 @@ document.addEventListener('DOMContentLoaded', () => {
       auth_states: "States Served",
       auth_lang: "Portuguese Support",
       
-      eyebrow_import: "Future Vision",
+      eyebrow_import: "Vision for the Future",
+      import_check_1: "We secure your children's future.",
+      import_check_2: "We protect your assets and your dream home.",
+      import_check_3: "We shield your business and your company.",
+      import_check_4: "We preserve your legacy in critical moments.",
+      import_check_conc: "You live your life. We take care of your protection.",
       import_title: "WE ARE BY YOUR SIDE",
-      import_desc_1: "When a child is born. When you buy a house. When you open a business. When your assets grow. You live your life. We take care of your protection.",
       btn_schedule: "Schedule Free Diagnosis",
       
       eyebrow_comp: "The Cost of Choice",
