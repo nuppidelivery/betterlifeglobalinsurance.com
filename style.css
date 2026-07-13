@@ -32,8 +32,10 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-html, body { overflow-x: hidden; width: 100%; }
 body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
   background-color: var(--bg-primary);
   color: var(--text-main);
   font-family: var(--font-body);
