@@ -897,3 +897,6 @@ header.scrolled {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.counter-item a { transition: all 0.3s ease; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.3); }
+.counter-item a:hover { color: var(--gold-light) !important; text-decoration-color: var(--gold-light); }

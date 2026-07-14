@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const counter = entry.target;
           const target = +counter.getAttribute('data-target');
           let count = 0;
-          const inc = target / speed;
+          const inc = Math.max(target / speed, target / 60);
           
           const updateCount = () => {
             count += inc;
