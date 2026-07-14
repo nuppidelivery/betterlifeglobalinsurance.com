@@ -34,8 +34,7 @@
 
 body {
     background-color: var(--bg-primary);
-    overflow-x: clip; /* Modern safe way to prevent side scroll without breaking touch */
-
+    
   color: var(--text-main);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -239,7 +238,23 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
     height: 60px;
 }
 
-@media (max-width: 768px) { .counters-grid { grid-template-columns: 1fr 1fr; } .counter-number { font-size: 2.5rem; } }
+@media (max-width: 768px) {
+
+  /* DISABLE HEAVY GPU OPERATIONS ON MOBILE TO FIX SCROLL LAG */
+  .glass-panel, .tech-card, .colorful-services .tech-card, header.scrolled, .dropdown-content {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  
+  /* Fallback solid backgrounds since blur is removed */
+  .glass-panel, .dropdown-content { background-color: rgba(3, 37, 89, 0.98) !important; }
+  header.scrolled { background-color: rgba(1, 23, 55, 0.98) !important; }
+  
+  /* Disable heavy continuous animations */
+  .floating-badge { animation: none !important; transform: none !important; }
+  .floating-whatsapp { animation: none !important; transform: none !important; }
+  .btn-pulse { animation: none !important; box-shadow: none !important; }
+ .counters-grid { grid-template-columns: 1fr 1fr; } .counter-number { font-size: 2.5rem; } }
 
 /* ==========================================================================
    Importance Section (Glow Effect)
@@ -862,3 +877,13 @@ header.scrolled {
 
 
 
+
+
+/* MOBILE PERFORMANCE & VISIBILITY FIX */
+@media (max-width: 768px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
