@@ -65,7 +65,16 @@
           </div>
         </div>
 
-        <a href="#quem-somos" data-i18n="nav_about">Quem Somos</a>
+        
+        <div class="nav-dropdown">
+          <a href="#quem-somos" class="dropdown-toggle">A Agência <i class="ph-bold ph-caret-down"></i></a>
+          <div class="dropdown-content glass-panel">
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#nosso-metodo" style="display:none;" data-status="noindex">Nosso Método</a>
+            <a href="#faq">Perguntas Frequentes</a>
+          </div>
+        </div>
+
         <a href="#faq" data-i18n="nav_faq">FAQ</a>
       </nav>
 
@@ -88,7 +97,15 @@
         <div class="mobile-nav">
       <a href="#solucoes" data-i18n="nav_services">Seguros</a>
       <a href="#solucoes-internacionais" data-i18n="srv_i_title">Soluções Internacionais</a>
-      <a href="#quem-somos" data-i18n="nav_about">Quem Somos</a>
+      
+        <div style="width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; text-align: center;">
+            <span style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; text-transform: uppercase;">A Agência</span>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <a href="#quem-somos" style="border: none; padding: 0;">Quem Somos</a>
+              <a href="#faq" style="border: none; padding: 0;">Perguntas Frequentes</a>
+            </div>
+        </div>
+
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
       <a href="https://wa.me/16892980422" target="_blank" class="btn btn-primary" style="border-color:var(--white);" data-i18n="nav_cta">FALE CONOSCO</a>
     </div>
@@ -286,13 +303,13 @@
     <div class="container">
       <div class="two-col-layout">
         <div class="text-col">
-          <span class="eyebrow text-gradient-gold" data-i18n="eyebrow_import">Visão de Futuro</span>
-          <h2 data-i18n="import_title" style="color:var(--navy-1);">ESTAMOS AO SEU LADO</h2>
+          <span class="eyebrow text-gradient-gold" data-i18n="eyebrow_import">O QUE RESOLVEMOS</span>
+          <h2 data-i18n="import_title" style="color:var(--navy-1);">Resolvemos tudo o que envolve os seus seguros.</h2>
           
           <ul class="stylish-checklist" style="list-style: none; padding: 0; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem;">
             <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
               <i class="ph-fill ph-check-circle text-gradient-gold" style="font-size: 1.5rem; flex-shrink: 0; margin-top:2px;"></i>
-              <span style="font-size: 1.1rem; color: var(--navy-1);" data-i18n="import_check_1">Garantimos o futuro dos seus filhos.</span>
+              <span style="font-size: 1.1rem; color: var(--navy-1);" data-i18n="import_check_1">Entendemos sua realidade antes de recomendar qualquer solução.</span>
             </li>
             <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
               <i class="ph-fill ph-check-circle text-gradient-gold" style="font-size: 1.5rem; flex-shrink: 0; margin-top:2px;"></i>
@@ -331,20 +348,20 @@
         <div class="comp-card danger glass-panel">
           <div class="comp-header">
             <div class="icon-glow-red"><i class="ph-light ph-x-circle"></i></div>
-            <h3 data-i18n="comp_bad_title">O Caminho Desprotegido</h3>
+            <h3 data-i18n="comp_bad_title">❌ Sem a Better Life</h3>
           </div>
           <ul class="comp-list">
-            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_1">Contas médicas astronômicas em caso de emergência (falência pessoal).</span></li>
-            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_2">Riscos de processos judiciais esgotarem os bens da sua empresa ou família.</span></li>
-            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_3">Dificuldade na resolução de problemas diretos com a seguradora.</span></li>
-            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_4">Barreira linguística e letras miúdas causando negação de cobertura no sinistro.</span></li>
+            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_1">Decisões importantes tomadas sem orientação especializada.</span></li>
+            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_2">Dificuldade para entender um mercado complexo.</span></li>
+            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_3">Tempo perdido resolvendo questões com seguradoras.</span></li>
+            <li><i class="ph-light ph-x"></i> <span data-i18n="comp_bad_4">Proteção que pode deixar de acompanhar as mudanças da sua vida.</span></li>
           </ul>
         </div>
         
         <div class="comp-card safe glass-panel">
           <div class="comp-header">
             <div class="icon-glow-green"><i class="ph-light ph-check-circle"></i></div>
-            <h3 data-i18n="comp_good_title">COM A PROTEÇÃO DA BETTER LIFE</h3>
+            <h3 data-i18n="comp_good_title">✅ Com a Better Life ao seu lado</h3>
           </div>
           <ul class="comp-list">
             <li><i class="ph-bold ph-check"></i> <span data-i18n="comp_good_1">Apólices desenhadas estrategicamente para blindar suas finanças.</span></li>
@@ -366,24 +383,24 @@
         </div>
         <div class="text-col" style="direction: ltr;">
           <span class="eyebrow text-gradient-gold" data-i18n="eyebrow_about">Quem Somos</span>
-          <h2 data-i18n="about_title">Especialistas em proteger brasileiros na América.</h2>
-          <p data-i18n="about_desc">A Better Life Global Insurance existe para suprir a maior necessidade dos imigrantes: entender com clareza o COMPLEXO sistema DE SEGUROS americano.</p>
+          <h2 data-i18n="about_title">Somos uma agência completa que resolve tudo o que envolve seguros para famílias e empresas brasileiras nos Estados Unidos.</h2>
+          <p data-i18n="about_desc">A Better Life Global Insurance é uma agência completa de seguros que simplifica o mercado americano e ajuda famílias e empresas brasileiras a proteger aquilo que realmente importa, com orientação clara, soluções personalizadas e acompanhamento contínuo.</p>
           <div class="list-col-small">
             <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-light ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
-              <span data-i18n="about_bullet_1">Proteção completa para famílias, empresas e patrimônio.</span>
+              <span data-i18n="about_bullet_1">Resolvemos todas as necessidades de seguros da sua família e da sua empresa.</span>
             </div>
             <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-light ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
-              <span data-i18n="about_bullet_2">Atendimento consultivo em português e inglês.</span>
+              <span data-i18n="about_bullet_2">Explicamos cada opção de forma clara e transparente.</span>
             </div>
             <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-light ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
-              <span data-i18n="about_bullet_3">As melhores soluções, escolhidas entre diversas seguradoras.</span>
+              <span data-i18n="about_bullet_3">Escolhemos a solução mais adequada entre diversas seguradoras.</span>
             </div>
             <div class="diff-item-small" style="background: rgba(1, 23, 55, 0.05); padding: 10px 15px; border-radius: 8px; border-left: 3px solid var(--gold-primary);">
               <i class="ph-light ph-check-circle text-gradient-gold" style="font-size:1.5rem;"></i>
-              <span data-i18n="about_bullet_4">Relacionamentos de longo prazo baseados em confiança e cuidado.</span>
+              <span data-i18n="about_bullet_4">Permanecemos ao seu lado antes, durante e depois da contratação.</span>
             </div>
           </div>
         </div>
@@ -622,7 +639,7 @@
           <a href="/" class="logo">
             <img src="logo.png" alt="Better Life Global Insurance" style="height:50px;">
           </a>
-          <p class="footer-desc" data-i18n="footer_desc" style="margin-top: 1.5rem;">One Agency. Every Protection. A agência que ajuda famílias e empresas brasileiras nos Estados Unidos a proteger tudo o que construíram.</p>
+          <p class="footer-desc" data-i18n="footer_desc" style="margin-top: 1.5rem;"><h5 style="color: var(--white); margin-bottom: 0.5rem; font-size: 1.2rem;">Você vive. Nós resolvemos.</h5>Resolvemos tudo o que envolve seguros para famílias e empresas brasileiras nos Estados Unidos, oferecendo orientação clara, soluções personalizadas e acompanhamento em cada etapa da vida.</p>
           <div class="social-icons" style="margin-top: 1.5rem;">
             <a href="https://wa.me/16892980422" target="_blank" aria-label="WhatsApp"><i class="ph-light ph-whatsapp-logo"></i></a>
             <a href="https://www.instagram.com/betterlife.usa/" target="_blank" aria-label="Instagram"><i class="ph-light ph-instagram-logo"></i></a>
@@ -631,18 +648,22 @@
         
         <!-- Serviços -->
         <div class="footer-col">
+          
           <h5 data-i18n="eyebrow_services" class="text-gradient-gold">Nossas Soluções</h5>
           <ul class="footer-links">
-            <li><a href="#solucoes" data-i18n="srv_1">Seguro de vida</a></li>
-            <li><a href="#solucoes" data-i18n="srv_2">Seguro saúde</a></li>
-            <li><a href="#solucoes" data-i18n="srv_3">Seguro de carro</a></li>
-            <li><a href="#solucoes" data-i18n="srv_4">Seguro de casa</a></li>
-            <li><a href="#solucoes" data-i18n="srv_5">Seguro para negócios</a></li>
-            <li><a href="#solucoes" data-i18n="srv_6">Soluções Internacionais</a></li>
-            <li><a href="#solucoes" data-i18n="srv_7">Seguro Viagem</a></li>
-            <li><a href="#solucoes" data-i18n="srv_8">Seguro Dental</a></li>
-            <li><a href="#solucoes" data-i18n="srv_9">Seguro para Pets</a></li>
+            <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Seguros Pessoais</li>
+            <li><a href="seguro-vida.html">Vida</a></li>
+            <li><a href="seguro-saude.html">Saúde</a></li>
+            <li><a href="seguro-carro.html">Auto</a></li>
+            <li><a href="seguro-residencial.html">Residencial</a></li>
+            
+            <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Seguros Empresariais</li>
+            <li><a href="seguro-bop.html">Empresas</a></li>
+
+            <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Soluções Internacionais</li>
+            <li><a href="sucessao-internacional.html">Planejamento Internacional</a></li>
           </ul>
+
         </div>
         
         <!-- Empresa -->
@@ -661,7 +682,7 @@
           <ul class="footer-links contact-info">
             <li><i class="ph-light ph-map-pin text-gradient-gold"></i> Orlando, Flórida</li>
             <li><i class="ph-light ph-whatsapp-logo text-gradient-gold"></i> <a href="https://wa.me/16892980422" target="_blank">+1 (561) 674-1194</a></li>
-            <li><i class="ph-light ph-envelope-simple text-gradient-gold"></i> contato@betterlifeglobalinsurance.com</li>
+            <li><i class="ph-light ph-envelope-simple text-gradient-gold"></i> hello@betterlifeglobalinsurance.com</li>
           </ul>
         </div>
         
