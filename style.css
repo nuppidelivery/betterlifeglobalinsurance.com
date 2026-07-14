@@ -887,3 +887,13 @@ header.scrolled {
     transition: none !important;
   }
 }
+
+
+/* Golden uppercase titles for Seguros e Solucoes */
+#solucoes h3, #solucoes h4 {
+  text-transform: uppercase !important;
+  color: var(--gold-light) !important;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
