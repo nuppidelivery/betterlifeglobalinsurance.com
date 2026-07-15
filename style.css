@@ -908,3 +908,16 @@ header.scrolled {
 .product-page h1 { font-weight: 700; font-size: clamp(2.5rem, 5vw, 4rem) !important; background: linear-gradient(135deg, var(--gold-light) 0%, #fff 50%, var(--gold-primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 4px 30px rgba(227, 177, 79, 0.3); letter-spacing: -1px; }
 .product-page .tagline { font-size: 1.4rem !important; letter-spacing: 1px; color: var(--gold-light); text-transform: uppercase; margin-bottom: 4rem !important; opacity: 0.9; }
 .product-page p, .product-page ul li { font-size: 1.15rem !important; line-height: 1.8; color: rgba(255, 255, 255, 0.85) !important; }
+
+
+/* Fix product pages typography for light background */
+.product-page h1 { background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%) !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; text-shadow: none !important; }
+.product-page h4 { color: var(--navy-1) !important; }
+.product-page .tagline { color: var(--navy-1) !important; font-weight: 600 !important; opacity: 1 !important; margin-bottom: 2rem !important; }
+.product-page p, .product-page ul li { color: var(--text-main) !important; font-weight: 400 !important; font-size: 1.15rem !important; line-height: 1.8 !important; }
+.content-section { background: var(--bg-secondary) !important; border: 1px solid rgba(0,0,0,0.05) !important; box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important; }
+.related-products h4 { color: var(--navy-1) !important; }
+.related-card { background: var(--bg-secondary) !important; border: 1px solid rgba(0,0,0,0.05) !important; }
+.related-card h5 { color: var(--navy-1) !important; font-weight: 700 !important; }
+.related-card p { color: var(--text-muted) !important; font-size: 0.95rem !important; }
+.breadcrumb, .breadcrumb a, .breadcrumb span { color: var(--navy-1) !important; font-weight: 500 !important; }
