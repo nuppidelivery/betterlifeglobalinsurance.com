@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Serviços | Better Life Global Insurance</title>
+  
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/16892980422" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="ph-light ph-whatsapp-logo"></i>
+  </a>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <img src="logo.png" alt="Better Life Global Insurance" class="logo-img">
+      </a>
+      
+            <nav class="desktop-nav">
+        <div class="nav-dropdown">
+          <a href="index.html#solucoes" class="dropdown-toggle"><span data-i18n="nav_services">Seguros</span> <i class="ph-bold ph-caret-down"></i></a>
+          <div class="dropdown-content glass-panel multi-col">
+            <div class="dropdown-col">
+              <h5 data-i18n="srv_p_title" style="color:var(--gold-primary); margin-bottom: 0.5rem;">Seguros Pessoais</h5>
+              <a href="seguro-vida.html" data-i18n="srv_p_1">Seguro de Vida</a>
+              <a href="seguro-saude.html" data-i18n="srv_p_2">Seguro Saúde</a>
+              <a href="seguro-carro.html" data-i18n="srv_p_3">Seguro de Carro</a>
+              <a href="seguro-residencial.html" data-i18n="srv_p_4">Seguro Residencial</a>
+              <a href="seguro-viagem.html" data-i18n="srv_p_5">Seguro Viagem</a>
+              <a href="seguro-pets.html" data-i18n="srv_p_6">Seguro para Pets</a>
+              <a href="umbrella-insurance.html" data-i18n="srv_p_7">Umbrella Insurance</a>
+            </div>
+            <div class="dropdown-col">
+              <h5 data-i18n="srv_e_title" style="color:var(--gold-primary); margin-bottom: 0.5rem;">Seguros Empresariais</h5>
+              <a href="seguro-bop.html" data-i18n="srv_e_1">Seguro para Empresas (BOP)</a>
+              <a href="general-liability.html" data-i18n="srv_e_2">General Liability</a>
+              <a href="workers-comp.html" data-i18n="srv_e_3">Workers' Compensation</a>
+              <a href="commercial-auto.html" data-i18n="srv_e_4">Seguro para Veículos Comerciais</a>
+              <a href="commercial-property.html" data-i18n="srv_e_5">Seguro Patrimonial Empresarial</a>
+              <a href="professional-liability.html" data-i18n="srv_e_6">Responsabilidade Profissional (E&O)</a>
+              <a href="cyber-liability.html" data-i18n="srv_e_7">Seguro Cibernético (Cyber Liability)</a>
+              <a href="surety-bonds.html" data-i18n="srv_e_8">Garantias Contratuais (Surety Bonds)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="index.html#solucoes-internacionais" class="dropdown-toggle"><span data-i18n="srv_i_title">Internacional</span> <i class="ph-bold ph-caret-down"></i></a>
+          <div class="dropdown-content glass-panel">
+            <a href="vida-internacional.html" data-i18n="srv_i_1">Seguro de Vida Internacional</a>
+            <a href="protecao-patrimonial.html" data-i18n="srv_i_2">Proteção Patrimonial Internacional</a>
+            <a href="sucessao-internacional.html" data-i18n="srv_i_3">Planejamento Sucessório</a>
+            <a href="renda-dolar.html" data-i18n="srv_i_4">Geração de Renda em Dólar</a>
+          </div>
+        </div>
+
+        
+        <div class="nav-dropdown">
+          <a href="index.html#quem-somos" class="dropdown-toggle">A Agência <i class="ph-bold ph-caret-down"></i></a>
+          <div class="dropdown-content glass-panel">
+            <a href="index.html#quem-somos">Quem Somos</a>
+            <a href="#nosso-metodo" style="display:none;" data-status="noindex">Nosso Método</a>
+            <a href="index.html#faq">Perguntas Frequentes</a>
+          </div>
+        </div>
+
+        <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle-container">
+            <input type="checkbox" id="lang-toggle" class="lang-checkbox">
+            <label for="lang-toggle" class="lang-label">
+              <span class="lang-pt" style="display:flex; align-items:center; gap:6px; z-index:1;"><img src="flag-br.png" alt="BR" style="width: 22px; height: auto;"> <span style="font-size: 0.85rem; font-weight: 700;">PT</span></span>
+                <span style="color: rgba(255,255,255,0.4); z-index:1; margin: 0 4px; font-weight: bold;">|</span>
+              <span class="lang-en" style="display:flex; align-items:center; gap:6px; z-index:1;"><span style="font-size: 0.85rem; font-weight: 700;">EN</span> <img src="flag-us.png" alt="US" style="width: 22px; height: auto;"></span>
+              <div class="lang-slider"></div>
+            </label>
+          </div>
+          
+          <a href="https://wa.me/16892980422" target="_blank" class="btn btn-outline desktop-only" data-i18n="nav_cta" style="border-image: linear-gradient(135deg, var(--gold-light), var(--gold-dark)) 1; color: var(--gold-light);">FALE CONOSCO</a>
+        <button class="mobile-menu-btn"><i class="ph-light ph-list"></i></button>
+      </div>
+    </div>
+    
+    <!-- Mobile Nav -->
+        <div class="mobile-nav">
+      <a href="index.html#solucoes" data-i18n="nav_services">Seguros</a>
+      <a href="index.html#solucoes-internacionais" data-i18n="srv_i_title">Internacional</a>
+      
+        <div style="width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; text-align: center;">
+            <span style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; text-transform: uppercase;">A Agência</span>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <a href="index.html#quem-somos" style="border: none; padding: 0;">Quem Somos</a>
+              <a href="index.html#faq" style="border: none; padding: 0;">Perguntas Frequentes</a>
+            </div>
+        </div>
+
+      <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="https://wa.me/16892980422" target="_blank" class="btn btn-primary" style="border-color:var(--white);" data-i18n="nav_cta">FALE CONOSCO</a>
+    </div>
+  </header>
+  
+
+  
+  <style>
+    .servicos-page {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background: var(--bg-primary);
+      min-height: 100vh;
+    }
+    .servicos-container {
+      display: flex;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 5%;
+      align-items: flex-start;
+    }
+    .servicos-sidebar {
+      flex: 0 0 280px;
+      position: sticky;
+      top: 100px;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.02);
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+    .servicos-sidebar h3 {
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .servicos-sidebar h3:first-child { margin-top: 0; }
+    .servicos-sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .servicos-sidebar li { margin-bottom: 0.5rem; }
+    .servicos-sidebar a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+      opacity: 0.8;
+    }
+    .servicos-sidebar a:hover {
+      color: var(--gold-light);
+      opacity: 1;
+    }
+    .servicos-main {
+      flex: 1;
+    }
+    .categoria-title {
+      font-size: 2.2rem;
+      color: var(--gold-primary);
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .categoria-title:first-child { margin-top: 0; }
+    .servico-block {
+      margin-bottom: 4rem;
+      padding: 2.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+    .servico-block h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+    }
+    .servico-block .tagline {
+      font-size: 1.1rem;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .servico-block h5 {
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .servico-block p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .servico-block ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.2rem;
+      color: var(--text-muted);
+    }
+    .servico-block li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .servico-block li::marker {
+      color: var(--gold-primary);
+    }
+    .btn-wpp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #25D366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.3s;
+    }
+    .btn-wpp:hover {
+      background: #128C7E;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 900px) {
+      .servicos-container {
+        flex-direction: column;
+      }
+      .servicos-sidebar {
+        flex: none;
+        width: 100%;
+        position: relative;
+        top: 0;
+        max-height: none;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+
+  <div class="servicos-page">
+    <div class="container center-text" style="margin-bottom: 3rem;">
+      <span class="eyebrow text-gradient-gold">O que resolvemos</span>
+      <h2>Nossas Soluções</h2>
+      <p style="color:var(--text-muted); max-width:600px; margin: 1rem auto 0;">Conheça em detalhes cada proteção estruturada para sua família e seu negócio.</p>
+    </div>
+
+    <div class="servicos-container">
+      
+      <!-- MENU LATERAL -->
+      <aside class="servicos-sidebar glass-panel">
+        <h3>Seguros Pessoais</h3>
+        <ul>
+          <li><a href="#seguro-de-vida">Seguro de Vida</a></li>
+          <li><a href="#seguro-saude">Seguro Saúde</a></li>
+          <li><a href="#seguro-de-carro">Seguro de Carro</a></li>
+          <li><a href="#seguro-residencial">Seguro Residencial</a></li>
+          <li><a href="#seguro-viagem">Seguro Viagem</a></li>
+          <li><a href="#seguro-pet">Seguro Pet</a></li>
+          <li><a href="#umbrella-insurance">Umbrella Insurance</a></li>
+        </ul>
+        <h3>Seguros Empresariais</h3>
+        <ul>
+          <li><a href="#seguro-bop">Seguro para Empresas (BOP)</a></li>
+          <li><a href="#general-liability">General Liability</a></li>
+          <li><a href="#workers-comp">Workers' Compensation</a></li>
+          <li><a href="#commercial-auto">Seguro Veículos Comerciais</a></li>
+          <li><a href="#commercial-property">Patrimonial Empresarial</a></li>
+          <li><a href="#professional-liability">E&O (Resp. Profissional)</a></li>
+          <li><a href="#cyber-liability">Seguro Cibernético</a></li>
+          <li><a href="#surety-bonds">Garantias Contratuais</a></li>
+        </ul>
+        <h3>Soluções Internacionais</h3>
+        <ul>
+          <li><a href="#vida-internacional">Vida Internacional</a></li>
+          <li><a href="#protecao-patrimonial">Proteção Patrimonial</a></li>
+          <li><a href="#sucessao-internacional">Planejamento Sucessório</a></li>
+          <li><a href="#renda-dolar">Renda em Dólar</a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTEUDO PRINCIPAL -->
+      <main class="servicos-main">
+
+        <h2 class="categoria-title">Seguros Pessoais</h2>
+        
+        <!-- SEGURO DE VIDA -->
+        <div class="servico-block reveal" id="seguro-de-vida">
+          <h3>Seguro de Vida</h3>
+          <div class="tagline">Proteção financeira para você e para quem depende de você.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Se algo acontecer com você, como uma doença grave, acidente ou até mesmo morte, as despesas da família continuam. O Seguro de Vida ajuda você em caso de doença grave ou quem você ama a manter a casa, pagar contas, cuidar da educação dos filhos e atravessar um momento difícil com mais segurança financeira.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando sua família depende da sua renda.</li>
+            <li>Quando você tem filhos, cônjuge ou familiares sob sua responsabilidade.</li>
+            <li>Quando existem financiamento da casa, dívidas ou outras despesas importantes.</li>
+            <li>Quando você deseja deixar uma proteção financeira para quem ama.</li>
+            <li>Quando quer se preparar para situações como invalidez ou doença grave, com o benefício em vida.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Entendemos sua realidade, suas responsabilidades e seus objetivos antes de recomendar qualquer solução. Depois, buscamos uma proteção adequada à sua família e ao seu orçamento.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20de%20Vida." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- SEGURO SAUDE -->
+        <div class="servico-block reveal" id="seguro-saude">
+          <h3>Seguro Saúde</h3>
+          <div class="tagline">Cuide da sua saúde sem colocar seu patrimônio em risco.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Consultas, exames, cirurgias e internações podem custar muito caro nos Estados Unidos. O Seguro Saúde facilita o acesso ao atendimento médico e reduz o risco de uma despesa inesperada comprometer o orçamento da sua família.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando você precisa consultar um médico.</li>
+            <li>Quando precisa realizar exames ou tratamentos.</li>
+            <li>Quando acontece uma emergência.</li>
+            <li>Quando uma cirurgia ou internação se torna necessária.</li>
+            <li>Quando sua família precisa de acompanhamento médico regular.</li>
+            <li>Quando você quer cuidar da saúde de forma preventiva.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Analisamos as necessidades da sua família, os médicos que deseja utilizar, sua região, sua renda e seu orçamento. Assim, ajudamos você a entender as opções e escolher um plano que realmente possa usar.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20Saúde." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- SEGURO CARRO -->
+        <div class="servico-block reveal" id="seguro-de-carro">
+          <h3>Seguro de Carro</h3>
+          <div class="tagline">Proteção para você, seu veículo e seu patrimônio.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Um acidente pode gerar prejuízos com o seu carro, com outros veículos e até com pessoas envolvidas. O Seguro de Carro reduz esse impacto financeiro e ajuda você a retomar sua rotina com mais rapidez.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando você se envolve em um acidente.</li>
+            <li>Quando causa danos ao veículo ou à propriedade de outra pessoa.</li>
+            <li>Quando alguém se machuca em um acidente envolvendo seu carro.</li>
+            <li>Quando seu veículo é roubado ou furtado.</li>
+            <li>Quando chuva forte, granizo, queda de objetos ou outros eventos danificam o carro.</li>
+            <li>Quando você precisa de reboque ou assistência na estrada, conforme a cobertura.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Analisamos quem dirige o veículo, como ele é utilizado, onde fica estacionado e qual proteção faz sentido para sua realidade. Depois, comparamos opções para equilibrar cobertura, franquia e preço — sem deixar você desprotegido apenas para conseguir uma mensalidade menor.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20de%20Carro." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- SEGURO RESIDENCIAL -->
+        <div class="servico-block reveal" id="seguro-residencial">
+          <h3>Seguro Residencial</h3>
+          <div class="tagline">Sua casa protegida contra os imprevistos da vida.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Sua casa representa uma parte importante do patrimônio da família. O Seguro Residencial protege financeiramente sua residência e seus bens contra acidentes, incêndios, desastres climáticos (como furacões) e responsabilidade civil caso alguém se acidente na sua propriedade.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando ocorrem danos causados pelo vento ou tempestades.</li>
+            <li>Quando um incêndio acidental atinge sua casa.</li>
+            <li>Quando há roubo de bens valiosos dentro da residência.</li>
+            <li>Quando você ou sua família são responsabilizados por danos a terceiros no seu terreno.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Ajudamos você a entender as diferentes coberturas, franquias e proteções extras necessárias na sua região (como seguro contra enchentes, flood insurance) para que o seu maior bem esteja protegido sem surpresas.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20Residencial." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- SEGURO VIAGEM -->
+        <div class="servico-block reveal" id="seguro-viagem">
+          <h3>Seguro Viagem</h3>
+          <div class="tagline">Tranquilidade para você explorar o mundo.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Cobrir despesas inesperadas e emergências médicas longe de casa, além de imprevistos com voos e bagagens.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando você adoece ou sofre acidentes no exterior.</li>
+            <li>Quando há atrasos graves ou cancelamentos de voos.</li>
+            <li>Quando sua bagagem é perdida ou roubada.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Garantimos a apólice correta de acordo com seu destino e tempo de estadia, fornecendo suporte global.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20Viagem." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- SEGURO PET -->
+        <div class="servico-block reveal" id="seguro-pet">
+          <h3>Seguro Pet</h3>
+          <div class="tagline">Proteja a saúde do melhor amigo da família.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Evita que você tenha que escolher entre o tratamento de saúde necessário para o seu animal de estimação e as suas finanças, cobrindo altas despesas veterinárias.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando seu pet sofre um acidente e precisa de cirurgia emergencial.</li>
+            <li>Quando ele desenvolve doenças crônicas ou precisa de exames complexos.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Analisamos os limites de cobertura, redes de veterinários e carências para garantir que seu pet seja atendido quando mais precisar.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20Pet." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- UMBRELLA -->
+        <div class="servico-block reveal" id="umbrella-insurance">
+          <h3>Umbrella Insurance</h3>
+          <div class="tagline">Proteção extra acima dos limites das suas apólices.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Processos judiciais com valores que excedem os limites do seu seguro de carro ou casa podem liquidar todo o seu patrimônio. O Umbrella age como uma camada adicional de milhões em cobertura.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando você é processado por um acidente de trânsito grave.</li>
+            <li>Quando um convidado sofre uma lesão grave e incapacitante na sua casa.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Avaliamos seu patrimônio exposto a riscos e estruturamos uma proteção robusta e surpreendentemente acessível para manter sua riqueza intacta.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Umbrella%20Insurance." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <h2 class="categoria-title">Seguros Empresariais</h2>
+
+        <!-- SEGURO EMPRESARIAL BOP -->
+        <div class="servico-block reveal" id="seguro-bop">
+          <h3>Seguro para Empresas (BOP)</h3>
+          <div class="tagline">Proteção inteligente e abrangente para pequenos negócios.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>O Business Owner's Policy empacota as duas coberturas mais essenciais (Responsabilidade Civil e Proteção Patrimonial) em uma única apólice, blindando financeiramente seu negócio contra perdas materiais e processos de terceiros.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando um cliente escorrega e se machuca dentro do seu estabelecimento.</li>
+            <li>Quando um incêndio danifica seu estoque, móveis ou imóvel comercial.</li>
+            <li>Quando suas operações precisam ser paralisadas temporariamente, cobrindo o lucro cessante.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Ajudamos você a alinhar os limites da apólice BOP de acordo com as exigências dos seus locadores, clientes e o tamanho real do seu negócio, garantindo um custo-benefício que faz sentido.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Seguro%20para%20Empresas%20(BOP)." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- GENERAL LIABILITY -->
+        <div class="servico-block reveal" id="general-liability">
+          <h3>General Liability</h3>
+          <div class="tagline">Responsabilidade Civil Geral para a continuidade do seu negócio.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Garante a proteção financeira contra alegações de lesões corporais, danos à propriedade, lesão pessoal (difamação) ou lesão publicitária sofrida por terceiros enquanto você opera seu negócio.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando seu funcionário quebra um bem valioso na casa de um cliente.</li>
+            <li>Quando seus serviços ou produtos acabam acidentalmente ferindo alguém.</li>
+            <li>Para conseguir fechar contratos maiores que exigem apólice de responsabilidade ativa.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>A BLGI estrutura uma defesa sólida contra processos judiciais que poderiam declarar a falência da sua empresa, garantindo os honorários advocatícios e indenizações.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20General%20Liability." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- WORKERS COMP -->
+        <div class="servico-block reveal" id="workers-comp">
+          <h3>Workers' Compensation</h3>
+          <div class="tagline">Cuidado com quem faz sua empresa crescer.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Protege sua empresa de pagar do próprio bolso despesas médicas e salários perdidos se um funcionário adoecer ou se ferir gravemente durante o trabalho, cumprindo também os rigorosos mandatos legais do estado (Flórida).</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando um funcionário adquire lesão por esforço repetitivo ou se acidenta no maquinário.</li>
+            <li>Para evitar multas severas e paralisação das atividades (Stop-Work Order) por não conformidade estadual.</li>
+            <li>Para cobrir reabilitação física e eventuais despesas por morte do trabalhador no exercício da função.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Oferecemos a estrutura exata para calcular seus prêmios com precisão baseados na classificação dos seus colaboradores (payroll), evitando surpresas na auditoria anual.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Workers'%20Compensation." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- COMMERCIAL AUTO -->
+        <div class="servico-block reveal" id="commercial-auto">
+          <h3>Seguro Veículos Comerciais</h3>
+          <div class="tagline">Proteja sua frota e as ferramentas sobre rodas do seu negócio.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>O seguro de carro pessoal recusa sinistros se o carro for usado para fins comerciais (como entregas ou transporte de equipamentos). O Commercial Auto garante cobertura para você, seus funcionários e veículos contra acidentes ocorridos em horário de trabalho.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando você possui vans, caminhões ou carros emplacados no nome da empresa.</li>
+            <li>Quando seus funcionários dirigem veículos para fazer visitas, entregas ou obras.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Dimensionamos coberturas de frota que cobrem a carga, os equipamentos acoplados e estendem a responsabilidade civil aos seus motoristas, preservando seu capital de giro.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Seguro%20Veículos%20Comerciais." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- COMMERCIAL PROPERTY -->
+        <div class="servico-block reveal" id="commercial-property">
+          <h3>Patrimonial Empresarial</h3>
+          <div class="tagline">O escudo do seu espaço físico e ativos empresariais.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Indeniza a empresa contra perdas físicas de edifícios, equipamentos de alto custo, estoques valiosos e sistemas de tecnologia causados por fogo, vento, vandalismo, ou roubo.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando seu estoque e matéria-prima são perdidos em um desastre inesperado.</li>
+            <li>Quando a infraestrutura física necessita de reconstrução total para a volta das operações.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Desenhamos a apólice considerando o real custo de reposição dos bens, garantindo não apenas a recuperação do espaço, mas também a sobrevivência financeira da marca.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Seguro%20Patrimonial%20Empresarial." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- E&O / PROFESSIONAL LIABILITY -->
+        <div class="servico-block reveal" id="professional-liability">
+          <h3>E&O (Responsabilidade Profissional)</h3>
+          <div class="tagline">Sua carreira blindada contra erros, omissões e falhas de serviço.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Protege médicos, corretores, consultores, engenheiros e prestadores de serviço intelectual contra clientes insatisfeitos que alegam ter sofrido perdas financeiras devido a conselhos ruins ou serviços falhos.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando um conselho técnico ou erro de cálculo resulta num revés financeiro para um cliente e ele processa você.</li>
+            <li>Quando você é acusado de negligência, mesmo sendo inocente, para cobrir honorários de defesa.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Buscamos coberturas Errors & Omissions personalizadas e adequadas aos riscos precisos e singulares da sua profissão.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20E&O%20(Responsabilidade%20Profissional)." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- CYBER LIABILITY -->
+        <div class="servico-block reveal" id="cyber-liability">
+          <h3>Seguro Cibernético</h3>
+          <div class="tagline">Segurança contra hackers e roubos de dados em um mundo digital.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Cobre prejuízos provenientes de extorsões, ataques de ransomware, vazamento de dados confidenciais de clientes e penalidades regulatórias geradas por brechas na sua TI.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando seu sistema sofre um sequestro de dados (ransomware).</li>
+            <li>Quando informações sensíveis (cartões, CPF/SSN) dos clientes são roubadas e você deve notificá-los e arcar com monitoramento de crédito.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Estruturamos as defesas que mitigam os severos danos à reputação e à caixa da empresa gerados na atual era da informação.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Seguro%20Cibernético." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- SURETY BONDS -->
+        <div class="servico-block reveal" id="surety-bonds">
+          <h3>Garantias Contratuais (Surety Bonds)</h3>
+          <div class="tagline">A confiança necessária para fechar grandes projetos e contratos estatais.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Não é exatamente um seguro, mas uma garantia (bond) financeira de que você cumprirá os termos contratuais, obrigações financeiras ou exigências regulatórias (frequentemente exigido na área de construção ou licenciamentos governamentais).</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando o estado exige um License & Permit Bond para emitir o alvará de funcionamento do seu negócio.</li>
+            <li>Quando um grande cliente exige garantias (Bid/Performance bonds) para entregar um projeto.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Emitimos bonds de forma ágil e competitiva para destrancar suas operações ou garantir vitórias em licitações.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Garantias%20Contratuais." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+
+        <h2 class="categoria-title">Soluções Internacionais</h2>
+
+        <!-- VIDA INTERNACIONAL -->
+        <div class="servico-block reveal" id="vida-internacional">
+          <h3>Vida Internacional</h3>
+          <div class="tagline">Proteção global estruturada em moeda forte (Dólar).</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Protege o estilo de vida da sua família, mas através de apólices robustas de emissão estrangeira (EUA) blindadas contra volatilidade política e desvalorização cambial (inflação) em países como o Brasil.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando você mora na América Latina, mas tem patrimônio ou vida conectada no exterior.</li>
+            <li>Quando você quer que seus beneficiários recebam a indenização integral em dólares de forma rápida.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Operamos com grandes companhias internacionais (Global Life/Indexadas) elaborando contratos para cidadãos não-residentes com máxima segurança.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Vida%20Internacional." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- PROTECAO PATRIMONIAL -->
+        <div class="servico-block reveal" id="protecao-patrimonial">
+          <h3>Proteção Patrimonial</h3>
+          <div class="tagline">O escudo definitivo contra intempéries legais.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Mantém a integridade e liquidez das suas reservas em moeda forte utilizando veículos financeiros juridicamente impenetráveis, isolando suas conquistas pessoais dos riscos corporativos do dia-a-dia.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando há possibilidade de bloqueios judiciais e riscos atrelados a sociedades empresariais.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Combinamos seguros sofisticados à estrutura do seu Private Wealth Management, agregando uma camada inquebrável de confidencialidade ao seu portfólio.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Proteção%20Patrimonial." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- PLANEJAMENTO SUCESSORIO -->
+        <div class="servico-block reveal" id="sucessao-internacional">
+          <h3>Planejamento Sucessório</h3>
+          <div class="tagline">Garantindo a perenidade intergeracional do seu império sem custos fiscais absurdos.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Fornece liquidez imediata livre de inventário e tributação sucessória (Estate Tax / ITCMD), permitindo uma transição patrimonial entre gerações tranquila e isenta de disputas familiares.</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando há imóveis nos EUA que incorrem na alta taxa sucessória de não-residentes (até 40%).</li>
+            <li>Quando a família precisa custear taxas elevadas após um falecimento súbito e os bens estão ilíquidos.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Através do "Trust" e Apólices Permanentes bem desenhadas, nós garantimos que o que você demorou uma vida para construir continue 100% com os seus filhos.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Planejamento%20Sucessório." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+        <!-- RENDA DOLAR -->
+        <div class="servico-block reveal" id="renda-dolar">
+          <h3>Renda em Dólar</h3>
+          <div class="tagline">Seu futuro financeiro dolarizado através do Cash Value.</div>
+          
+          <h5>Que problema esse seguro resolve?</h5>
+          <p>Instrumentos como Index Universal Life (IUL) permitem gerar valor no longo prazo, onde o dinheiro rende acoplado a índices americanos sem o risco da queda. Posteriormente esse valor pode ser sacado de forma isenta de imposto de renda (tax-free loans).</p>
+          
+          <h5>Quando ele faz diferença?</h5>
+          <ul>
+            <li>Quando seu objetivo é construir e complementar sua aposentadoria em uma moeda forte e segura.</li>
+            <li>Para quem precisa acumular um fundo para custear a faculdade futura dos filhos nos EUA.</li>
+          </ul>
+
+          <h5>Como a Better Life pode ajudar?</h5>
+          <p>Simulamos cuidadosamente diferentes cenários de contribuição, alavancando os juros compostos para proporcionar saques vitais imponentes na sua melhor idade.</p>
+
+          <a href="https://wa.me/16892980422?text=Olá!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20Renda%20em%20Dólar." target="_blank" class="btn-wpp"><i class="ph-bold ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+        </div>
+
+
+      </main>
+    </div>
+  </div>
+<footer id="contato" class="reveal">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand -->
+        <div class="footer-col brand-col">
+          <a href="/" class="logo">
+            <img src="logo.png" alt="Better Life Global Insurance" style="height:50px;">
+          </a>
+          <p class="footer-desc" data-i18n="footer_desc" style="margin-top: 1.5rem;"><h5 style="color: var(--white); margin-bottom: 0.5rem; font-size: 1.2rem;">Você vive. Nós resolvemos.</h5>Resolvemos tudo o que envolve seguros para famílias e empresas brasileiras nos Estados Unidos, oferecendo orientação clara, soluções personalizadas e acompanhamento em cada etapa da vida.</p>
+          <div class="social-icons" style="margin-top: 1.5rem;">
+            <a href="https://wa.me/16892980422" target="_blank" aria-label="WhatsApp"><i class="ph-light ph-whatsapp-logo"></i></a>
+            <a href="https://www.instagram.com/betterlife.usa/" target="_blank" aria-label="Instagram"><i class="ph-light ph-instagram-logo"></i></a>
+          </div>
+        </div>
+        
+        <!-- Serviços -->
+        <div class="footer-col">
+          
+          
+          <h5 data-i18n="eyebrow_services" class="text-gradient-gold">Nossas Soluções</h5>
+          <ul class="footer-links">
+            <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Seguros Pessoais</li>
+            <li><a href="seguro-vida.html">Vida</a></li>
+            <li><a href="seguro-saude.html">Saúde</a></li>
+            <li><a href="seguro-carro.html">Auto</a></li>
+            <li><a href="seguro-residencial.html">Residencial</a></li>
+            
+            <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Seguros Empresariais</li>
+            <li><a href="seguro-bop.html">Seguro para Empresas (BOP)</a></li>
+
+            <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Internacional</li>
+            <li><a href="sucessao-internacional.html">Planejamento Internacional</a></li>
+          </ul>
+
+
+        </div>
+        
+        <!-- Empresa -->
+        <div class="footer-col">
+          <h5 data-i18n="foot_nav_2" class="text-gradient-gold">A Agência</h5>
+          <ul class="footer-links">
+            <li>
+        <div class="nav-dropdown">
+          <a href="index.html#quem-somos" class="dropdown-toggle">A Agência <i class="ph-bold ph-caret-down"></i></a>
+          <div class="dropdown-content glass-panel">
+            <a href="index.html#quem-somos">Quem Somos</a>
+            <a href="#nosso-metodo" style="display:none;" data-status="noindex">Nosso Método</a>
+            <a href="index.html#faq">Perguntas Frequentes</a>
+          </div>
+        </div>
+</li>
+            <li><a href="index.html#faq" data-i18n="nav_faq">FAQ</a></li>
+            <li></li>
+          </ul>
+        </div>
+        
+        <!-- Contato -->
+        <div class="footer-col">
+          <h5 data-i18n="foot_nav_3" class="text-gradient-gold">Contato</h5>
+          <ul class="footer-links contact-info">
+            <li><i class="ph-light ph-map-pin text-gradient-gold"></i> Orlando, Flórida</li>
+            <li><i class="ph-light ph-whatsapp-logo text-gradient-gold"></i> <a href="https://wa.me/16892980422" target="_blank">+1 (561) 674-1194</a></li>
+            <li><i class="ph-light ph-envelope-simple text-gradient-gold"></i> hello@betterlifeglobalinsurance.com</li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+        <p class="copyright" style="margin: 0;">© 2026 Better Life Global Insurance. <span data-i18n="copyright_text">Todos os direitos reservados.</span></p>
+        <div class="legal-links" style="display: flex; gap: 1.5rem;">
+          <a href="#" data-i18n="legal_privacy">Política de Privacidade</a>
+          <a href="#" data-i18n="legal_terms">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js?v=4"></script>
+</body>
+</html>
+
