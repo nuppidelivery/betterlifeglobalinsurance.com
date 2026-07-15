@@ -921,3 +921,14 @@ header.scrolled {
 .related-card h5 { color: var(--navy-1) !important; font-weight: 700 !important; }
 .related-card p { color: var(--text-muted) !important; font-size: 0.95rem !important; }
 .breadcrumb, .breadcrumb a, .breadcrumb span { color: var(--navy-1) !important; font-weight: 500 !important; }
+
+
+/* Premium FAQ Redesign */
+.faq-section { background: linear-gradient(135deg, var(--navy-2) 0%, var(--navy-1) 100%) !important; color: var(--white) !important; }
+.faq-section .section-title { color: var(--white) !important; }
+.faq-section .section-subtitle { color: rgba(255,255,255,0.7) !important; }
+.faq-item { border-bottom: 1px solid rgba(227, 177, 79, 0.2) !important; }
+.faq-btn { color: var(--gold-light) !important; font-weight: 600 !important; }
+.faq-btn i { color: var(--gold-primary) !important; }
+.faq-content p { color: rgba(255,255,255,0.85) !important; font-size: 1.1rem !important; }
+.faq-btn:hover { color: var(--white) !important; }

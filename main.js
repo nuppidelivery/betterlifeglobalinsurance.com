@@ -551,9 +551,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const langCheckbox = document.getElementById('lang-toggle');
   const i18nElements = document.querySelectorAll('[data-i18n]');
 
-  if (langCheckbox) {
+  
+  const savedLang = localStorage.getItem('lang') || 'pt';
+  if(langCheckbox && savedLang === 'en') { 
+    langCheckbox.checked = true; 
+  }
+  
+  function applyLanguage(lang) {
+    i18nElements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key]) {
+        if (el.tagName === 'LABEL' || el.tagName === 'SPAN' || el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'H4' || el.tagName === 'H5' || el.tagName === 'P' || el.tagName === 'A' || el.tagName === 'BUTTON' || el.tagName === 'OPTION' || el.tagName === 'DIV') {
+          el.innerHTML = translations[lang][key];
+        }
+      }
+    });
+  }
+
+  if (savedLang === 'en') { 
+    applyLanguage('en');
+  }
+
+if (langCheckbox) {
     langCheckbox.addEventListener('change', (e) => {
       const lang = e.target.checked ? 'en' : 'pt';
+      localStorage.setItem('lang', lang);
       
       i18nElements.forEach(el => {
         const key = el.getAttribute('data-i18n');
