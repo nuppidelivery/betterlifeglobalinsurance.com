@@ -1,0 +1,397 @@
+[
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "vida",
+    "name": "Seguro de Vida",
+    "subtitle": "Proteção financeira para você e para quem depende de você.",
+    "problem": "Se algo acontecer com você, como uma doença grave, acidente ou até mesmo morte, as despesas da família continuam. O Seguro de Vida ajuda você em caso de doença grave ou quem você ama a manter a casa, pagar contas, cuidar da educação dos filhos e atravessar um momento difícil com mais segurança financeira.",
+    "difference": [
+      "Quando sua família depende da sua renda.",
+      "Quando você tem filhos, cônjuge ou familiares sob sua responsabilidade.",
+      "Quando existem financiamento da casa, dívidas ou outras despesas importantes.",
+      "Quando você deseja deixar uma proteção financeira para quem ama.",
+      "Quando quer se preparar para situações como invalidez ou doença grave, com o benefício em vida."
+    ],
+    "help": "Entendemos sua realidade, suas responsabilidades e seus objetivos antes de recomendar qualquer solução. Depois, buscamos uma proteção adequada à sua família e ao seu orçamento.",
+    "related": [
+      "saude",
+      "carro"
+    ]
+  },
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "saude",
+    "name": "Seguro Saúde",
+    "subtitle": "Cuide da sua saúde sem colocar seu patrimônio em risco.",
+    "problem": "Consultas, exames, cirurgias e internações podem custar muito caro nos Estados Unidos. O Seguro Saúde facilita o acesso ao atendimento médico e reduz o risco de uma despesa inesperada comprometer o orçamento da sua família.",
+    "difference": [
+      "Quando você precisa consultar um médico.",
+      "Quando precisa realizar exames ou tratamentos.",
+      "Quando acontece uma emergência.",
+      "Quando uma cirurgia ou internação se torna necessária.",
+      "Quando sua família precisa de acompanhamento médico regular.",
+      "Quando você quer cuidar da saúde de forma preventiva."
+    ],
+    "help": "Analisamos as necessidades da sua família, os médicos que deseja utilizar, sua região, sua renda e seu orçamento. Assim, ajudamos você a entender as opções e escolher um plano que realmente possa usar.",
+    "related": [
+      "vida",
+      "residencial"
+    ]
+  },
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "carro",
+    "name": "Seguro de Carro",
+    "subtitle": "Proteção para você, seu veículo e seu patrimônio.",
+    "problem": "Um acidente pode gerar prejuízos com o seu carro, com outros veículos e até com pessoas envolvidas. O Seguro de Carro reduz esse impacto financeiro e ajuda você a retomar sua rotina com mais rapidez.",
+    "difference": [
+      "Quando você se envolve em um acidente.",
+      "Quando causa danos ao veículo ou à propriedade de outra pessoa.",
+      "Quando alguém se machuca em um acidente envolvendo seu carro.",
+      "Quando seu veículo é roubado ou furtado.",
+      "Quando chuva forte, granizo, queda de objetos ou outros eventos danificam o carro.",
+      "Quando você precisa de reboque ou assistência na estrada, conforme a cobertura."
+    ],
+    "help": "Analisamos quem dirige o veículo, como ele é utilizado, onde fica estacionado e qual proteção faz sentido para sua realidade. Depois, comparamos opções para equilibrar cobertura, franquia e preço — sem deixar você desprotegido apenas para conseguir uma mensalidade menor.",
+    "related": [
+      "residencial",
+      "vida"
+    ]
+  },
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "residencial",
+    "name": "Seguro Residencial",
+    "subtitle": "Sua casa protegida contra os imprevistos da vida.",
+    "problem": "Sua casa representa uma parte importante do patrimônio da família. O Seguro Residencial ajuda a reduzir os prejuízos quando incêndios, tempestades, roubos, acidentes ou outros eventos cobertos causam danos ao imóvel ou aos seus bens.",
+    "difference": [
+      "Quando uma tempestade causa danos ao telhado ou à estrutura.",
+      "Quando um incêndio atinge a residência.",
+      "Quando um cano se rompe e provoca danos cobertos pela apólice.",
+      "Quando ocorre roubo ou vandalismo.",
+      "Quando móveis, eletrodomésticos ou outros bens são danificados por um evento coberto.",
+      "Quando alguém sofre um acidente em sua propriedade e você pode ser responsabilizado."
+    ],
+    "help": "Na Flórida, não basta contratar qualquer seguro residencial. Avaliamos as características do imóvel, a região, o tipo de construção e os riscos que precisam ser considerados para encontrar uma proteção adequada para sua casa e seu patrimônio.",
+    "related": [
+      "carro",
+      "umbrella"
+    ]
+  },
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "viagem",
+    "name": "Seguro Viagem",
+    "subtitle": "Viaje sabendo que terá a quem recorrer.",
+    "problem": "Uma emergência médica, uma bagagem extraviada ou o cancelamento de uma viagem pode gerar despesas e muita preocupação. O Seguro Viagem oferece suporte para lidar com imprevistos longe de casa.",
+    "difference": [
+      "Quando você precisa de atendimento médico durante a viagem.",
+      "Quando sofre um acidente longe de casa.",
+      "Quando sua bagagem é extraviada ou chega com atraso.",
+      "Quando a viagem precisa ser cancelada ou interrompida por uma situação coberta.",
+      "Quando ocorre um atraso significativo.",
+      "Quando você precisa de orientação ou assistência em outro país."
+    ],
+    "help": "Consideramos o destino, a duração, a idade dos viajantes e o tipo de viagem para encontrar uma opção adequada. Assim, você viaja com uma proteção compatível com seus planos, sem contratar coberturas desnecessárias.",
+    "related": [
+      "saude",
+      "vida"
+    ]
+  },
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "pets",
+    "name": "Seguro para Pets",
+    "subtitle": "Proteção para quem também faz parte da família.",
+    "problem": "Consultas, exames, cirurgias e emergências veterinárias podem gerar despesas elevadas. O Seguro para Pets ajuda você a cuidar da saúde do seu animal sem precisar decidir entre o tratamento necessário e o impacto no orçamento.",
+    "difference": [
+      "Quando seu pet adoece.",
+      "Quando sofre um acidente.",
+      "Quando precisa de exames ou medicamentos.",
+      "Quando uma cirurgia se torna necessária.",
+      "Quando ocorre uma emergência veterinária.",
+      "Quando você deseja manter cuidados preventivos, conforme o plano escolhido."
+    ],
+    "help": "Avaliamos a idade, a raça e as necessidades do seu pet para comparar opções de cobertura, franquias, reembolsos e limitações. Você escolhe com clareza e sabe como o plano poderá ser utilizado.",
+    "related": [
+      "vida",
+      "residencial"
+    ]
+  },
+  {
+    "category": "Seguros Pessoais",
+    "folder": "seguros",
+    "slug": "umbrella",
+    "name": "Umbrella Insurance",
+    "subtitle": "Uma proteção adicional para o patrimônio que você construiu.",
+    "problem": "Alguns acidentes podem resultar em indenizações muito superiores aos limites do Seguro de Carro ou do Seguro Residencial. O Umbrella acrescenta uma camada extra de responsabilidade civil para ajudar a proteger seu patrimônio.",
+    "difference": [
+      "Quando um acidente de carro causa danos graves a outras pessoas.",
+      "Quando alguém sofre um acidente sério em sua propriedade.",
+      "Quando o valor de uma reclamação ultrapassa o limite do seguro principal.",
+      "Quando existem despesas judiciais e indenizações elevadas.",
+      "Quando você possui casa, investimentos, renda ou outros bens que deseja preservar."
+    ],
+    "help": "Analisamos seus seguros atuais e o patrimônio que precisa ser protegido. Em seguida, verificamos se os limites existentes são suficientes ou se uma camada adicional de proteção faz sentido para sua vida.",
+    "related": [
+      "carro",
+      "residencial"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "bop",
+    "name": "Seguro para Empresas (BOP)",
+    "subtitle": "As principais proteções do seu negócio em uma única apólice.",
+    "problem": "Um incêndio, um roubo, um acidente com um cliente ou a interrupção das atividades pode comprometer o caixa da empresa. O BOP reúne proteções essenciais para pequenos e médios negócios em uma solução mais simples.",
+    "difference": [
+      "Quando equipamentos, móveis ou mercadorias são danificados.",
+      "Quando ocorre incêndio, roubo ou outro evento coberto.",
+      "Quando um cliente sofre um acidente no estabelecimento.",
+      "Quando a empresa é responsabilizada por danos a terceiros.",
+      "Quando um evento coberto impede temporariamente o funcionamento do negócio."
+    ],
+    "help": "Entendemos como a empresa funciona, onde opera, quais bens possui e quais riscos enfrenta. A partir disso, montamos uma proteção compatível com a realidade do negócio, evitando tanto lacunas quanto coberturas desnecessárias.",
+    "related": [
+      "general-liability",
+      "workers-comp"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "general-liability",
+    "name": "Responsabilidade Civil para Empresas (General Liability)",
+    "subtitle": "Proteção contra acidentes e reclamações de terceiros.",
+    "problem": "Mesmo um pequeno acidente pode resultar em despesas médicas, indenizações ou processos. O General Liability ajuda a proteger a empresa quando suas atividades causam danos corporais ou materiais a clientes, fornecedores ou outras pessoas.",
+    "difference": [
+      "Quando um cliente escorrega e se machuca no estabelecimento.",
+      "Quando sua equipe danifica a propriedade de um cliente.",
+      "Quando um serviço causa prejuízo material a terceiros.",
+      "Quando a empresa recebe uma reclamação ou processo relacionado às suas atividades.",
+      "Quando um contratante exige um certificado de seguro antes de liberar o trabalho."
+    ],
+    "help": "Identificamos os riscos reais da atividade, o local onde o trabalho é realizado e as exigências dos seus contratos. Assim, ajudamos a contratar limites e coberturas coerentes com a operação da empresa.",
+    "related": [
+      "bop",
+      "workers-comp"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "workers-comp",
+    "name": "Seguro para Funcionários (Workers' Compensation)",
+    "subtitle": "Proteção para quem trabalha e para quem emprega.",
+    "problem": "Um acidente ou uma doença relacionada ao trabalho pode gerar despesas médicas, afastamentos e custos importantes para a empresa. O Workers' Compensation oferece proteção aos funcionários e reduz o impacto financeiro para o empregador.",
+    "difference": [
+      "Quando um funcionário sofre um acidente durante o trabalho.",
+      "Quando uma lesão ocorre ao levantar peso ou utilizar equipamentos.",
+      "Quando o colaborador precisa de atendimento médico ou reabilitação.",
+      "Quando há afastamento por acidente ocupacional.",
+      "Quando a legislação ou um contrato exige essa proteção.",
+      "Quando a empresa deseja crescer com mais segurança e organização."
+    ],
+    "help": "Avaliamos o número de funcionários, as funções exercidas, a folha de pagamento e as exigências aplicáveis ao negócio. Isso ajuda a empresa a contratar corretamente e a evitar problemas por falta ou inadequação da cobertura.",
+    "related": [
+      "general-liability",
+      "bop"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "commercial-auto",
+    "name": "Seguro para Veículos Comerciais (Commercial Auto)",
+    "subtitle": "Proteção para os veículos que mantêm sua empresa em movimento.",
+    "problem": "Quando um veículo é usado para trabalhar, transportar materiais, fazer entregas ou atender clientes, um seguro pessoal pode não ser suficiente. O Commercial Auto protege a empresa contra prejuízos relacionados ao uso comercial dos veículos.",
+    "difference": [
+      "Quando o veículo é utilizado para visitar clientes.",
+      "Quando transporta equipamentos, ferramentas ou mercadorias.",
+      "Quando é dirigido por funcionários.",
+      "Quando faz entregas ou presta serviços externos.",
+      "Quando se envolve em um acidente durante uma atividade comercial.",
+      "Quando a empresa possui carros, vans, caminhonetes ou caminhões."
+    ],
+    "help": "Entendemos como cada veículo é utilizado, quem dirige e o que é transportado. Depois, buscamos uma proteção adequada à operação, evitando que um uso comercial seja declarado incorretamente em um seguro pessoal.",
+    "related": [
+      "general-liability",
+      "commercial-property"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "commercial-property",
+    "name": "Seguro Patrimonial Empresarial (Commercial Property)",
+    "subtitle": "Proteção para a estrutura e os bens essenciais da empresa.",
+    "problem": "Equipamentos, mercadorias, móveis e instalações podem levar anos para serem construídos ou adquiridos. Um incêndio, uma tempestade ou um roubo pode interromper a operação e causar grandes prejuízos.",
+    "difference": [
+      "Quando a estrutura do imóvel sofre danos.",
+      "Quando equipamentos ou máquinas são atingidos.",
+      "Quando móveis, computadores ou mercadorias são danificados.",
+      "Quando ocorre incêndio, vandalismo ou roubo.",
+      "Quando tempestades ou outros eventos cobertos afetam o estabelecimento.",
+      "Quando a empresa precisa substituir rapidamente bens essenciais para continuar operando."
+    ],
+    "help": "Avaliamos o imóvel, os equipamentos, o estoque e os bens necessários ao funcionamento da empresa. Na realidade climática da Flórida, também observamos com atenção os riscos ligados a tempestades e outros eventos severos.",
+    "related": [
+      "bop",
+      "cyber-liability"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "professional-liability",
+    "name": "Responsabilidade Profissional (E&O)",
+    "subtitle": "Proteção para quem oferece conhecimento, orientação ou serviços.",
+    "problem": "Mesmo profissionais experientes podem ser acusados de cometer um erro, deixar de informar algo ou entregar um serviço diferente do esperado. O E&O ajuda a proteger o profissional e a empresa contra os custos dessas reclamações.",
+    "difference": [
+      "Quando um cliente afirma que recebeu uma orientação incorreta.",
+      "Quando existe alegação de erro ou omissão no serviço.",
+      "Quando um prazo importante não é cumprido.",
+      "Quando o cliente diz ter sofrido prejuízo financeiro.",
+      "Quando é necessário contratar defesa jurídica.",
+      "Quando um contrato exige comprovação dessa cobertura."
+    ],
+    "help": "Analisamos o tipo de serviço, o perfil dos clientes e os possíveis prejuízos que uma alegação profissional poderia causar. Assim, buscamos uma solução alinhada às responsabilidades específicas da sua atividade.",
+    "related": [
+      "general-liability",
+      "cyber-liability"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "cyber-liability",
+    "name": "Seguro Cibernético (Cyber Liability)",
+    "subtitle": "Proteção para os riscos digitais do seu negócio.",
+    "problem": "Empresas de todos os tamanhos armazenam dados, utilizam sistemas e recebem pagamentos eletrônicos. Um ataque, fraude ou vazamento pode interromper as atividades, gerar despesas e prejudicar a confiança dos clientes.",
+    "difference": [
+      "Quando ocorre invasão de sistemas.",
+      "Quando dados de clientes são expostos.",
+      "Quando a empresa sofre um ataque de ransomware.",
+      "Quando um funcionário ou fornecedor causa uma falha de segurança.",
+      "Quando é preciso recuperar informações ou sistemas.",
+      "Quando a empresa precisa notificar clientes e responder às consequências do incidente."
+    ],
+    "help": "Entendemos como sua empresa utiliza tecnologia, armazena informações e recebe pagamentos. A partir disso, ajudamos a encontrar uma proteção compatível com os riscos digitais da operação.",
+    "related": [
+      "professional-liability",
+      "bop"
+    ]
+  },
+  {
+    "category": "Seguros Empresariais",
+    "folder": "seguros",
+    "slug": "surety-bonds",
+    "name": "Garantias Contratuais (Surety Bonds)",
+    "subtitle": "A garantia necessária para trabalhar, contratar e crescer.",
+    "problem": "Algumas licenças, contratos e projetos exigem uma garantia de que a empresa cumprirá suas obrigações. O Surety Bond transmite segurança à outra parte e permite que o negócio atenda a essas exigências.",
+    "difference": [
+      "Quando uma licença profissional exige uma garantia.",
+      "Quando a empresa participa de uma licitação.",
+      "Quando um contrato de construção exige um bond.",
+      "Quando o cliente quer garantia de execução do serviço.",
+      "Quando uma autoridade pública exige comprovação financeira.",
+      "Quando a empresa precisa demonstrar credibilidade para fechar um contrato."
+    ],
+    "help": "Identificamos qual bond foi solicitado, o valor exigido e a finalidade da garantia. Depois, orientamos a empresa no processo para que ela consiga atender à exigência e seguir com o contrato ou a licença.",
+    "related": [
+      "general-liability",
+      "commercial-property"
+    ]
+  },
+  {
+    "category": "Soluções Internacionais",
+    "folder": "internacional",
+    "slug": "vida-internacional",
+    "name": "Seguro de Vida Internacional",
+    "subtitle": "Proteção financeira em dólar para quem pensa globalmente.",
+    "problem": "Grande parte do patrimônio das famílias brasileiras permanece concentrada em um único país e em uma única moeda. O Seguro de Vida Internacional permite criar uma proteção financeira em dólar, estruturada em uma jurisdição internacional estável, oferecendo mais segurança para sua família e maior liberdade para o seu planejamento patrimonial.",
+    "difference": [
+      "Quando você deseja proteger parte do patrimônio fora do Brasil.",
+      "Quando busca diversificar seus recursos em dólar.",
+      "Quando deseja que sua família receba recursos em qualquer lugar do mundo.",
+      "Quando quer uma proteção que acompanhe sua família independentemente de onde ela esteja.",
+      "Quando procura estabilidade jurídica e previsibilidade no longo prazo.",
+      "Quando deseja construir um patrimônio internacional de forma organizada."
+    ],
+    "help": "Antes de falar sobre produtos, entendemos seus objetivos familiares, sucessórios e patrimoniais. Depois mostramos como uma estrutura internacional pode proteger sua família e integrar seu planejamento financeiro de longo prazo.",
+    "related": [
+      "protecao-patrimonial",
+      "sucessao"
+    ]
+  },
+  {
+    "category": "Soluções Internacionais",
+    "folder": "internacional",
+    "slug": "protecao-patrimonial",
+    "name": "Proteção Patrimonial Internacional",
+    "subtitle": "Proteja parte do seu patrimônio em uma das moedas mais fortes do mundo.",
+    "problem": "Concentrar todo o patrimônio em um único país significa concentrar também os riscos. Estruturar parte dos seus recursos em dólar e em uma jurisdição internacional amplia a diversificação patrimonial, proporciona maior estabilidade jurídica e reduz a dependência de um único ambiente econômico.",
+    "difference": [
+      "Quando você deseja diversificar parte do patrimônio internacionalmente.",
+      "Quando busca proteção em moeda forte.",
+      "Quando deseja organizar recursos fora do Brasil de forma estruturada.",
+      "Quando pretende preservar patrimônio para as próximas gerações.",
+      "Quando busca uma estratégia patrimonial com visão de longo prazo.",
+      "Quando deseja ampliar sua liberdade financeira internacional."
+    ],
+    "help": "Explicamos de forma simples como funciona uma estrutura internacional, quais são seus benefícios e em quais situações ela faz sentido. Nosso compromisso é ajudá-lo a construir uma estratégia sólida, alinhada aos seus objetivos e sempre respeitando as normas aplicáveis.",
+    "related": [
+      "vida-internacional",
+      "estrategias-patrimoniais"
+    ]
+  },
+  {
+    "category": "Soluções Internacionais",
+    "folder": "internacional",
+    "slug": "sucessao",
+    "name": "Planejamento Sucessório Internacional",
+    "subtitle": "Uma forma simples, rápida e eficiente de cuidar do futuro da sua família.",
+    "problem": "A transferência de patrimônio pode ser demorada, burocrática e gerar custos elevados. O Seguro de Vida Internacional permite que os beneficiários recebam os recursos diretamente da seguradora, sem depender do processo tradicional de inventário da apólice, proporcionando liquidez e agilidade justamente quando a família mais precisa.",
+    "difference": [
+      "Quando você deseja facilitar a sucessão patrimonial.",
+      "Quando quer oferecer liquidez imediata para sua família.",
+      "Quando busca reduzir burocracias na transferência dos recursos da apólice.",
+      "Quando deseja proteger financeiramente as próximas gerações.",
+      "Quando pretende organizar sua sucessão com antecedência.",
+      "Quando valoriza eficiência, simplicidade e previsibilidade."
+    ],
+    "help": "Analisamos sua estrutura familiar e seus objetivos sucessórios para demonstrar como uma solução internacional pode complementar o planejamento patrimonial da sua família e proporcionar mais tranquilidade para as próximas gerações.",
+    "related": [
+      "vida-internacional",
+      "protecao-patrimonial"
+    ]
+  },
+  {
+    "category": "Soluções Internacionais",
+    "folder": "internacional",
+    "slug": "estrategias-patrimoniais",
+    "name": "Estratégias Patrimoniais em Dólar",
+    "subtitle": "Transforme proteção em um patrimônio que trabalha para você.",
+    "problem": "Além da proteção financeira, uma estrutura internacional pode ser utilizada como ferramenta de planejamento patrimonial. Ela permite construir recursos em dólar ao longo do tempo e utilizá-los estrategicamente para complementar renda, financiar projetos ou criar uma reserva de liquidez sem depender exclusivamente dos sistemas tradicionais de investimento.",
+    "difference": [
+      "Quando você deseja construir patrimônio em dólar.",
+      "Quando pretende criar uma renda em dólar no futuro.",
+      "Quando busca uma alternativa para uma aposentadoria em moeda forte.",
+      "Quando deseja utilizar estratégias de acesso à liquidez, como o Infinite Banking.",
+      "Quando quer preservar capital para projetos familiares ou empresariais.",
+      "Quando busca liberdade geográfica e financeira para as próximas décadas."
+    ],
+    "help": "A Better Life Global Insurance mostra como o Seguro de Vida Internacional pode ir muito além da proteção familiar. Explicamos, de forma clara e transparente, como essa estrutura pode fazer parte do seu planejamento patrimonial, ajudando você a construir patrimônio em dólar, acessar liquidez de forma estratégica e ampliar sua liberdade financeira no longo prazo.",
+    "related": [
+      "protecao-patrimonial",
+      "vida-internacional"
+    ]
+  }
+]
