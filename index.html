@@ -75,7 +75,19 @@
           </div>
         </div>
 
-        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <div class="nav-dropdown">
+            <a href="#faq" class="dropdown-toggle"><span data-i18n="nav_faq">FAQ</span> <i class="ph-bold ph-caret-down"></i></a>
+            <div class="dropdown-content glass-panel">
+              <a href="#faq-seguro-de-vida" data-i18n="nav_faq_1">Vida</a>
+              <a href="#faq-seguro-saude" data-i18n="nav_faq_2">Saúde</a>
+              <a href="#faq-seguro-carro" data-i18n="nav_faq_3">Carro</a>
+              <a href="#faq-seguro-residencial" data-i18n="nav_faq_4">Casa</a>
+              <a href="#faq-seguro-viagem" data-i18n="nav_faq_5">Viagem</a>
+              <a href="#faq-seguro-pet" data-i18n="nav_faq_6">Pets</a>
+              <a href="#faq-seguros-empresariais" data-i18n="nav_faq_7">Empresariais</a>
+              <a href="#faq-solucoes-internacionais" data-i18n="nav_faq_8">Internacional</a>
+            </div>
+          </div>
       </nav>
 
       <div class="nav-actions">
@@ -107,7 +119,19 @@
             </div>
         </div>
 
-      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <div style="width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; text-align: center;">
+              <span style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; text-transform: uppercase;">FAQ</span>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+                <a href="#faq-seguro-de-vida" data-i18n="nav_faq_1" style="border: none; padding: 0;">Vida</a>
+                <a href="#faq-seguro-saude" data-i18n="nav_faq_2" style="border: none; padding: 0;">Saúde</a>
+                <a href="#faq-seguro-carro" data-i18n="nav_faq_3" style="border: none; padding: 0;">Carro</a>
+                <a href="#faq-seguro-residencial" data-i18n="nav_faq_4" style="border: none; padding: 0;">Casa</a>
+                <a href="#faq-seguro-viagem" data-i18n="nav_faq_5" style="border: none; padding: 0;">Viagem</a>
+                <a href="#faq-seguro-pet" data-i18n="nav_faq_6" style="border: none; padding: 0;">Pets</a>
+                <a href="#faq-seguros-empresariais" data-i18n="nav_faq_7" style="border: none; padding: 0;">Empresariais</a>
+                <a href="#faq-solucoes-internacionais" data-i18n="nav_faq_8" style="border: none; padding: 0;">Internacional</a>
+              </div>
+          </div>
       <a href="https://wa.me/16892980422" target="_blank" class="btn btn-primary" style="border-color:var(--white);" data-i18n="nav_cta">FALE CONOSCO</a>
     </div>
   </header>
@@ -250,17 +274,16 @@
             </div>
             <div class="form-group">
               <select id="interest" required>
-                <option value="" disabled selected data-i18n="form_interest">Qual sua principal necessidade hoje?</option>
-                <option value="vida" data-i18n="srv_1">Seguro de vida</option>
-                <option value="saude" data-i18n="srv_2">Seguro saúde</option>
-                <option value="carro" data-i18n="srv_3">Seguro de carro</option>
-                <option value="casa" data-i18n="srv_4">Seguro de casa</option>
-                <option value="negocios" data-i18n="srv_5">Seguro para negócios</option>
-                <option value="internacional" data-i18n="srv_6">Internacional</option>
-                <option value="viagem" data-i18n="srv_7">Seguro Viagem</option>
-                <option value="dental" data-i18n="srv_8">Seguro Dental</option>
-                <option value="pets" data-i18n="srv_9">Seguro para Pets</option>
-              </select>
+                  <option value="" disabled selected data-i18n="form_interest">Qual sua principal necessidade hoje?</option>
+                  <option value="vida" data-i18n="opt_vida">Vida</option>
+                  <option value="saude" data-i18n="opt_saude">Saúde</option>
+                  <option value="carro" data-i18n="opt_carro">Carro</option>
+                  <option value="casa" data-i18n="opt_casa">Casa</option>
+                  <option value="viagem" data-i18n="opt_viagem">Viagem</option>
+                  <option value="pets" data-i18n="opt_pets">Pets</option>
+                  <option value="empresariais" data-i18n="opt_empresariais">Empresariais</option>
+                  <option value="internacional" data-i18n="opt_internacional">Internacional</option>
+                </select>
             </div>
             <button type="button" class="btn btn-gold btn-full" data-i18n="form_btn">Solicitar Cotação &rarr;</button>
           </form>
@@ -756,7 +779,7 @@
           </div>
         </div>
 </li>
-            <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+            
             <li></li>
           </ul>
         </div>

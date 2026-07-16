@@ -155,6 +155,23 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================== */
   const translations = {
     pt: {
+        nav_faq_1: "Vida",
+        nav_faq_2: "Saúde",
+        nav_faq_3: "Carro",
+        nav_faq_4: "Casa",
+        nav_faq_5: "Viagem",
+        nav_faq_6: "Pets",
+        nav_faq_7: "Empresariais",
+        nav_faq_8: "Internacional",
+        opt_vida: "Vida",
+        opt_saude: "Saúde",
+        opt_carro: "Carro",
+        opt_casa: "Casa",
+        opt_viagem: "Viagem",
+        opt_pets: "Pets",
+        opt_empresariais: "Empresariais",
+        opt_internacional: "Internacional",
+
         "vida_name": "Seguro de Vida",
         "vida_subtitle": "Proteção financeira para você e para quem depende de você.",
         "vida_problem": "Se algo acontecer com você, como uma doença grave, acidente ou até mesmo morte, as despesas da família continuam. O Seguro de Vida ajuda você em caso de doença grave ou quem você ama a manter a casa, pagar contas, cuidar da educação dos filhos e atravessar um momento difícil com mais segurança financeira.",
@@ -523,6 +540,23 @@ document.addEventListener('DOMContentLoaded', () => {
       legal_terms: "Termos de Uso"
     },
     en: {
+        nav_faq_1: "Life",
+        nav_faq_2: "Health",
+        nav_faq_3: "Auto",
+        nav_faq_4: "Home",
+        nav_faq_5: "Travel",
+        nav_faq_6: "Pets",
+        nav_faq_7: "Commercial",
+        nav_faq_8: "International",
+        opt_vida: "Life",
+        opt_saude: "Health",
+        opt_carro: "Auto",
+        opt_casa: "Home",
+        opt_viagem: "Travel",
+        opt_pets: "Pets",
+        opt_empresariais: "Commercial",
+        opt_internacional: "International",
+
         "vida_name": "Life Insurance",
         "vida_subtitle": "Financial protection for you and those who depend on you.",
         "vida_problem": "If something happens to you, like a serious illness, accident or even death, family expenses continue. Life Insurance helps you in case of critical illness, or helps your loved ones keep the house, pay bills, pay for children's education and get through a difficult time with greater financial security.",
