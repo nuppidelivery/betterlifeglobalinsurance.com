@@ -950,8 +950,9 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      // Example webhook integration
-      const webhookUrl = 'SUA_URL_DO_ZAPIER_AQUI'; // <--- Replace with Zapier/Make Webhook URL
+      // Integração com o Backend (ou Zapier)
+      // Substitua pela URL final onde o seu backend.js estiver hospedado (ex: Render, Heroku) ou Webhook do Zapier
+      const webhookUrl = 'https://seu-backend-betterlife.herokuapp.com/api/contact';
       
       const formData = {
         name: document.getElementById('name').value,
@@ -960,7 +961,7 @@ document.addEventListener('DOMContentLoaded', () => {
         interest: document.getElementById('interest').value
       };
 
-      if(webhookUrl !== 'SUA_URL_DO_ZAPIER_AQUI') {
+      if(webhookUrl !== 'https://seu-backend-betterlife.herokuapp.com/api/contact') {
         fetch(webhookUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
