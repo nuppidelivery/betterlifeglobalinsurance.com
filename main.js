@@ -359,10 +359,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       eyebrow_import: "Visão de Futuro",
       import_check_1: "Garantimos o futuro dos seus filhos.",
-      import_check_2: "Protegemos o seu patrimônio e a casa dos seus sonhos.",
-      import_check_3: "Blindamos os seus negócios e a sua empresa.",
-      import_check_4: "Preservamos o seu legado em momentos críticos.",
-      import_check_conc: "Você vive sua vida. Nós cuidamos da sua proteção.",
+      import_check_2: "Escolhemos entre diversas seguradoras a opção que faz mais sentido para você.",
+      import_check_3: "Cuidamos da contratação, das revisões e do relacionamento com as seguradoras.",
+      import_check_4: "Acompanhamos você sempre que sua vida, sua família ou seu patrimônio mudarem.",
+      import_check_conc: "Você vive sua vida. Nós permanecemos ao seu lado em cada etapa.",
       import_title: "ESTAMOS AO SEU LADO",
       btn_schedule: "Solicitar Cotação",
       
@@ -694,10 +694,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       eyebrow_import: "Vision for the Future",
       import_check_1: "We secure your children's future.",
-      import_check_2: "We protect your assets and your dream home.",
-      import_check_3: "We shield your business and your company.",
-      import_check_4: "We preserve your legacy in critical moments.",
-      import_check_conc: "You live your life. We take care of your protection.",
+      import_check_2: "Escolhemos entre diversas seguradoras a opção que faz mais sentido para você.",
+      import_check_3: "Cuidamos da contratação, das revisões e do relacionamento com as seguradoras.",
+      import_check_4: "Acompanhamos você sempre que sua vida, sua família ou seu patrimônio mudarem.",
+      import_check_conc: "Você vive sua vida. Nós permanecemos ao seu lado em cada etapa.",
       import_title: "WE ARE BY YOUR SIDE",
       btn_schedule: "Request Quote",
       
