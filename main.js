@@ -941,3 +941,42 @@ if (langCheckbox) {
     });
   }
 });
+
+
+// Handle Contact Form Submission
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Example webhook integration
+      const webhookUrl = 'SUA_URL_DO_ZAPIER_AQUI'; // <--- Replace with Zapier/Make Webhook URL
+      
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        interest: document.getElementById('interest').value
+      };
+
+      if(webhookUrl !== 'SUA_URL_DO_ZAPIER_AQUI') {
+        fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        }).catch(err => console.error('Webhook error:', err));
+      }
+
+      // Show success modal
+      const modal = document.getElementById('successModal');
+      if (modal) {
+        modal.style.display = 'flex';
+      }
+      
+      // Reset form
+      contactForm.reset();
+    });
+  }
+});
+
