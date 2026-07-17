@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "saude_name": "Seguro Saúde",
         "saude_subtitle": "Cuide da sua saúde sem colocar seu patrimônio em risco.",
         "saude_problem": "Consultas, exames, cirurgias e internações podem custar muito caro nos Estados Unidos. O Seguro Saúde facilita o acesso ao atendimento médico e reduz o risco de uma despesa inesperada comprometer o orçamento da sua família.",
-        "saude_help": "Analisamos as necessidades da sua família, os médicos que deseja utilizar, sua região, sua renda e seu orçamento. Assim, ajudamos você a entender as opções e escolher um plano que realémente possa usar.",
+        "saude_help": "Analisamos as necessidades da sua família, os médicos que deseja utilizar, sua região, sua renda e seu orçamento. Assim, ajudamos você a entender as opções e escolher um plano que realmente possa usar.",
         "saude_difference_0": "Quando você precisa consultar um médico.",
         "saude_difference_1": "Quando precisa realizar exames ou tratamentos.",
         "saude_difference_2": "Quando acontece uma emergência.",
