@@ -487,32 +487,35 @@
   </section>
 
   <!-- Biblioteca Gratuita -->
-  <section id="biblioteca" class="library-section reveal" style="background:var(--bg-secondary);">
+  <section id="biblioteca" class="library-section reveal" style="background:var(--bg-secondary); position: relative;">
     <div class="container">
       <div class="section-header center">
         <span class="eyebrow text-gradient-gold" data-i18n="eyebrow_lib">Conteúdo Exclusivo</span>
         <h2 data-i18n="lib_title">Biblioteca Gratuita</h2>
         <p style="color:var(--text-muted);" data-i18n="lib_desc">Acesse nossos manuais e guias para entender tudo sobre a proteção patrimonial nos EUA.</p>
       </div>
-      <div class="library-grid">
+      <div class="library-grid" style="opacity: 0.5; filter: grayscale(100%); pointer-events: none;">
         <div class="lib-card" style="border-top: 4px solid var(--gold-primary); background: var(--white);">
           <div class="lib-icon"><i class="ph-light ph-file-pdf text-gradient-gold" style="font-size: 3rem;"></i></div>
           <h4 data-i18n="lib_1_title" style="color:var(--navy-1); margin-top:1rem;">Seguro de vida com benefício em vida</h4>
           <p data-i18n="lib_1_desc">Como acumular patrimônio em dólar e proteger sua família ao mesmo tempo.</p>
-          <button class="btn btn-outline" data-i18n="lib_btn" style="background:var(--navy-1); color:var(--white); border:none;">Baixar PDF</button>
+          <button class="btn btn-outline" style="background:#ccc; color:#666; border:none; cursor:not-allowed;">Disponível em breve</button>
         </div>
         <div class="lib-card" style="border-top: 4px solid var(--gold-primary); background: var(--white);">
           <div class="lib-icon"><i class="ph-light ph-file-pdf text-gradient-gold" style="font-size: 3rem;"></i></div>
           <h4 data-i18n="lib_2_title" style="color:var(--navy-1); margin-top:1rem;">Opções de seguro saúde</h4>
           <p data-i18n="lib_2_desc">Tudo que o imigrante precisa saber para não pagar multas no Tax Return.</p>
-          <button class="btn btn-outline" data-i18n="lib_btn" style="background:var(--navy-1); color:var(--white); border:none;">Baixar PDF</button>
+          <button class="btn btn-outline" style="background:#ccc; color:#666; border:none; cursor:not-allowed;">Disponível em breve</button>
         </div>
         <div class="lib-card" style="border-top: 4px solid var(--gold-primary); background: var(--white);">
           <div class="lib-icon"><i class="ph-light ph-file-pdf text-gradient-gold" style="font-size: 3rem;"></i></div>
           <h4 data-i18n="lib_3_title" style="color:var(--navy-1); margin-top:1rem;">Soluções de seguros para empresas</h4>
           <p data-i18n="lib_3_desc">General Liability e Workers Comp. Não perca sua empresa por um processo.</p>
-          <button class="btn btn-outline" data-i18n="lib_btn" style="background:var(--navy-1); color:var(--white); border:none;">Baixar PDF</button>
+          <button class="btn btn-outline" style="background:#ccc; color:#666; border:none; cursor:not-allowed;">Disponível em breve</button>
         </div>
+      </div>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(1, 23, 55, 0.9); padding: 1rem 3rem; border-radius: 50px; border: 2px solid var(--gold-primary); box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 10;">
+        <h3 style="color: var(--white); margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">Disponível em breve</h3>
       </div>
     </div>
   </section>
