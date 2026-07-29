@@ -134,6 +134,14 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
 .lang-checkbox:checked + .lang-label .lang-slider { transform: translateX(50px); }
 
 @media (max-width: 992px) {
+  .section-header { text-align: center !important; }
+  .section-header.left { text-align: center !important; }
+  .text-col h2, .text-col .eyebrow { text-align: center !important; margin-left: auto; margin-right: auto; }
+  .text-col p { text-align: center !important; }
+  .text-col { text-align: center !important; }
+  .diff-item-small { justify-content: center; text-align: left; }
+  .list-col-small { align-items: center; }
+
   .desktop-nav { display: none; }
   .desktop-only { display: none; }
   .mobile-menu-btn { display: block; }
