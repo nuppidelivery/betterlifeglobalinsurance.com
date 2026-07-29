@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
       eyebrow_video: "Uma mensagem para você",
       video_title: "Bem-vindo à Better Life",
       "video_subtitle": "Descubra como podemos transformar a maneira como você protege seu patrimônio nos Estados Unidos.",
-      video_placeholder_text: "O seu vídeo será adicionado aqui",
+      video_placeholder_text: "DISPONÍVEL EM BREVE",
       
       eyebrow_services: "Nossas Soluções",
       services_title: "Todas as proteções que você precisa em um só lugar",
@@ -767,7 +767,7 @@ document.addEventListener('DOMContentLoaded', () => {
       eyebrow_video: "A message for you",
       video_title: "Welcome to Better Life",
       "video_subtitle": "Discover how we can transform the way you protect your assets in the United States.",
-      video_placeholder_text: "Your video will be added here",
+      video_placeholder_text: "AVAILABLE SOON",
       
       eyebrow_services: "Our Solutions",
       services_title: "All the protection you need in one place",
