@@ -311,16 +311,16 @@ document.addEventListener('DOMContentLoaded', () => {
         "surety-bonds_difference_2": "Quando um contrato de construção exige um bond.",
         "surety-bonds_difference_3": "Quando o cliente quer garantia de execução do serviço.",
         "surety-bonds_difference_4": "Quando uma autoridade pública exige comprovação financeira.",
-        "vida-soluções internacionais_name": "Solução de Vida Soluções Internacionais",
+        "vida-soluções internacionais_name": "Soluções de Vida Internacionais",
         "vida-soluções internacionais_subtitle": "Proteção financeira em dólar para quem pensa globalémente.",
-        "vida-soluções internacionais_problem": "Grande parte do patrimônio das famílias brasileiras permanece concentrada em um único país e em uma única moeda. O Solução de Vida Soluções Internacionais permite criar uma proteção financeira em dólar, estruturada em uma jurisdição soluções internacionais estável, oferecendo mais segurança para sua família e maior liberdade para o seu planejamento patrimonial.",
+        "vida-soluções internacionais_problem": "Grande parte do patrimônio das famílias brasileiras permanece concentrada em um único país e em uma única moeda. O Soluções de Vida Internacionais permite criar uma proteção financeira em dólar, estruturada em uma jurisdição soluções internacionais estável, oferecendo mais segurança para sua família e maior liberdade para o seu planejamento patrimonial.",
         "vida-soluções internacionais_help": "Antes de falar sobre produtos, entendemos seus objetivos familiares, sucessórios e patrimoniais. Depois mostramos como uma estrutura soluções internacionais pode proteger sua família e integrar seu planejamento financeiro de longo prazo.",
         "vida-soluções internacionais_difference_0": "Quando você deseja proteger parte do patrimônio fora do Brasil.",
         "vida-soluções internacionais_difference_1": "Quando busca diversificar seus recursos em dólar.",
         "vida-soluções internacionais_difference_2": "Quando deseja que sua família receba recursos em qualquer lugar do mundo.",
         "vida-soluções internacionais_difference_3": "Quando quer uma proteção que acompanhe sua família independentemente de onde ela esteja.",
         "vida-soluções internacionais_difference_4": "Quando procura estabilidade jurídica e previsibilidade no longo prazo.",
-        "protecao-patrimonial_name": "Proteção Patrimonial Soluções Internacionais",
+        "protecao-patrimonial_name": "Proteção Patrimonial",
         "protecao-patrimonial_subtitle": "Proteja parte do seu patrimônio em uma das moedas mais fortes do mundo.",
         "protecao-patrimonial_problem": "Concentrar todo o patrimônio em um único país significa concentrar também os riscos. Estruturar parte dos seus recursos em dólar e em uma jurisdição soluções internacionais amplia a diversificação patrimonial, proporciona maior estabilidade jurídica e reduz a dependência de um único ambiente econômico.",
         "protecao-patrimonial_help": "Explicamos de forma simples como funciona uma estrutura soluções internacionais, quais são seus benefícios e em quais situações ela faz sentido. Nosso compromisso é ajudá-lo a construir uma estratégia sólida, alinhada aos seus objetivos e sempre respeitando as normas aplicáveis.",
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "protecao-patrimonial_difference_4": "Quando busca uma estratégia patrimonial com visão de longo prazo.",
         "sucessao_name": "Planejamento Sucessório Soluções Internacionais",
         "sucessao_subtitle": "Uma forma simples, rápida e eficiente de cuidar do futuro da sua família.",
-        "sucessao_problem": "A transferência de patrimônio pode ser demorada, burocrática e gerar custos elevados. O Solução de Vida Soluções Internacionais permite que os beneficiários recebam os recursos diretamente da seguradora, sem depender do processo tradicional de inventário da apólice, proporcionando liquidez e agilidade justamente quando a família mais precisa.",
+        "sucessao_problem": "A transferência de patrimônio pode ser demorada, burocrática e gerar custos elevados. O Soluções de Vida Internacionais permite que os beneficiários recebam os recursos diretamente da seguradora, sem depender do processo tradicional de inventário da apólice, proporcionando liquidez e agilidade justamente quando a família mais precisa.",
         "sucessao_help": "Analisamos sua estrutura familiar e seus objetivos sucessórios para demonstrar como uma solução soluções internacionais pode complementar o planejamento patrimonial da sua família e proporcionar mais tranquilidade para as próximas gerações.",
         "sucessao_difference_0": "Quando você deseja facilitar a sucessão patrimonial.",
         "sucessao_difference_1": "Quando quer oferecer liquidez imediata para sua família.",
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "estrategias-patrimoniais_name": "Estratégias Patrimoniais em Dólar",
         "estrategias-patrimoniais_subtitle": "Transforme proteção em um patrimônio que trabalha para você.",
         "estrategias-patrimoniais_problem": "Além da proteção financeira, uma estrutura soluções internacionais pode ser utilizada como ferramenta de planejamento patrimonial. Ela permite construir recursos em dólar ao longo do tempo e utilizá-los estrategicamente para complementar renda, financiar projetos ou criar uma reserva de liquidez sem depender exclusivamente dos sistemas tradicionais de investimento.",
-        "estrategias-patrimoniais_help": "A Better Life Global Insurance mostra como o Solução de Vida Soluções Internacionais pode ir muito além da proteção familiar. Explicamos, de forma clara e transparente, como essa estrutura pode fazer parte do seu planejamento patrimonial, ajudando você a construir patrimônio em dólar, acessar liquidez de forma estratégica e ampliar sua liberdade financeira no longo prazo.",
+        "estrategias-patrimoniais_help": "A Better Life Global Insurance mostra como o Soluções de Vida Internacionais pode ir muito além da proteção familiar. Explicamos, de forma clara e transparente, como essa estrutura pode fazer parte do seu planejamento patrimonial, ajudando você a construir patrimônio em dólar, acessar liquidez de forma estratégica e ampliar sua liberdade financeira no longo prazo.",
         "estrategias-patrimoniais_difference_0": "Quando você deseja construir patrimônio em dólar.",
         "estrategias-patrimoniais_difference_1": "Quando pretende criar uma renda em dólar no futuro.",
         "estrategias-patrimoniais_difference_2": "Quando busca uma alternativa para uma aposentadoria em moeda forte.",
@@ -503,9 +503,9 @@ document.addEventListener('DOMContentLoaded', () => {
       srv_e_8_d: "Credibilidade e garantia para grandes projetos.",
 
       // Internacionais
-      srv_i_1: "Solução de Vida Soluções Internacionais",
+      srv_i_1: "Soluções de Vida Internacionais",
       srv_i_1_d: "Estratégias globais para proteger sua família sem fronteiras.",
-      srv_i_2: "Proteção Patrimonial Soluções Internacionais",
+      srv_i_2: "Proteção Patrimonial",
       srv_i_2_d: "Blindagem e segurança cambial para seu capital.",
       srv_i_3: "Planejamento Sucessório Soluções Internacionais",
       srv_i_3_d: "Preserve seu legado para as próximas gerações com eficiência.",
@@ -950,32 +950,20 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      // Integração com o Backend (ou Zapier)
-      // Substitua pela URL final onde o seu backend.js estiver hospedado (ex: Render, Heroku) ou Webhook do Zapier
-      const webhookUrl = 'https://seu-backend-betterlife.herokuapp.com/api/contact';
+      const interestEl = document.getElementById('interest');
+      const interestText = interestEl.options[interestEl.selectedIndex].text;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
       
-      const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        interest: document.getElementById('interest').value
-      };
-
-      if(webhookUrl !== 'https://seu-backend-betterlife.herokuapp.com/api/contact') {
-        fetch(webhookUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
-        }).catch(err => console.error('Webhook error:', err));
-      }
-
-      // Show success modal
-      const modal = document.getElementById('successModal');
-      if (modal) {
-        modal.style.display = 'flex';
-      }
+      let message = `Olá! Gostaria de solicitar uma cotação para ${interestText}.\n\n`;
+      if (name) message += `Nome: ${name}\n`;
+      if (phone) message += `Telefone: ${phone}\n`;
+      if (email) message += `E-mail: ${email}\n`;
       
-      // Reset form
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/16892980422?text=${encodedMessage}`, '_blank');
+      
       contactForm.reset();
     });
   }

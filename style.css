@@ -348,7 +348,7 @@ header .btn-outline:hover { background: var(--gold-primary); color: var(--navy-1
    Differentials & About Us
    ========================================================================== */
 .differentials { background: var(--white); }
-.two-col-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
+.two-col-layout { display: grid; grid-template-columns: 0.95fr 1.2fr; gap: 5rem; align-items: center; }
 .about-image-wrapper { position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
 .about-image { width: 100%; height: auto; display: block; object-fit: cover; }
 .text-col h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
