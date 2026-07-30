@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "curl -s -L -o 0725_2.mp4 \"https://media.githubusercontent.com/media/nuppidelivery/betterlifeglobalinsurance.com/main/0725_2.mp4\" && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
