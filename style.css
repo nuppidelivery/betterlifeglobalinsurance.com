@@ -946,7 +946,7 @@ header.scrolled {
   /* 2. Botão Idiomas Mobile */
   .lang-toggle-container {
     transform: scale(0.9);
-    margin: 0.5rem 1rem;
+    margin: 0 0.25rem;
   }
 
   /* 4. Quem Somos Mobile Order */
@@ -963,5 +963,19 @@ header.scrolled {
   #quem-somos p { order: 4; text-align: center; }
   #quem-somos .list-col-small { order: 5; margin-top: 1rem; }
   #quem-somos .btn { order: 6; margin-left: auto; margin-right: auto; margin-top: 1rem; }
+
+}
+
+@media (max-width: 992px) {
+
+  /* 3. Títulos da Seção de Seguros Mobile */
+  #solucoes h3 {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
 }
