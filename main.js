@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nav_faq_5: "Seguro Viagem",
         nav_faq_6: "Seguro Pets",
         nav_faq_7: "Seguros Empresariais",
-        nav_faq_8: "Seguro de Vida Internacional",
+        nav_faq_8: "Soluções Internacionais",
         news_title: "Notícias e Conteúdos",
         opt_vida: "Seguro de Vida",
         opt_saude: "Seguro Saúde",
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opt_viagem: "Seguro Viagem",
         opt_pets: "Seguro Pets",
         opt_empresariais: "Seguros Empresariais",
-        opt_internacional: "Seguro de Vida Internacional",
+        opt_internacional: "Soluções Internacionais",
         footer_col3: "Contato",
         "problem_title": "Que problema esse seguro resolve?",
         "difference_title": "Quando ele faz diferença?",
@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "protecao-patrimonial_difference_2": "Quando deseja organizar recursos fora do Brasil de forma estruturada.",
         "protecao-patrimonial_difference_3": "Quando pretende preservar patrimônio para as próximas gerações.",
         "protecao-patrimonial_difference_4": "Quando busca uma estratégia patrimonial com visão de longo prazo.",
-        "sucessao_name": "Planejamento Sucessório Seguro de Vida Internacional",
+        "sucessao_name": "Planejamento Sucessório",
         "sucessao_subtitle": "Uma forma simples, rápida e eficiente de cuidar do futuro da sua família.",
         "sucessao_problem": "A transferência de patrimônio pode ser demorada, burocrática e gerar custos elevados. O Soluções de Vida Internacionais permite que os beneficiários recebam os recursos diretamente da seguradora, sem depender do processo tradicional de inventário da apólice, proporcionando liquidez e agilidade justamente quando a família mais precisa.",
         "sucessao_help": "Analisamos sua estrutura familiar e seus objetivos sucessórios para demonstrar como uma solução soluções internacionais pode complementar o planejamento patrimonial da sua família e proporcionar mais tranquilidade para as próximas gerações.",
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       srv_p_title: "Seguros Pessoais",
       srv_e_title: "Seguros Empresariais",
-      srv_i_title: "Seguro de Vida Internacional",
+      srv_i_title: "Soluções Internacionais",
       
       // Pessoais
       srv_p_1: "Seguro de Vida",
@@ -504,11 +504,11 @@ document.addEventListener('DOMContentLoaded', () => {
       srv_e_8_d: "Credibilidade e garantia para grandes projetos.",
 
       // Internacionais
-      srv_i_1: "Soluções de Vida Internacionais",
+      srv_i_1: "Seguro de Vida Internacional",
       srv_i_1_d: "Estratégias globais para proteger sua família sem fronteiras.",
       srv_i_2: "Proteção Patrimonial",
       srv_i_2_d: "Blindagem e segurança cambial para seu capital.",
-      srv_i_3: "Planejamento Sucessório Seguro de Vida Internacional",
+      srv_i_3: "Planejamento Sucessório",
       srv_i_3_d: "Preserve seu legado para as próximas gerações com eficiência.",
       srv_i_4: "Geração de Renda em Dólar",
       srv_i_4_d: "Soluções seguras para construir e rentabilizar em moeda forte.",
