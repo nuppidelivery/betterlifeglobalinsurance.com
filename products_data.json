@@ -65,9 +65,9 @@
     "category": "Seguros Pessoais",
     "folder": "seguros",
     "slug": "residencial",
-    "name": "Seguro Residencial",
+    "name": "Seguro Casa",
     "subtitle": "Sua casa protegida contra os imprevistos da vida.",
-    "problem": "Sua casa representa uma parte importante do patrimônio da família. O Seguro Residencial ajuda a reduzir os prejuízos quando incêndios, tempestades, roubos, acidentes ou outros eventos cobertos causam danos ao imóvel ou aos seus bens.",
+    "problem": "Sua casa representa uma parte importante do patrimônio da família. O Seguro Casa ajuda a reduzir os prejuízos quando incêndios, tempestades, roubos, acidentes ou outros eventos cobertos causam danos ao imóvel ou aos seus bens.",
     "difference": [
       "Quando uma tempestade causa danos ao telhado ou à estrutura.",
       "Quando um incêndio atinge a residência.",
@@ -130,7 +130,7 @@
     "slug": "umbrella",
     "name": "Umbrella Insurance",
     "subtitle": "Uma proteção adicional para o patrimônio que você construiu.",
-    "problem": "Alguns acidentes podem resultar em indenizações muito superiores aos limites do Seguro de Carro ou do Seguro Residencial. O Umbrella acrescenta uma camada extra de responsabilidade civil para ajudar a proteger seu patrimônio.",
+    "problem": "Alguns acidentes podem resultar em indenizações muito superiores aos limites do Seguro de Carro ou do Seguro Casa. O Umbrella acrescenta uma camada extra de responsabilidade civil para ajudar a proteger seu patrimônio.",
     "difference": [
       "Quando um acidente de carro causa danos graves a outras pessoas.",
       "Quando alguém sofre um acidente sério em sua propriedade.",
