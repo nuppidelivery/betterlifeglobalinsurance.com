@@ -155,6 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================== */
   const translations = {
     pt: {
+          welcome_link: "Bem-vindo",
+
           stat_1_desc: "Acidentes de trânsito anuais nos EUA",
           stat_2_desc: "Falências ligadas a dívidas médicas (Forbes)",
           stat_3_desc: "Em danos por desastres climáticos em 2024 (NOAA)",
@@ -597,6 +599,8 @@ document.addEventListener('DOMContentLoaded', () => {
       legal_terms: "Termos de Uso"
     },
     en: {
+          welcome_link: "Welcome",
+
           stat_1_desc: "Annual traffic accidents in the US",
           stat_2_desc: "Bankruptcies linked to medical debt (Forbes)",
           stat_3_desc: "In climate disaster damages in 2024 (NOAA)",

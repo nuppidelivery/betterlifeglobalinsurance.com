@@ -1,50 +1,79 @@
 const fs = require('fs');
 const path = require('path');
 
-const htmlFiles = [
-    'index.html',
-    'interna.html',
-    'seguros/vida.html',
-    'seguros/saude.html',
-    'seguros/carro.html',
-    'seguros/residencial.html',
-    'seguros/viagem.html',
-    'seguros/pets.html',
-    'seguros/umbrella.html',
-    'seguros/bop.html',
-    'seguros/general-liability.html',
-    'seguros/workers-comp.html',
-    'seguros/commercial-auto.html',
-    'seguros/commercial-property.html',
-    'seguros/professional-liability.html',
-    'seguros/cyber-liability.html',
-    'seguros/surety-bonds.html',
-    'internacional/vida-internacional.html',
-    'internacional/protecao-patrimonial.html',
-    'internacional/sucessao.html',
-    'internacional/estrategias-patrimoniais.html'
-];
+function processHtml(folder) {
+    const files = fs.readdirSync(folder);
+    for (const file of files) {
+        if (!file.endsWith('.html')) continue;
+        const filePath = path.join(folder, file);
+        let content = fs.readFileSync(filePath, 'utf8');
+        let changed = false;
 
-htmlFiles.forEach(file => {
-    let filePath = path.join(__dirname, file);
-    if (!fs.existsSync(filePath)) return;
-    let content = fs.readFileSync(filePath, 'utf8');
+        const isRoot = folder === '.';
+        const prefix = isRoot ? '' : '../';
+        
+        // 1. Update Image (only relevant for index.html but we can apply everywhere just in case)
+        if (content.includes('src="EQUIPE_BL.png"')) {
+            content = content.replace(/src="EQUIPE_BL\.png"/g, 'src="EQUIPE_BL_02.png"');
+            changed = true;
+        }
 
-    // Desktop nav
-    // From: <div class="nav-dropdown">\s*<a href="#quem-somos" class="dropdown-toggle">Quem Somos <i class="ph-bold ph-caret-down"></i></a>\s*<div class="dropdown-content glass-panel">\s*<a href="#quem-somos">Quem Somos</a>\s*<a href="#nosso-metodo"[^>]*>Nosso M[é]todo</a>\s*<a href="#faq">Perguntas Frequentes</a>\s*</div>\s*</div>
-    // To: <a href="#quem-somos" class="nav-link">Quem Somos</a>
-    // For interna/seguros pages it might be <a href="/#quem-somos"
-    const desktopRegex = /<div class="nav-dropdown">\s*<a href="([^"]*#quem-somos)" class="dropdown-toggle">Quem Somos <i class="ph-bold ph-caret-down"><\/i><\/a>\s*<div class="dropdown-content[^>]*>\s*<a href="[^"]*#quem-somos">Quem Somos<\/a>\s*<a href="[^"]*#nosso-metodo"[^>]*>Nosso M[é]todo<\/a>\s*<a href="[^"]*#faq">Perguntas Frequentes<\/a>\s*<\/div>\s*<\/div>/g;
-    
-    // Some instances might have different inner links or missing #nosso-metodo if we removed it earlier? Let's check regex carefully.
-    const desktopGeneralRegex = /<div class="nav-dropdown">\s*<a href="([^"]*#quem-somos)" class="dropdown-toggle">Quem Somos <i class="ph-bold ph-caret-down"><\/i><\/a>[\s\S]*?<\/div>\s*<\/div>/g;
-    content = content.replace(desktopGeneralRegex, '<a href="$1" class="nav-link">Quem Somos</a>');
+        // 2. Update Header Desktop Menu for Quem Somos
+        // We look for: <a href="#quem-somos" class="nav-link" data-i18n="quem_somos_link">Quem Somos</a>
+        // Or variations in subpages: <a href="../index.html#quem-somos" class="nav-link" data-i18n="quem_somos_link">Quem Somos</a>
+        const desktopRegex = /<a href="([^"]*#quem-somos)" class="nav-link" data-i18n="quem_somos_link">Quem Somos<\/a>/;
+        if (desktopRegex.test(content)) {
+            const match = desktopRegex.exec(content);
+            const hrefQuem = match[1];
+            const hrefVideo = isRoot ? '#video-boas-vindas' : '../index.html#video-boas-vindas';
+            
+            const newDesktop = `<div class="nav-dropdown">
+              <a href="${hrefQuem}" class="dropdown-toggle"><span data-i18n="quem_somos_link">Quem Somos</span> <i class="ph-bold ph-caret-down"></i></a>
+              <div class="dropdown-content glass-panel">
+                <a href="${hrefQuem}" data-i18n="quem_somos_link">Quem Somos</a>
+                <a href="${hrefVideo}" data-i18n="welcome_link">Bem-vindo</a>
+              </div>
+            </div>`;
+            
+            content = content.replace(desktopRegex, newDesktop);
+            changed = true;
+        }
 
-    // Mobile nav
-    const mobileGeneralRegex = /<div style="width: 100%; border-bottom: 1px solid rgba\(255,255,255,0\.1\); padding-bottom: 0\.5rem; text-align: center;">\s*<span style="color: var\(--gold-light\); font-weight: 600; font-size: 0\.9rem; text-transform: uppercase;">Quem Somos<\/span>[\s\S]*?<\/div>\s*<\/div>/g;
-    content = content.replace(mobileGeneralRegex, '<a href="/#quem-somos" style="display: block; width: 100%; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--white); text-decoration: none;">Quem Somos</a>');
-    
-    fs.writeFileSync(filePath, content, 'utf8');
-});
+        // 3. Update Header Mobile Menu for Quem Somos
+        // Look for:
+        // <div style="width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; text-align: center;">
+        //      <span style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; text-transform: uppercase;" data-i18n="quem_somos_link">Quem Somos</span>
+        //      <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+        //        <a href="#quem-somos" style="border: none; padding: 0;" data-i18n="quem_somos_link">Quem Somos</a>
+        //      </div>
+        //  </div>
+        // Let's use a targeted replace for the inner anchor tag if it doesn't already have welcome_link
+        const hrefQuemMob = isRoot ? '#quem-somos' : '../index.html#quem-somos';
+        const hrefVideoMob = isRoot ? '#video-boas-vindas' : '../index.html#video-boas-vindas';
+        
+        const mobileTarget = `<a href="${hrefQuemMob}" style="border: none; padding: 0;" data-i18n="quem_somos_link">Quem Somos</a>`;
+        if (content.includes(mobileTarget) && !content.includes('welcome_link')) {
+            const newMobile = `${mobileTarget}\n                <a href="${hrefVideoMob}" style="border: none; padding: 0;" data-i18n="welcome_link">Bem-vindo</a>`;
+            content = content.replace(mobileTarget, newMobile);
+            changed = true;
+        }
 
-console.log('Quem somos updated.');
+        if (changed) {
+            fs.writeFileSync(filePath, content, 'utf8');
+            console.log('Updated', filePath);
+        }
+    }
+}
+
+processHtml('.');
+processHtml('seguros');
+processHtml('internacional');
+
+// Also update main.js translation keys
+let mainJs = fs.readFileSync('main.js', 'utf8');
+if (!mainJs.includes('welcome_link:')) {
+    mainJs = mainJs.replace(/pt: {/, 'pt: {\n          welcome_link: "Bem-vindo",\n');
+    mainJs = mainJs.replace(/en: {/, 'en: {\n          welcome_link: "Welcome",\n');
+    fs.writeFileSync('main.js', mainJs, 'utf8');
+    console.log('Updated main.js with welcome_link');
+}

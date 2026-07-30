@@ -67,7 +67,13 @@
         </div>
 
         
-        <a href="../index.html#quem-somos" class="nav-link">Quem Somos</a>
+        <div class="nav-dropdown">
+              <a href="../index.html#quem-somos" class="dropdown-toggle"><span data-i18n="quem_somos_link">Quem Somos</span> <i class="ph-bold ph-caret-down"></i></a>
+              <div class="dropdown-content glass-panel">
+                <a href="../index.html#quem-somos" data-i18n="quem_somos_link">Quem Somos</a>
+                <a href="../index.html#video-boas-vindas" data-i18n="welcome_link">Bem-vindo</a>
+              </div>
+            </div>
 
         <div class="nav-dropdown">
             <a href="../index.html#faq" class="dropdown-toggle"><span data-i18n="nav_faq">FAQ</span> <i class="ph-bold ph-caret-down"></i></a>
@@ -216,35 +222,48 @@
           
           
           <h5 data-i18n="eyebrow_services" class="text-gradient-gold">Nossas Soluções</h5>
-            <ul class="footer-links">
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+              
               <!-- Seguros Pessoais -->
-              <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;" data-i18n="srv_p_title">Seguros Pessoais</li>
-              <li><a href="../seguros/vida.html" data-i18n="srv_p_1">Seguro de Vida</a></li>
-              <li><a href="../seguros/saude.html" data-i18n="srv_p_2">Seguro Saúde</a></li>
-              <li><a href="../seguros/carro.html" data-i18n="srv_p_3">Seguro de Carro</a></li>
-              <li><a href="../seguros/residencial.html" data-i18n="srv_p_4">Seguro de Casa</a></li>
-              <li><a href="../seguros/viagem.html" data-i18n="srv_p_5">Seguro Viagem</a></li>
-              <li><a href="../seguros/pets.html" data-i18n="srv_p_6">Seguro para Pets</a></li>
-              <li><a href="../seguros/umbrella.html" data-i18n="srv_p_7">Umbrella Insurance</a></li>
+              <div class="nav-dropdown" style="display: block;">
+                <div class="dropdown-toggle" style="color: var(--white); font-weight: 600; font-size: 1rem;"><span data-i18n="srv_p_title">Seguros Pessoais</span> <i class="ph-bold ph-caret-down"></i></div>
+                <div class="dropdown-content glass-panel" style="top: auto; bottom: 100%; margin-bottom: 10px;">
+                  <a href="../seguros/vida.html" data-i18n="srv_p_1">Seguro de Vida</a>
+                  <a href="../seguros/saude.html" data-i18n="srv_p_2">Seguro Saúde</a>
+                  <a href="../seguros/carro.html" data-i18n="srv_p_3">Seguro de Carro</a>
+                  <a href="../seguros/residencial.html" data-i18n="srv_p_4">Seguro de Casa</a>
+                  <a href="../seguros/viagem.html" data-i18n="srv_p_5">Seguro Viagem</a>
+                  <a href="../seguros/pets.html" data-i18n="srv_p_6">Seguro para Pets</a>
+                  <a href="../seguros/umbrella.html" data-i18n="srv_p_7">Umbrella Insurance</a>
+                </div>
+              </div>
 
               <!-- Seguros Empresariais -->
-              <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;" data-i18n="srv_e_title">Seguros Empresariais</li>
-              <li><a href="../seguros/bop.html" data-i18n="srv_e_1">BOP (Business Owner's Policy)</a></li>
-              <li><a href="../seguros/workers-comp.html" data-i18n="srv_e_2">Worker's Compensation</a></li>
-              <li><a href="../seguros/commercial-auto.html" data-i18n="srv_e_3">Commercial Auto</a></li>
-              <li><a href="../seguros/commercial-property.html" data-i18n="srv_e_4">Commercial Property</a></li>
-              <li><a href="../seguros/general-liability.html" data-i18n="srv_e_5">General Liability</a></li>
-              <li><a href="../seguros/professional-liability.html" data-i18n="srv_e_6">Professional Liability</a></li>
-              <li><a href="../seguros/cyber-liability.html" data-i18n="srv_e_7">Cyber Liability</a></li>
-              <li><a href="../seguros/surety-bonds.html" data-i18n="srv_e_8">Surety Bonds</a></li>
+              <div class="nav-dropdown" style="display: block;">
+                <div class="dropdown-toggle" style="color: var(--white); font-weight: 600; font-size: 1rem;"><span data-i18n="srv_e_title">Seguros Empresariais</span> <i class="ph-bold ph-caret-down"></i></div>
+                <div class="dropdown-content glass-panel" style="top: auto; bottom: 100%; margin-bottom: 10px;">
+                  <a href="../seguros/bop.html" data-i18n="srv_e_1">BOP (Business Owner's Policy)</a>
+                  <a href="../seguros/workers-comp.html" data-i18n="srv_e_2">Worker's Compensation</a>
+                  <a href="../seguros/commercial-auto.html" data-i18n="srv_e_3">Commercial Auto</a>
+                  <a href="../seguros/commercial-property.html" data-i18n="srv_e_4">Commercial Property</a>
+                  <a href="../seguros/general-liability.html" data-i18n="srv_e_5">General Liability</a>
+                  <a href="../seguros/professional-liability.html" data-i18n="srv_e_6">Professional Liability</a>
+                  <a href="../seguros/cyber-liability.html" data-i18n="srv_e_7">Cyber Liability</a>
+                  <a href="../seguros/surety-bonds.html" data-i18n="srv_e_8">Surety Bonds</a>
+                </div>
+              </div>
 
               <!-- Soluções Internacionais -->
-              <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;" data-i18n="srv_i_title">Soluções Internacionais</li>
-              <li><a href="../internacional/vida-internacional.html" data-i18n="srv_i_1">Seguro de Vida Internacional</a></li>
-              <li><a href="../internacional/protecao-patrimonial.html" data-i18n="srv_i_2">Proteção Patrimonial</a></li>
-              <li><a href="../internacional/sucessao.html" data-i18n="srv_i_3">Planejamento Sucessório</a></li>
-              <li><a href="../internacional/estrategias-patrimoniais.html" data-i18n="srv_i_4">Geração de Renda em Dólar</a></li>
-            </ul>
+              <div class="nav-dropdown" style="display: block;">
+                <div class="dropdown-toggle" style="color: var(--white); font-weight: 600; font-size: 1rem;"><span data-i18n="srv_i_title">Soluções Internacionais</span> <i class="ph-bold ph-caret-down"></i></div>
+                <div class="dropdown-content glass-panel" style="top: auto; bottom: 100%; margin-bottom: 10px;">
+                  <a href="../internacional/vida-internacional.html" data-i18n="srv_i_1">Seguro de Vida Internacional</a>
+                  <a href="../internacional/protecao-patrimonial.html" data-i18n="srv_i_2">Proteção Patrimonial</a>
+                  <a href="../internacional/sucessao.html" data-i18n="srv_i_3">Planejamento Sucessório</a>
+                  <a href="../internacional/estrategias-patrimoniais.html" data-i18n="srv_i_4">Geração de Renda em Dólar</a>
+                </div>
+              </div>
+            </div>
 
 
         </div>
