@@ -65,9 +65,9 @@
     "category": "Seguros Pessoais",
     "folder": "seguros",
     "slug": "residencial",
-    "name": "Seguro Casa",
+    "name": "Seguro de Casa",
     "subtitle": "Sua casa protegida contra os imprevistos da vida.",
-    "problem": "Sua casa representa uma parte importante do patrimônio da família. O Seguro Casa ajuda a reduzir os prejuízos quando incêndios, tempestades, roubos, acidentes ou outros eventos cobertos causam danos ao imóvel ou aos seus bens.",
+    "problem": "Sua casa representa uma parte importante do patrimônio da família. O Seguro de Casa ajuda a reduzir os prejuízos quando incêndios, tempestades, roubos, acidentes ou outros eventos cobertos causam danos ao imóvel ou aos seus bens.",
     "difference": [
       "Quando uma tempestade causa danos ao telhado ou à estrutura.",
       "Quando um incêndio atinge a residência.",
@@ -130,7 +130,7 @@
     "slug": "umbrella",
     "name": "Umbrella Insurance",
     "subtitle": "Uma proteção adicional para o patrimônio que você construiu.",
-    "problem": "Alguns acidentes podem resultar em indenizações muito superiores aos limites do Seguro de Carro ou do Seguro Casa. O Umbrella acrescenta uma camada extra de responsabilidade civil para ajudar a proteger seu patrimônio.",
+    "problem": "Alguns acidentes podem resultar em indenizações muito superiores aos limites do Seguro de Carro ou do Seguro de Casa. O Umbrella acrescenta uma camada extra de responsabilidade civil para ajudar a proteger seu patrimônio.",
     "difference": [
       "Quando um acidente de carro causa danos graves a outras pessoas.",
       "Quando alguém sofre um acidente sério em sua propriedade.",
@@ -311,7 +311,7 @@
     ]
   },
   {
-    "category": "Soluções Internacionais",
+    "category": "Seguro de Vida Internacional",
     "folder": "internacional",
     "slug": "vida-internacional",
     "name": "Seguro de Vida Internacional",
@@ -332,7 +332,7 @@
     ]
   },
   {
-    "category": "Soluções Internacionais",
+    "category": "Seguro de Vida Internacional",
     "folder": "internacional",
     "slug": "protecao-patrimonial",
     "name": "Proteção Patrimonial Internacional",
@@ -353,7 +353,7 @@
     ]
   },
   {
-    "category": "Soluções Internacionais",
+    "category": "Seguro de Vida Internacional",
     "folder": "internacional",
     "slug": "sucessao",
     "name": "Planejamento Sucessório Internacional",
@@ -374,7 +374,7 @@
     ]
   },
   {
-    "category": "Soluções Internacionais",
+    "category": "Seguro de Vida Internacional",
     "folder": "internacional",
     "slug": "estrategias-patrimoniais",
     "name": "Estratégias Patrimoniais em Dólar",
