@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       hero_eyebrow: "Você vive. Nós resolvemos.",
       hero_title: "Toda proteção que sua família precisa",
-      "hero_subtitle": "Seguro de Vida, Saúde, Carro, Casa, Negócios e Seguro de Vida Internacional para a comunidade brasileira.",
+      "hero_subtitle": "Seguro de vida, saúde, carro, casa, negócios e soluções internacionais para a comunidade brasileira.",
       hero_cta_1: "Solicitar Cotação",
       hero_cta_2: "Falar no WhatsApp",
       
@@ -593,11 +593,32 @@ document.addEventListener('DOMContentLoaded', () => {
       cta_title: "Vamos construir seu plano de proteção?",
       cta_btn_1: "Conversar com especialista por WhatsApp",
       
-      footer_desc: "Você vive. Nós resolvemos. A agência que ajuda famílias e empresas brasileiras nos Estados Unidos a proteger tudo o que construíram.",
+      
       copyright_text: "Todos os direitos reservados.",
       legal_privacy: "Política de Privacidade",
       legal_terms: "Termos de Uso"
     },
+        story_1_author: "Mariana Silva",
+        story_1_city: "Orlando, FL",
+        story_1_text: "\"O sistema de saúde aqui sempre me assustou. A BLGI encontrou o plano perfeito para minha família, explicando tudo em português. Confiança total!\"",
+        story_2_author: "Ricardo Mendes",
+        story_2_city: "Boca Raton, FL",
+        story_2_text: "\"Contratei o seguro do meu carro e da minha casa. A agilidade deles e a clareza nas opções de cobertura são impressionantes. Recomendo de olhos fechados.\"",
+        story_3_author: "Thiago Costa",
+        story_3_city: "Miami, FL",
+        story_3_text: "\"Como dono de negócio, precisava de um General Liability. Eles resolveram minha apólice no mesmo dia. Um alívio saber que tenho esse suporte.\"",
+        foot_nav_2: "Quem Somos",
+        foot_nav_3: "Nossas Soluções",
+        footer_desc_title: "Você vive. Nós resolvemos.",
+        opt_casa: "Seguro de Casa",
+        faq_cat_about: "Sobre a Better Life",
+        mobile_faq: "FAQ",
+        footer_location: "Orlando, Flórida",
+        copyright_text: "Todos os direitos reservados.",
+
+
+        
+
     en: {
           welcome_link: "Welcome",
 
@@ -1003,12 +1024,34 @@ document.addEventListener('DOMContentLoaded', () => {
       cta_title: "Shall we build your protection plan?",
       cta_btn_1: "Chat with an expert on WhatsApp",
       
-      footer_desc: "You live. We handle it. The agency helping Brazilian families and businesses in the US protect everything they've built.",
+      
       copyright_text: "All rights reserved.",
       legal_privacy: "Privacy Policy",
       legal_terms: "Terms of Use"
     }
-  };
+  
+        story_1_author: "Mariana Silva",
+        story_1_city: "Orlando, FL",
+        story_1_text: "\"The healthcare system here always scared me. BLGI found the perfect plan for my family, explaining everything clearly. Total trust!\"",
+        story_2_author: "Ricardo Mendes",
+        story_2_city: "Boca Raton, FL",
+        story_2_text: "\"I got my home and auto insurance with them. Their agility and clarity on coverage options are impressive. Highly recommend.\"",
+        story_3_author: "Thiago Costa",
+        story_3_city: "Miami, FL",
+        story_3_text: "\"As a business owner, I needed General Liability. They got my policy sorted the same day. Such a relief to have this support.\"",
+        foot_nav_2: "About Us",
+        foot_nav_3: "Our Solutions",
+        news_title: "News and Content",
+        footer_desc_title: "You live. We handle it.",
+        
+
+        opt_casa: "Home Insurance",
+        faq_cat_about: "About Better Life",
+        mobile_faq: "FAQ",
+
+        footer_location: "Orlando, Florida",
+        copyright_text: "All rights reserved.",
+};
 
   const langCheckbox = document.getElementById('lang-toggle');
   const i18nElements = document.querySelectorAll('[data-i18n]');
@@ -1020,32 +1063,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function applyLanguage(lang) {
-    i18nElements.forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        if (el.tagName === 'LABEL' || el.tagName === 'SPAN' || el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'H4' || el.tagName === 'H5' || el.tagName === 'P' || el.tagName === 'A' || el.tagName === 'BUTTON' || el.tagName === 'OPTION' || el.tagName === 'DIV') {
+      i18nElements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
           el.innerHTML = translations[lang][key];
         }
-      }
-    });
-  }
-
-  if (savedLang === 'en') { 
+      });
+    }
+  
+    if (savedLang === 'en') { 
     applyLanguage('en');
   }
 
 if (langCheckbox) {
     langCheckbox.addEventListener('change', (e) => {
-      const lang = e.target.checked ? 'en' : 'pt';
-      localStorage.setItem('lang', lang);
-      
-      i18nElements.forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang] && translations[lang][key]) {
-          if (el.tagName === 'LABEL' || el.tagName === 'SPAN' || el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'H4' || el.tagName === 'H5' || el.tagName === 'P' || el.tagName === 'A' || el.tagName === 'BUTTON' || el.tagName === 'OPTION') {
-            el.innerHTML = translations[lang][key];
-          }
-        }
+        const lang = e.target.checked ? 'en' : 'pt';
+        localStorage.setItem('lang', lang);
+        applyLanguage(lang);
       });
     });
   }
