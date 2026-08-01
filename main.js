@@ -615,6 +615,12 @@ document.addEventListener('DOMContentLoaded', () => {
         mobile_faq: "FAQ",
         footer_location: "Orlando, Flórida",
         copyright_text: "Todos os direitos reservados.",
+        estrategias_name: "Estratégias Patrimoniais em Dólar",
+        protecao_name: "Proteção Patrimonial",
+        sucessao_name: "Planejamento Sucessório",
+        vida_int_name: "Seguro de Vida Internacional",
+        nav_home: "Início",
+
 
 
         
@@ -844,7 +850,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       hero_eyebrow: "You live. We handle it.",
       hero_title: "All the protection your family needs",
-      "hero_subtitle": "Life, Health, Auto, Home, Business, and International Solutions...",
+      "hero_subtitle": "Life, health, auto, home, business, and international solutions for the Brazilian community.",
       hero_cta_1: "Request a Quote",
       hero_cta_2: "Talk on WhatsApp",
       
@@ -1051,6 +1057,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         footer_location: "Orlando, Florida",
         copyright_text: "All rights reserved.",
+
+        estrategias_name: "Dollar Wealth Strategies",
+        protecao_name: "Asset Protection",
+        sucessao_name: "Succession Planning",
+        vida_int_name: "International Life Insurance",
+        nav_home: "Home",
 };
 
   const langCheckbox = document.getElementById('lang-toggle');
@@ -1066,7 +1078,18 @@ document.addEventListener('DOMContentLoaded', () => {
       i18nElements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-          el.innerHTML = translations[lang][key];
+          if (el.tagName === 'META') {
+              el.setAttribute('content', translations[lang][key]);
+          } else {
+              el.innerHTML = translations[lang][key];
+          }
+        }
+      });
+      // Also update placeholders for inputs/textareas
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            el.setAttribute('placeholder', translations[lang][key]);
         }
       });
     }

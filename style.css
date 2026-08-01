@@ -1011,3 +1011,5 @@ header.scrolled {
         display: block !important;
     }
 }
+
+.faq-title { text-transform: uppercase; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.2; font-family: var(--font-heading); letter-spacing: -0.02em; margin-bottom: 2rem; }
