@@ -49,7 +49,7 @@ processHtml('internacional');
 for (let i = 0; i < enAdditions.length; i++) {
     let text = enAdditions[i];
     text = text.replace(/ - EN",$/, '",');
-    text = text.replace(/Seguro de Vida Internacional/g, "International Life Insurance");
+    text = text.replace(/Soluções Internacionais/g, "International Life Insurance");
     text = text.replace(/Seguro de Vida/g, "Life Insurance");
     text = text.replace(/Seguro Sa[úu]de/g, "Health Insurance");
     text = text.replace(/Seguro de Carro/g, "Auto Insurance");

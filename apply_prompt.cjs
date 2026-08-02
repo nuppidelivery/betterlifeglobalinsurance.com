@@ -32,9 +32,9 @@ allFiles.forEach(file => {
     content = content.replace(/Seguro Casa/g, 'Seguro de Casa');
     content = content.replace(/Seguro casa/g, 'Seguro de casa');
     content = content.replace(/Seguro Empresarial/g, 'Seguros Empresariais');
-    content = content.replace(/Soluções Internacionais/g, 'Seguro de Vida Internacional');
-    content = content.replace(/Solu[çc][õo][\xAA\xBA\x8E\uFFFD]+es Internacionais/g, 'Seguro de Vida Internacional');
-    content = content.replace(/Solu[çc][õo]es Internacionais/g, 'Seguro de Vida Internacional');
+    content = content.replace(/Soluções Internacionais/g, 'Soluções Internacionais');
+    content = content.replace(/Solu[çc][õo][\xAA\xBA\x8E\uFFFD]+es Internacionais/g, 'Soluções Internacionais');
+    content = content.replace(/Solu[çc][õo]es Internacionais/g, 'Soluções Internacionais');
 
     if (content !== original) {
         fs.writeFileSync(file, content, 'utf8');

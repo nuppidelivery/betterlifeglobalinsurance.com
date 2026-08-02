@@ -1149,8 +1149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       copyright_text: "All rights reserved.",
       legal_privacy: "Privacy Policy",
-      legal_terms: "Terms of Use"
-    }
+      legal_terms: "Terms of Use",
   
         story_1_author: "Mariana Silva",
         story_1_city: "Orlando, FL",
@@ -1293,9 +1292,9 @@ document.addEventListener('DOMContentLoaded', () => {
         vida_difference_3: "When you want to leave financial protection for those you love.",
         vida_difference_4: "When you want to prepare for situations such as disability or serious illness, with living benefits.",
         vida_help: "We understand your reality, your responsibilities, and your goals before recommending any solution. Then, we look for adequate protection for your family and your budget.",
-        seo_title_workers_comp: "Workers' Compensation | Better Life Global Insurance",
-
-};
+        seo_title_workers_comp: "Workers' Compensation | Better Life Global Insurance"
+    }
+  };
 
   const langCheckbox = document.getElementById('lang-toggle');
   const i18nElements = document.querySelectorAll('[data-i18n]');
@@ -1335,7 +1334,6 @@ if (langCheckbox) {
         const lang = e.target.checked ? 'en' : 'pt';
         localStorage.setItem('lang', lang);
         applyLanguage(lang);
-      });
     });
   }
 });

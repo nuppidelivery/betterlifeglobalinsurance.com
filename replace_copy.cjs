@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const targetStr = "Seguro de Vida, Saúde, Carro, Casa, Negócios e Seguro de Vida Internacional para a comunidade brasileira.";
+const targetStr = "Seguro de vida, saúde, carro, casa, negócios e soluções internacionais para a comunidade brasileira.";
 const newStr = "Seguro de vida, saúde, carro, casa, negócios e soluções internacionais para a comunidade brasileira.";
 
 function replaceInFolder(folder) {

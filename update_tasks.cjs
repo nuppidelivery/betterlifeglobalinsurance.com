@@ -17,10 +17,10 @@ function replaceInFile(filePath, replacements) {
 }
 
 // 4 & 5. Internacional -> Soluções Internacionais
-// Seguro de Vida Internacional -> Solução de Vida Internacional
+// Soluções Internacionais -> Solução de Vida Internacional
 const globalReplacements = [
     // Task 5
-    ['Seguro de Vida Internacional', 'Solução de Vida Internacional'],
+    ['Soluções Internacionais', 'Solução de Vida Internacional'],
     ['Seguro de vida internacional', 'Solução de vida internacional'],
     // Task 4
     ['Internacional', 'Soluções Internacionais'],

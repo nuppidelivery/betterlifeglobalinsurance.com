@@ -45,7 +45,7 @@ function updateFooter(content) {
               <div class="nav-dropdown" style="display: block;">
                 <div class="dropdown-toggle" style="color: var(--white); font-weight: 600; font-size: 1rem;"><span data-i18n="srv_i_title">Soluções Internacionais</span> <i class="ph-bold ph-caret-down"></i></div>
                 <div class="dropdown-content glass-panel" style="top: auto; bottom: 100%; margin-bottom: 10px;">
-                  <a href="../internacional/vida-internacional.html" data-i18n="srv_i_1">Seguro de Vida Internacional</a>
+                  <a href="../internacional/vida-internacional.html" data-i18n="srv_i_1">Soluções Internacionais</a>
                   <a href="../internacional/protecao-patrimonial.html" data-i18n="srv_i_2">Proteção Patrimonial</a>
                   <a href="../internacional/sucessao.html" data-i18n="srv_i_3">Planejamento Sucessório</a>
                   <a href="../internacional/estrategias-patrimoniais.html" data-i18n="srv_i_4">Geração de Renda em Dólar</a>

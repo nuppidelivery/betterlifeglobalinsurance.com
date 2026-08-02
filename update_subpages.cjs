@@ -41,7 +41,7 @@ function replaceInFolder(folder) {
 
               <!-- Soluções Internacionais -->
               <li style="color: var(--white); font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;" data-i18n="srv_i_title">Soluções Internacionais</li>
-              <li><a href="../internacional/vida-internacional.html" data-i18n="srv_i_1">Seguro de Vida Internacional</a></li>
+              <li><a href="../internacional/vida-internacional.html" data-i18n="srv_i_1">Soluções Internacionais</a></li>
               <li><a href="../internacional/protecao-patrimonial.html" data-i18n="srv_i_2">Proteção Patrimonial</a></li>
               <li><a href="../internacional/sucessao.html" data-i18n="srv_i_3">Planejamento Sucessório</a></li>
               <li><a href="../internacional/estrategias-patrimoniais.html" data-i18n="srv_i_4">Geração de Renda em Dólar</a></li>

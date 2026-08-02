@@ -16,11 +16,11 @@ function processHtml(folder) {
             ['>FAQ<', ' data-i18n="nav_faq">FAQ<'],
             ['>Nossas Soluções<', ' data-i18n="services_title">Nossas Soluções<'],
             ['>Início<', ' data-i18n="nav_home">Início<'],
-            ['<span style="color: rgba(255,255,255,0.6);">Seguro de Vida Internacional</span>', '<span style="color: rgba(255,255,255,0.6);" data-i18n="srv_i_title">Seguro de Vida Internacional</span>'],
+            ['<span style="color: rgba(255,255,255,0.6);">Soluções Internacionais</span>', '<span style="color: rgba(255,255,255,0.6);" data-i18n="srv_i_title">Soluções Internacionais</span>'],
             ['<span style="font-weight: 600;">Estratégias Patrimoniais em Dólar</span>', '<span style="font-weight: 600;" data-i18n="estrategias_name">Estratégias Patrimoniais em Dólar</span>'],
             ['<span style="font-weight: 600;">Proteção Patrimonial</span>', '<span style="font-weight: 600;" data-i18n="protecao_name">Proteção Patrimonial</span>'],
             ['<span style="font-weight: 600;">Planejamento Sucessório</span>', '<span style="font-weight: 600;" data-i18n="sucessao_name">Planejamento Sucessório</span>'],
-            ['<span style="font-weight: 600;">Seguro de Vida Internacional</span>', '<span style="font-weight: 600;" data-i18n="vida_int_name">Seguro de Vida Internacional</span>']
+            ['<span style="font-weight: 600;">Soluções Internacionais</span>', '<span style="font-weight: 600;" data-i18n="vida_int_name">Soluções Internacionais</span>']
         ];
 
         for (const [oldStr, newStr] of replacements) {
@@ -60,7 +60,7 @@ if (!mainjs.includes('estrategias_name:')) {
         estrategias_name: "Estratégias Patrimoniais em Dólar",
         protecao_name: "Proteção Patrimonial",
         sucessao_name: "Planejamento Sucessório",
-        vida_int_name: "Seguro de Vida Internacional",
+        vida_int_name: "Soluções Internacionais",
         nav_home: "Início",
 ` + p2);
     mainjs = mainjs.replace(/(en:\s*{[\s\S]*?)(};)/, (match, p1, p2) => p1 + `
