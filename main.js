@@ -417,8 +417,8 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_cta_1: "Solicitar Cotação",
       hero_cta_2: "Falar no WhatsApp",
       
-      badge_secure: "Proteção Total",
-      badge_expert: "Consultoria VIP",
+      badge_secure: "Você vive.",
+      badge_expert: "Nós resolvemos!",
       
       "hero_help": "COMO PODEMOS TE AJUDAR?",
       quick_saude: "SAÚDE",
@@ -970,8 +970,8 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_cta_1: "Request a Quote",
       hero_cta_2: "Talk on WhatsApp",
       
-      badge_secure: "Total Protection",
-      badge_expert: "VIP Consulting",
+      badge_secure: "You live.",
+      badge_expert: "We handle it!",
       
       "hero_help": "HOW CAN WE HELP YOU?",
       quick_saude: "HEALTH",
