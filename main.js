@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
       srv_e_8_d: "Credibilidade e garantia para grandes projetos.",
 
       // Internacionais
-      srv_i_1: "Seguro de Vida Internacional",
+      srv_i_1: "Seguro de vida internacional",
       srv_i_1_d: "Estratégias globais para proteger sua família sem fronteiras.",
       srv_i_2: "Proteção Patrimonial",
       srv_i_2_d: "Blindagem e segurança cambial para seu capital.",
